@@ -1,18 +1,17 @@
-import Header from "../components/Header"
-import Footer from "../components/Footer"
-import Section from "../components/Section"
+import Header from '../components/Header'
+import Section from '../components/Section'
+import Footer from '../components/Footer'
 
-
-function App() {
+function Home() {
   return (
     <div>
       <Header />
       <Section>
-        <p>Hello my name is kenny</p>
+        <h1>Hello my name is Kenny</h1>
       </Section>
       <Footer />
     </div>
   )
 }
 
-export default App
+export default Home

@@ -1,12 +1,13 @@
-import Btn from '../components/Btn'
+import Box from '../components/Box'
 
 function Header(props) {
   return (
-    <header className="header" id="styled_box" >
-      <Btn link="#defaut">Kenny Vargas</Btn>
+    <header className="header" id="styled_box">
+      <Box><strong>Kenny Vargas</strong></Box>
       <div className="header-right">
-        <Btn active="active" link="/">Home</Btn>
-        <Btn active="desactive" link="/contact">Contact</Btn>
+        <Box link="/">Home</Box>
+        <Box link="/contact">Contact</Box>
+        <Box link="/about">About</Box >
       </div>
     </header >
   )

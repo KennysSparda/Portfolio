@@ -2,7 +2,7 @@
   --primary-color: #aaaaff;
   --secundary-color: #aaffff;
   --tertiary-color: #f1f1f1;
-  --background: #191970;
+  --background: #191930;
 }
 
 body {
@@ -10,6 +10,7 @@ body {
   font-size: 20px;
   text-align: center;
   margin: 0px;
+  padding: 0px;
   color: var(--primary-color);
   background: var(--background);
 }
@@ -30,8 +31,15 @@ body {
   float: right;
 }
 
+footer {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 10px;
+}
+
 section {
-  height: 100vh;
+  height: 75vh;
   text-align: center;
   width: 90%;
   max-width: 1000px;
