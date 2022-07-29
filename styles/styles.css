@@ -2,7 +2,7 @@
   --primary-color: #aaaaff;
   --secundary-color: #aaffff;
   --tertiary-color: #f1f1f1;
-  --background: #2a3e4f;
+  --background: #191970;
 }
 
 body {
@@ -64,11 +64,20 @@ section h1 {
   background-image: linear-gradient( to bottom right, var(--tertiary-color), var(--primary-color), var(--tertiary-color));
 }
 
+#unstyled_box.active {
+  background: var(--primary-color);
+}
+
 #unstyled_box:hover {
   color: white;
-  box-shadow: 0px 0px 20px var(--secundary-color);
   background-image: linear-gradient( to bottom right, var(--secundary-color), var(--primary-color), var(--secundary-color));
 }
+
+#styled_box:hover {
+  color: white;
+  box-shadow: 0px 0px 20px var(--secundary-color);
+}
+
 
 @media screen and (max-width: 500px) {
   .header a {
