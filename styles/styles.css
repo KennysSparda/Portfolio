@@ -1,0 +1,83 @@
+:root {
+  --primary-color: #aaaaff;
+  --secundary-color: #aaffff;
+  --tertiary-color: #f1f1f1;
+  --background: #2a3e4f;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin: 0px;
+  color: var(--primary-color);
+  background: var(--background);
+}
+
+.header {
+  overflow: hidden;
+  padding: 20px 10px;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.header a {
+  float: left;
+}
+
+.header-right {
+  float: right;
+}
+
+section {
+  height: 100vh;
+  text-align: center;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 10px;
+}
+
+section h1 {
+  text-shadow: 0px 0px 10px var(--tertiary-colorr);
+}
+
+#unstyled_box {
+  color: white;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 10px;
+}
+
+#styled_box {
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px black;
+  background-image: linear-gradient( to bottom right, var(--tertiary-color), var(--primary-color), var(--tertiary-color));
+}
+
+#unstyled_box:hover {
+  color: white;
+  box-shadow: 0px 0px 20px var(--secundary-color);
+  background-image: linear-gradient( to bottom right, var(--secundary-color), var(--primary-color), var(--secundary-color));
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .header-right {
+    float: none;
+  }
+}
