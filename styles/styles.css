@@ -1,57 +1,66 @@
 :root {
-  --primary-color: #aaaaff;
-  --secundary-color: #aaffff;
-  --tertiary-color: #f1f1f1;
-  --background: #191930;
+  --primary-color: #aa0000;
+  --secundary-color: #ff0000;
+  --tertiary-color: #5c5c5c;
+  --background: #292929;
 }
 
 body {
   font-family: sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   margin: 0px;
-  padding: 0px;
   color: var(--primary-color);
   background: var(--background);
 }
 
-.header {
+.navbar {
   overflow: hidden;
-  padding: 20px 10px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 1.2em;
   width: 90%;
   max-width: 1000px;
   margin: auto;
+  margin-bottom: 2em;
 }
 
-.header a {
+.navbar a {
   float: left;
 }
 
-.header-right {
+.navbar-right {
   float: right;
 }
 
 footer {
+  height: 150px;
   width: 90%;
   max-width: 1000px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
   margin: auto;
   padding: 10px;
 }
 
 section {
-  height: 75vh;
+  font-size: 35px;
   text-align: center;
   width: 90%;
   max-width: 1000px;
-  margin: auto;
+  margin: 10px auto;
   padding: 10px;
+  border-radius: 20px;
+  text-shadow: 0px 0px 10px black;
+  background-image: linear-gradient( to bottom, var(--background), #2f2f2f, var(--background));
 }
 
-section h1 {
-  text-shadow: 0px 0px 10px var(--tertiary-colorr);
+section p {
+  font-size: 26px;
 }
 
-#unstyled_box {
+#unstyled {
   color: white;
   padding: 12px;
   text-decoration: none;
@@ -60,32 +69,37 @@ section h1 {
   border-radius: 10px;
 }
 
-#styled_box {
+#styled {
   color: white;
   text-align: center;
   padding: 12px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 25px;
   border-radius: 10px;
   box-shadow: 0px 0px 20px black;
-  background-image: linear-gradient( to bottom right, var(--tertiary-color), var(--primary-color), var(--tertiary-color));
+  background-image: linear-gradient( to bottom right, var(--tertiary-color), var(--background), var(--tertiary-color));
 }
 
-#unstyled_box.active {
+#unstyled.active {
   background: var(--primary-color);
 }
 
-#unstyled_box:hover {
+#unstyled:hover {
   color: white;
-  background-image: linear-gradient( to bottom right, var(--secundary-color), var(--primary-color), var(--secundary-color));
+  background-image: linear-gradient( to bottom right, var(--background), var(--tertiary-color), var(--background));
 }
 
-#styled_box:hover {
-  color: white;
+#styled:hover {
+  color: #ff0000;
   box-shadow: 0px 0px 20px var(--secundary-color);
 }
 
+#ico {
+  width: 18px;
+  height: 18px;
+  margin: 0px 5px;
+}
 
 @media screen and (max-width: 500px) {
   .header a {

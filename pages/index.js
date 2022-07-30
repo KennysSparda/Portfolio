@@ -1,13 +1,14 @@
-import Header from '../components/Header'
+import Navbar from '../components/Navbar'
 import Section from '../components/Section'
 import Footer from '../components/Footer'
 
 function Home() {
   return (
     <div>
-      <Header />
+      <Navbar />
       <Section>
-        <h1>Hello my name is Kenny</h1>
+        <h1>Hello world.</h1>
+        <h2>My name is Kenny!</h2>
       </Section>
       <Footer />
     </div>

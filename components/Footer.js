@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer class="layout" id="unstyled_box">
+    <footer className="footer" id="styled">
       <p>Posted by Swygax</p>
       <p>Localized at rua chabvlas, 25, Jobes Fragnoth / FR</p>
     </footer>

@@ -1,7 +1,11 @@
+/*   Box like button but for whatever"
+ *   accept styles= {'styled', 'unstyled'}
+ *   accept link= {'/home', '/about'}
+ */
 function Box(props) {
   return (
     <a
-      id="unstyled_box"
+      id={props.style}
       href={props.link}
     >
       {props.children}
