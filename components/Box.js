@@ -1,4 +1,5 @@
-/*   Box like button but for whatever"
+/*   Box like button but for whatever
+ *   
  *   accept styles= {'styled', 'unstyled'}
  *   accept link= {'/home', '/about'}
  */
