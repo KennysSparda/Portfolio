@@ -20,6 +20,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  height: ;
   width: 90%;
   max-width: 1000px;
   margin: 0px auto;
@@ -111,14 +112,14 @@ footer {
   border-radius: 20px;
 }
 
-@media screen and (max-width: 500px) {
-  .header a {
+@media screen and (max-width: 650px) {
+  .navbar a {
     float: none;
     display: block;
     text-align: left;
   }
 
-  .header-right {
+  .navbar-right {
     float: none;
   }
 }
