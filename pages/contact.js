@@ -1,16 +1,12 @@
-import Navbar from '../components/Navbar'
 import Section from '../components/Section'
 import Box from '../components/Box'
-import Footer from '../components/Footer'
 
 function Contact() {
   var links = ["https://contate.me/Swygax", "https://github.com/KennysSparda", "https://www.linkedin.com/in/kenny-de-souza-vargas-8a521422a"]
   var ico = ['/images/whatsapp.png', '/images/github.png', '/images/linkedin.png']
 
   return (
-    <div>
-      <Navbar />
-      <Section>
+      <Section id='contact'>
         <h1>Contato</h1>
         <p><strong>Email:</strong> swygax@gmail.com</p>
         <p>Me mande um "oi" no </p>
@@ -21,9 +17,6 @@ function Contact() {
 
         <Box style='styled' link={links[1]}><img id='ico' src={ico[1]}></img> Github</Box>
       </Section>
-      <br />
-      <Footer />
-    </div>
   )
 }
 

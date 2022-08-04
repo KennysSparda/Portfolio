@@ -22,7 +22,7 @@ function NavbarRight() {
     const [select, setSelect] = useState(false)
     return (
       <div>
-        <Box style='unstyled' link="/projects" onClick={Button2}>Projetos</Box >
+        <Box style='unstyled' link="#projects" onClick={Button2}>Projetos</Box >
       </div>
     )
   }
@@ -31,7 +31,7 @@ function NavbarRight() {
     const [select, setSelect] = useState(false)
     return (
       <div>
-        <Box style='unstyled' link="/skills" onClick={Button3}>Habilidades</Box>
+        <Box style='unstyled' link="#skills" onClick={Button3}>Habilidades</Box>
       </div>
     )
   }
@@ -40,7 +40,7 @@ function NavbarRight() {
     const [select, setSelect] = useState(false)
     return (
       <div>
-        <Box style='unstyled' link="/contact" onClick={Button4}>Contato</Box>
+        <Box style='unstyled' link="#contact" onClick={Button4}>Contato</Box>
       </div>
     )
   }
@@ -49,7 +49,7 @@ function NavbarRight() {
     const [select, setSelect] = useState(false)
     return (
       <div>
-        <Box style='unstyled' link="/about" onClick={Button5}>Sobre</Box >
+        <Box style='unstyled' link="#about" onClick={Button5}>Sobre</Box >
       </div>
     )
   }

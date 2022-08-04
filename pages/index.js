@@ -1,18 +1,24 @@
 import Navbar from '../components/Navbar'
-import Section from '../components/Section'
 import Footer from '../components/Footer'
 
-function Home() {
+import Home from './home'
+import Contact from './contact'
+import Projects from './projects'
+import Skills from './skills'
+import About from './about'
+
+function App() {
   return (
     <div>
       <Navbar />
-      <Section>
-        <h1>Hello world.
-          My name is Kenny.</h1>
-      </Section>
+      <Home />
+      <Contact />
+      <Projects />
+      <Skills />
+      <About />
       <Footer />
     </div>
   )
 }
 
-export default Home
+export default App
