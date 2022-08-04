@@ -1,4 +1,4 @@
-function Section(props) {
+export default function Section(props) {
   return (
     <div id={props.id}>
       <section className="layout" id={props.style}>
@@ -7,5 +7,3 @@ function Section(props) {
     </div>
   )
 }
-
-export default Section

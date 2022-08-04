@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Box from './Box'
 
 
-function Navbar(props) {
+export default function Navbar(props) {
   const [toggle, setToggle] = useState(false);
 
   const triggerToggle = () => {
@@ -18,51 +18,87 @@ function Navbar(props) {
   }
 
   function NavbarRight() {
+    var links = [ "/files/KennyVargas-pt_BR.pdf", "/files/KennyVargas-en_US.pdf" ]
+    var ico = ['/images/link.png']
 
     function Button1() {
-      const [select, setSelect] = useState(false)
       return (
         <div>
-          <Box style='unstyled' link="#home" function={triggerToggle}>Início</Box>
+          <Box style='unstyled' link="/#home" function={triggerToggle}>Início</Box>
         </div>
       )
     }
     
     function Button2() {
-      const [select, setSelect] = useState(false)
       return (
         <div>
-          <Box style='unstyled' link="#projects" function={triggerToggle}>Projetos</Box >
+          <Box style='unstyled' link="/#projects" function={triggerToggle}>Projetos</Box >
         </div>
       )
     }
     
     function Button3() {
-      const [select, setSelect] = useState(false)
       return (
         <div>
-          <Box style='unstyled' link="#skills" function={triggerToggle}>Habilidades</Box>
+          <Box style='unstyled' link="/#skills" function={triggerToggle}>Habilidades</Box>
         </div>
       )
     }
     
     function Button4() {
-      const [select, setSelect] = useState(false)
       return (
         <div>
-          <Box style='unstyled' link="#contact" function={triggerToggle}>Contato</Box>
+          <Box style='unstyled' link="/#contact" function={triggerToggle}>Contato</Box>
         </div>
       )
     }
     
     function Button5() {
-      const [select, setSelect] = useState(false)
+      const [toggle, setToggle] = useState(false);
+
+      const triggerToggle = () => {
+        setToggle( !toggle )
+      }
+    
+      if(toggle == true ) {
+        return (
+          <div>
+            <Box style='styled' function={triggerToggle}>Meu Curriculo
+              <table>
+                <tr>
+                  <th>Português</th>
+                  <th>English</th>
+                </tr>
+                <tr>
+                  <td><Box style='unstyled' link='/resume/pt'>Visualizar</Box></td>
+                  <td><Box style='unstyled' link='/resume/en'>Visualizar</Box></td>
+                </tr>
+                <tr>
+                  <td><Box type='external' style='styled' link={links[0]}>Baixar</Box></td>
+                  <td><Box type='external' style='styled' link={links[1]}>Baixar</Box></td>
+                </tr>
+              </table>
+            </Box>
+          </div>
+        )
+      } else {
+        return (
+          <div>
+            <Box style='unstyled' function={triggerToggle}>Meu Curriculo</Box>
+          </div>
+        )
+      }
+    }
+
+    function Button6() {
       return (
         <div>
-          <Box style='unstyled' link="#about" function={triggerToggle}>Sobre</Box >
+          <Box style='unstyled' link="/#about" function={triggerToggle}>Sobre
+          </Box >
         </div>
       )
     }
+
     return (
       <nav className="navbar-right">
         <Button1 />
@@ -70,6 +106,7 @@ function Navbar(props) {
         <Button3 />
         <Button4 />
         <Button5 />
+        <Button6 />
       </nav>
     )
   }
@@ -94,5 +131,3 @@ function Navbar(props) {
     )
   }
 }
-
-export default Navbar

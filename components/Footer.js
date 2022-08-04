@@ -2,7 +2,7 @@
  *      you will need to load this on
  *      all pages manualy :(
  */
-function Footer() {
+export default function Footer() {
   return (
     <footer className="footer" id="unstyled">
       {/* You can make changes below */}
@@ -11,5 +11,3 @@ function Footer() {
     </footer>
   )
 }
-
-export default Footer

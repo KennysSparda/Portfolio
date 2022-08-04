@@ -1,5 +1,5 @@
 
-function Frame(props) {
+export default function Frame(props) {
     var srcImage = props.source
     var sourceSet=` ${srcImage} 320w
                     ${srcImage} 480w,
@@ -15,5 +15,3 @@ function Frame(props) {
         </img>
     )
 }
-
-export default Frame

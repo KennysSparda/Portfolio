@@ -3,7 +3,7 @@
  *   accept styles= {'styled', 'unstyled'}
  *   accept link= {'/home', '/about'}
  */
-function Box(props) {
+export default function Box(props) {
 
   if(props.type == 'external') {
     return (
@@ -31,5 +31,3 @@ function Box(props) {
     )
   }
 }
-
-export default Box

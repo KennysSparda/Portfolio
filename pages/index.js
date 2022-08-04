@@ -8,12 +8,12 @@ import Projects from './home/projects'
 import Skills from './home/skills'
 import About from './home/about'
 
-function App() {
+export default function App() {
 
   return (
     <div>
       <Head>
-        <title>Portifolio</title>
+        <title>Swygax Portfolio</title>
       </Head>
       <Navbar />
       <Home />
@@ -25,5 +25,3 @@ function App() {
     </div>
   )
 }
-
-export default App
