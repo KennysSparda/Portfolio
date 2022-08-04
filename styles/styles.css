@@ -15,6 +15,15 @@ body {
   
 }
 
+.navbar_only {
+  position: fixed;
+  padding: 20px;
+  width: 110px;
+  margin: 0px auto;
+  left: 0;
+  right: 0;
+}
+
 .navbar {
   position: fixed;
   padding: 20px;
@@ -35,9 +44,9 @@ body {
 }
 
 section {
-  font-size: 35px;
+  font-size: 26px;
   text-align: center;
-  height: 70vh;
+  height: 60vh;
   width: 90%;
   max-width: 1000px;
   margin: 0px auto;
@@ -46,9 +55,9 @@ section {
   text-shadow: 0px 0px 10px black;
   background-image: linear-gradient( to bottom, var(--background), #2f2f2f, var(--background));
 }
-
-section p {
-  font-size: 26px;
+ 
+section h1 {
+  font-size: 40px;
 }
 
 footer {
@@ -83,6 +92,11 @@ footer {
   background-image: linear-gradient( to bottom right, var(--tertiary-color), var(--background), var(--tertiary-color));
 }
 
+#styled:hover {
+  color: #ff0000;
+  box-shadow: 0px 0px 20px var(--secundary-color);
+}
+
 #unstyled.active {
   background: var(--primary-color);
 }
@@ -90,11 +104,6 @@ footer {
 #unstyled:hover {
   color: white;
   background-image: linear-gradient( to bottom right, var(--background), var(--tertiary-color), var(--background));
-}
-
-#styled:hover {
-  color: #ff0000;
-  box-shadow: 0px 0px 20px var(--secundary-color);
 }
 
 #ico {
@@ -105,7 +114,7 @@ footer {
 
 #frame {
   width: 70%;
-  height: 70%;
+
   margin: 0px;
   padding: 30px;
   border: solid grey 2px;
@@ -113,6 +122,7 @@ footer {
 }
 
 @media screen and (max-width: 606px) {
+
   .navbar a {
     float: none;
     display: block;

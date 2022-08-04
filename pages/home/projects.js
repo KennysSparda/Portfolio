@@ -1,5 +1,5 @@
-import Section from '../components/Section'
-import Frame from '../components/Frame'
+import Section from '../../components/Section'
+import Frame from '../../components/Frame'
 
 function Projects() {
   return (

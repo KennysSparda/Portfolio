@@ -1,5 +1,5 @@
-import Box from '../components/Box'
-import Section from '../components/Section'
+import Box from '../../components/Box'
+import Section from '../../components/Section'
 
 function About() {
   return (
