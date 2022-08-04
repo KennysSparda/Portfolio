@@ -1,3 +1,5 @@
+import Helmet from 'react-helmet'
+
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
@@ -8,7 +10,7 @@ import Skills from './home/skills'
 import About from './home/about'
 
 function App() {
-  document.title = 'Kenny Portfolio'
+  <Helmet title='Kenny Portfolio' />
   return (
     <div>
       <Navbar />
