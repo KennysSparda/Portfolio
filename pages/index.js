@@ -1,5 +1,4 @@
-import Helmet from 'react-helmet'
-
+import Head from 'next/head'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
@@ -10,9 +9,12 @@ import Skills from './home/skills'
 import About from './home/about'
 
 function App() {
-  <Helmet title='Kenny Portfolio' />
+
   return (
     <div>
+      <Head>
+        <title>Portifolio</title>
+      </Head>
       <Navbar />
       <Home />
       <Contact />
