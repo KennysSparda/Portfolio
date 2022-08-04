@@ -46,7 +46,7 @@ body {
 section {
   font-size: 26px;
   text-align: center;
-  height: 60vh;
+  min-height: 60vh;
   width: 90%;
   max-width: 1000px;
   margin: 0px auto;
@@ -54,6 +54,10 @@ section {
   border-radius: 5px;
   text-shadow: 0px 0px 10px black;
   background-image: linear-gradient( to bottom, var(--background), #2f2f2f, var(--background));
+}
+
+section li {
+  text-align: left;
 }
 
 footer {

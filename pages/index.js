@@ -8,6 +8,7 @@ import Skills from './home/skills'
 import About from './home/about'
 
 function App() {
+  document.title = 'Kenny Portfolio'
   return (
     <div>
       <Navbar />
