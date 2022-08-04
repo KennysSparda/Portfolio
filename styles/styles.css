@@ -16,15 +16,14 @@ body {
 }
 
 .navbar {
-  overflow: hidden;
-  justify-content: space-between;
-  align-items: center;
+  position: fixed;
   padding: 20px;
-  height: ;
   width: 90%;
   max-width: 1000px;
   margin: 0px auto;
   margin-bottom: 1em;
+  left: 0;
+  right: 0;
 }
 
 .navbar a {
@@ -32,6 +31,7 @@ body {
 }
 
 .navbar-right {
+  display: flex;
   float: right;
 }
 
@@ -104,22 +104,23 @@ footer {
 }
 
 #frame {
-  width: 400px;
-  height: 400px;
+  width: 70%;
+  height: 70%;
   margin: 0px;
-  padding: 5px;
-  border: solid black 10px;
+  padding: 30px;
+  border: solid grey 2px;
   border-radius: 20px;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 606px) {
   .navbar a {
     float: none;
     display: block;
-    text-align: left;
+    text-align: center;
   }
 
   .navbar-right {
     float: none;
+    display: block;
   }
 }

@@ -8,6 +8,7 @@ function Box(props) {
     <a
       id={props.style}
       href={props.link}
+      onClick={props.function}
     >
       {props.children}
     </a>

@@ -8,7 +8,7 @@ function Home() {
       <Navbar />
       <Section>
         <h1>Hello world.
-        My name is Kenny.</h1>
+          My name is Kenny.</h1>
       </Section>
       <Footer />
     </div>

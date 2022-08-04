@@ -12,16 +12,16 @@ function Contact() {
       <Navbar />
       <Section>
         <h1>Contato</h1>
-          <p><strong>Email:</strong> swygax@gmail.com</p>
-          <p>Me mande um "oi" no </p>
-          <Box style='styled' link={links[0]}><img id='ico' src={ico[0]}></img> Whatsapp</Box>
-          <br/>
-          <p>perfis nas redes sociais</p>
-          <Box style='styled' link={links[2]}><img id='ico' src={ico[2]}></img> Linkedin</Box>
-           
-          <Box style='styled' link={links[1]}><img id='ico' src={ico[1]}></img> Github</Box>
+        <p><strong>Email:</strong> swygax@gmail.com</p>
+        <p>Me mande um "oi" no </p>
+        <Box style='styled' link={links[0]}><img id='ico' src={ico[0]}></img> Whatsapp</Box>
+        <br />
+        <p>perfis nas redes sociais</p>
+        <Box style='styled' link={links[2]}><img id='ico' src={ico[2]}></img> Linkedin</Box>
+
+        <Box style='styled' link={links[1]}><img id='ico' src={ico[1]}></img> Github</Box>
       </Section>
-      <br/>
+      <br />
       <Footer />
     </div>
   )

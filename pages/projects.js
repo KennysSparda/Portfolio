@@ -10,7 +10,7 @@ function Projects() {
       <Section>
         <h1>Projetos</h1>
         <p>Esse espaço é para os meus projetos.</p>
-        <Frame height="400px" width="500px">/images/demo.png</Frame>
+        <Frame>/images/demo.png</Frame>
       </Section>
       <Footer />
     </div>
