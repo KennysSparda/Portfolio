@@ -55,10 +55,6 @@ section {
   text-shadow: 0px 0px 10px black;
   background-image: linear-gradient( to bottom, var(--background), #2f2f2f, var(--background));
 }
- 
-section h1 {
-  font-size: 40px;
-}
 
 footer {
   height: 100px;
@@ -110,15 +106,6 @@ footer {
   width: 18px;
   height: 18px;
   margin: 0px 5px;
-}
-
-#frame {
-  width: 70%;
-
-  margin: 0px;
-  padding: 30px;
-  border: solid grey 2px;
-  border-radius: 20px;
 }
 
 @media screen and (max-width: 606px) {

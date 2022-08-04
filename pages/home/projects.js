@@ -6,7 +6,7 @@ function Projects() {
       <Section id='projects'>
         <h1>Projetos</h1>
         <p>Esse espaço é para os meus projetos.</p>
-        <Frame>/images/demo.png</Frame>
+        <Frame description="image of thermal conversor">/images/ThermalConversor.png</Frame>
       </Section>
   )
 }
