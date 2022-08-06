@@ -1,5 +1,10 @@
-
-export default function Frame(props) {
+/*      Picture like place for some image 
+ *    you will need to load this on all
+ *    pages manualy passing the
+ *    path of the image in source
+ *    property 
+ */
+export default function Picture(props) {
     var srcImage = props.source
     var sourceSet=` ${srcImage} 320w
                     ${srcImage} 480w,

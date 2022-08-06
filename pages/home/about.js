@@ -13,7 +13,7 @@ export default function About() {
               style='styled'>
                 <img id='ico' src='/images/github.png'></img> Github
         </Box>
-        <p>Lá você vai entender como rodar a budega e muito mais :D</p>
+        <p>Lá você vai entender como rodar o projeto e muito mais :D</p>
       </Section>
     </div>
   )

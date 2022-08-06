@@ -1,8 +1,8 @@
 import Section from '../../components/Section'
-import Frame from '../../components/Frame'
+import Picture from '../../components/Picture'
 import Box from '../../components/Box'
 
-function Projects() {
+export default function Projects() {
   var links = ["https://github.com/KennysSparda/ThermalConversor"]
   var ico = ['/images/link.png']
 
@@ -10,7 +10,7 @@ function Projects() {
       <Section  id='projects'>
         <h1>Projetos</h1>
         <h5>Conversor de Temperaturas</h5>
-        <Frame  description="image of thermal conversor"
+        <Picture  description="image of thermal conversor"
                 source='/images/ThermalConversor.png' />
         <br/>
         <br/>
@@ -23,5 +23,3 @@ function Projects() {
       </Section>
   )
 }
-
-export default Projects

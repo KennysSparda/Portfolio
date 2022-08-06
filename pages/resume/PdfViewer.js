@@ -20,7 +20,7 @@ const viewer = useRef(null)
   }, [])
   return (
     <div className='header'>
-        <div className='webviewer' ref={viewer} style={{ height: '100vh', padding: '100px 20px 0px 20px'}}></div>
+        <div className='webviewer' ref={viewer} style={{ height: '80vh', padding: '70px 10px'}}></div>
     </div>
   )
 }

@@ -1,7 +1,7 @@
 import Section from '../../components/Section'
 import Box from '../../components/Box'
 
-function Contact() {
+export default function Contact() {
   var links = [ "https://contate.me/hi-swygax",
                 "https://www.linkedin.com/in/kenny-de-souza-vargas-8a521422a",
                 "swygax@gmail.com"]
@@ -15,15 +15,16 @@ function Contact() {
         <Box  type='external'
               style='styled'
               link={links[0]}>
-                <img id='ico' src={ico[0]}></img> Whatsapp
+                <img id='ico' src={ico[0]}></img> Whatsapp (41)99510-1213
         </Box>
-        <p>e dê uma olhada no meu</p>
+        <br/>
+        <p>ou</p>
                 <Box  type='external'
               style='styled'
               link={links[1]}>
                 <img id='ico' src={ico[1]}></img> Linkedin
         </Box>
-        <p>Você pode me conta e-mail também para: </p>
+        <p>Você pode mandar um e-mail para: </p>
         <Box  type='external'
                 style='unstyled'
                 link={links[3]}><strong>swygax@gmail.com</strong>
@@ -31,5 +32,3 @@ function Contact() {
       </Section>
   )
 }
-
-export default Contact

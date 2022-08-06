@@ -1,8 +1,7 @@
 :root {
-  --primary-color: #aa0000;
-  --secundary-color: #ff0000;
-  --tertiary-color: #5c5c5c;
-  --background: #292929;
+  --primary-color: #ff0000;
+  --secondary-color: #5c5c5c33;
+  --background: #262629;
 }
 
 body {
@@ -15,49 +14,42 @@ body {
   
 }
 
-.navbar_only {
-  position: fixed;
-  padding: 20px;
-  width: 110px;
-  margin: 0px auto;
-  left: 0;
-  right: 0;
-}
-
 .navbar {
-  position: fixed;
-  padding: 20px;
-  width: 90%;
-  max-width: 1000px;
+  max-width: 90%;
   margin: 0px auto;
+  padding: 10px auto;
+}
+
+
+.navbar-body {
+  position: fixed;
+  width: auto;
+  height: 50px auto;
+  padding: 10px;
   left: 0;
   right: 0;
+  box-shadow: 0px 0px 10px black;
+  background-image: linear-gradient( to bottom right, var(--secondary-color), var(--background), var(--secondary-color));
 }
 
-.navbar a {
-  float: left;
-}
-
-.navbar-right {
+.menu {
   display: flex;
   float: right;
 }
 
-.navbar table {
-  margin: auto;
-}
-
 section {
   font-size: 26px;
-  text-align: center;
-  min-height: 60vh;
-  width: 90%;
-  max-width: 1000px;
+  line-height: 200%;
+  width: auto;
   margin: 0px auto;
-  padding: 100px 10px;
-  border-radius: 5px;
+  padding: 50px;
+  border-radius: 50px;
   text-shadow: 0px 0px 10px black;
-  background-image: linear-gradient( to bottom, var(--background), #2f2f2f, var(--background));
+  background-image: linear-gradient( to bottom, var(--background), var(--secondary-color), var(--background));
+}
+
+section h1 {
+  padding-top: 70px;
 }
 
 section li {
@@ -66,8 +58,7 @@ section li {
 
 footer {
   height: 100px;
-  width: 90%;
-  max-width: 1000px;
+  width: 100%;
   align-items: center;
   justify-content: center;
   margin: auto;
@@ -75,39 +66,39 @@ footer {
 }
 
 #unstyled {
-  color: white;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 25px;
-  border-radius: 50px;
-}
-
-#styled {
-  color: white;
+  color: silver;
+  text-shadow: 3px 3px 6px#000000;
   text-align: center;
   padding: 12px;
   text-decoration: none;
   font-size: 22px;
   line-height: 25px;
   border-radius: 50px;
-  box-shadow: 0px 0px 20px black;
-  background-image: linear-gradient( to bottom right, var(--tertiary-color), var(--background), var(--tertiary-color));
-}
-
-#styled:hover {
-  color: #ff0000;
-  box-shadow: 0px 0px 20px var(--secundary-color);
-}
-
-#unstyled.active {
-  background: var(--primary-color);
 }
 
 #unstyled:hover {
-  color: white;
-  background-image: linear-gradient( to bottom right, var(--background), var(--tertiary-color), var(--background));
+  color: silver;
+  text-shadow: 0px 0px 3px var(--primary-color);
+  background-image: linear-gradient( to bottom right, var(--background), var(--secondary-color), var(--background));
+}
+
+#styled {
+  color: silver;
+  text-align: center;
+  margin: 2px;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 22px;
+  line-height: 25px;
+  border-radius: 50px;
+  box-shadow: 0px 0px 20px black;
+  background-image: linear-gradient( to bottom right, var(--secondary-color), var(--background), var(--secondary-color));
+}
+
+#styled:hover {
+  color: silver;;
+  text-shadow: 0px 0px 3px var(--primary-color);
+  box-shadow: 0px 0px 10px var(--primary-color);
 }
 
 #ico {
@@ -116,15 +107,23 @@ footer {
   margin: 0px 5px;
 }
 
-@media screen and (max-width: 606px) {
+.frame {
+  margin: 0px auto;
+  padding: 0px;
+  width: 100%;
+  max-width:500px;
+  min-width: 300px;
+  border-radius: 50px;
+  background: black;
+}
 
+@media screen and (max-width: 722px) {
   .navbar a {
     float: none;
     display: block;
-    text-align: center;
   }
 
-  .navbar-right {
+  .menu {
     float: none;
     display: block;
   }
