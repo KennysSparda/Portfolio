@@ -1,25 +1,51 @@
 import Section from '../../components/Section'
 import Picture from '../../components/Picture'
 import Box from '../../components/Box'
+import Copyright from '../../components/copyright'
 
 export default function Projects() {
-  var links = ["/projects/thermalconversor/index.html"]
+  var imagePath = ['/images/ThermalConversor.png', '/images/calculator.png']
+  var links = ["/projects/thermalconversor/index.html", "/projects/calculator/index.html"]
   var ico = ['/images/link.png']
 
   return (
       <Section  id='projects'>
         <h1>Projetos</h1>
-        <h5>Conversor de Temperaturas</h5>
-        <Picture  description="image of thermal conversor"
-                source='/images/ThermalConversor.png' />
+
+        <div id='styled'>
+          <h5>Conversor de Temperaturas</h5>
+          <Picture  description="image of thermal conversor"
+                    source={imagePath[0]} />
+          <br/>
+          <br/>
+          <Box  type='external'
+                style='styled'
+                link={links[0]}> 
+                  <img id='ico' src={ico[0]} alt='linked icon'></img>
+                Acessar
+          </Box>
+          <br/>
+          <br/>
+          <Copyright />
+        </div>
         <br/>
-        <br/>
-        <Box  type='external'
-              style='styled'
-              link={links[0]}> 
-                <img id='ico' src={ico[0]}></img>
-              Acessar
-        </Box>
+        <div id='styled'>
+          <h5>Calculadora</h5>
+          <Picture  description="image of calculator"
+                    source={imagePath[1]} />
+          <br/>
+          <br/>
+          <Box  type='external'
+                style='styled'
+                link={links[1]}>
+                  <img id='ico' src={ico[0]} alt='linked icon'></img>
+                Acessar
+          </Box>
+          <br/>
+          <br/>
+          <Copyright />
+        </div>
+        
       </Section>
   )
 }
