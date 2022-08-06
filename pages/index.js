@@ -17,9 +17,9 @@ export default function App() {
       </Head>
       <Navbar />
       <Home />
-      <Contact />
       <Projects />
       <Skills />
+      <Contact />
       <About />
       <Footer />
     </div>
