@@ -3,7 +3,7 @@ import Picture from '../../components/Picture'
 import Box from '../../components/Box'
 
 export default function Projects() {
-  var links = ["https://github.com/KennysSparda/ThermalConversor"]
+  var links = ["/projects/thermalconversor/index.html"]
   var ico = ['/images/link.png']
 
   return (
