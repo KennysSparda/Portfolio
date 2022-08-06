@@ -18,6 +18,7 @@ body {
   max-width: 90%;
   margin: 0px auto;
   padding: 10px auto;
+  text-align: left;
 }
 
 
@@ -118,6 +119,11 @@ footer {
 }
 
 @media screen and (max-width: 722px) {
+
+  .navbar {
+    text-align: center;
+  }
+  
   .navbar a {
     float: none;
     display: block;
