@@ -4,14 +4,30 @@ import Box from '../../components/Box'
 import Copyright from '../../components/copyright'
 
 export default function Projects() {
-  var imagePath = ['/images/ThermalConversor.png', '/images/calculator.png']
-  var links = ["/projects/thermalconversor/index.html", "/projects/calculator/index.html"]
+  var imagePath = ['/images/ThermalConversor.png', '/images/calculator.png', '/images/storeProject.png']
+  var links = ["/projects/thermalconversor/index.html", "/projects/calculator/index.html", "https://selena-modas.vercel.app/"]
   var ico = ['/images/link.png']
 
   return (
       <Section  id='projects'>
         <h1>Projetos</h1>
-
+        <div id='styled'>
+          <h5>Store Project</h5>
+          <Picture  description="image of store project"
+                    source={imagePath[2]} />
+          <br/>
+          <br/>
+          <Box  type='external'
+                style='styled'
+                link={links[2]}>
+                  <img id='ico' src={ico[0]} alt='linked icon'></img>
+                Acessar
+          </Box>
+          <br/>
+          <br/>
+          <Copyright />
+        </div>
+        <br/>
         <div id='styled'>
           <h5>Conversor de Temperaturas</h5>
           <Picture  description="image of thermal conversor"
@@ -45,7 +61,7 @@ export default function Projects() {
           <br/>
           <Copyright />
         </div>
-        
+        <br/>
       </Section>
   )
 }
