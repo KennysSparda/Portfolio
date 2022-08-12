@@ -1,0 +1,47 @@
+.navbar {
+  width: 90%;
+  max-width: 720px;
+  margin: 0px auto;
+  padding: 10px auto;
+  text-align: left;
+}
+
+.navbar-body {
+  position: fixed;
+  width: auto;
+  height: 50px auto;
+  padding: 10px;
+  left: 0;
+  right: 0;
+  box-shadow: 0px 0px 10px var(--shadow);
+  background-image: linear-gradient( to right, var(--secondary), var(--back), var(--secondary));
+}
+
+.menu {
+  display: flex;
+  float: right;
+}
+
+@media screen and (max-width: 722px) {
+
+  .navbar {
+    text-align: center;
+  }
+  
+  .navbar a {
+    float: none;
+    display: block;
+  }
+
+  .navbar img {
+    text-align: center;
+  }
+
+  .menu {
+    float: none;
+    display: block;
+    background-color: var(--secondary);
+    padding: 10px;
+    border-radius: 20px;
+  }
+}

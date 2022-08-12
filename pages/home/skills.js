@@ -1,19 +1,19 @@
-import Section from '../../components/Section'
+import Container from '../../components/Container'
 
 export default function Skills() {
   return (
-      <Section id='skills'>
+      <Container id='skills'>
         <h1>Habilidades</h1>
         <div id='styled'>
           <h3>Hard Skills</h3>
-          <ui>
+          <ul>
             <li><strong>Sistemas operacionais:</strong> Linux e Windows</li>
             <li><strong>Linguagens de programação:</strong> C#, Python, Javascript, ShellScript</li>
             <li><strong>Sistema de versionamento:</strong> Git e Github</li>
             <li><strong>FrontEnd:</strong> HTML, CSS, ( React + NextJS )</li>
             <li><strong>BackEnd:</strong> SQL Server Express, MySQL, SQLite</li>
             <li><strong>Outros:</strong> Pacote Office</li>
-          </ui>
+          </ul>
         </div>
         <br/>
         <div id='styled'>
@@ -34,6 +34,6 @@ export default function Skills() {
             <li><strong>Inglês</strong>: Intermediário</li>
           </ul>
         </div>
-      </Section>
+      </Container>
   )
 }

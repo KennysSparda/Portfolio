@@ -2,16 +2,16 @@ import Head from 'next/head'
 import Navbar from '../components/navbar/Navbar'
 import Footer from '../components/Footer'
 import ResumeMenu from './resume/ResumeMenu'
-import Section from '../components/Section'
+import Container from '../components/Container'
 
 export default function Resume() {
   return (
     <div>
         <Navbar />
-        <Section>
+        <Container>
           <h1>Curriculo</h1>
           <ResumeMenu />
-        </Section>
+        </Container>
         <Footer />
     </div>
   )

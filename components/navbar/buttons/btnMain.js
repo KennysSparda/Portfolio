@@ -1,5 +1,5 @@
-import Box from '../../Box'
+import Button from '../../Button'
 
 export default function BtnMain(props) {
-  return <button id='styled' onClick={props.function}><strong>Swygax</strong></button>
+  return <Button function={props.function}>Swygax</Button>
 }

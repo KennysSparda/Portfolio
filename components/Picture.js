@@ -5,17 +5,11 @@
  *    property 
  */
 export default function Picture(props) {
-    var srcImage = props.source
-    var sourceSet=` ${srcImage} 320w
-                    ${srcImage} 480w,
-                    ${srcImage} 800w`
+
     return (
         <img 
-            srcSet={sourceSet}
-            sizes="(max-width: 320px) 280px,
-            (max-width: 480px) 440px, 800px"
             id='unstyled'
-            src={srcImage}
+            src={props.source}
             alt={props.description}>
         </img>
     )

@@ -1,5 +1,5 @@
-import Box from '../../Box'
+import Button from '../../Button'
 
 export default function BtnHome(props) {
-  return <Box style='unstyled' link="/#home" function={props.function}>Início</Box>
+  return <Button type='linkIn' path="/#home" function={props.function}>Início</Button>
 }

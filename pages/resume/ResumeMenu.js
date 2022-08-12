@@ -1,4 +1,4 @@
-import Box from '../../components/Box'
+import Button from '../../components/Button'
 import Viewer from './PdfViewer'
 
 export default function ResumeMenu() {
@@ -6,10 +6,10 @@ export default function ResumeMenu() {
 
   return (
     <div>
-      <label>Português: </label><Box type='external' style='styled' link={links[0]}>Baixar</Box>
+      <label>Português: </label><Button type='linkEx' link={links[0]}>Baixar</Button>
       <br />
       <br />
-      <label>English: </label><Box type='external' style='styled' link={links[1]}>Download</Box>
+      <label>English: </label><Button type='linkEx' link={links[1]}>Download</Button>
       <br />
       <br />
       <div className='frame'><Viewer source={links[0]} /></div>

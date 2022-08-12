@@ -1,0 +1,28 @@
+section {
+  padding: 10px;
+  padding-top: 100px;
+  text-align: center;
+  margin: 0px auto;
+  height: auto;
+  width: 90%;
+  max-width: 720px;
+  left: 0;
+  right: 0;
+}
+
+ul {
+  text-align: left;
+}
+
+.container{
+  padding: 10px;
+  border-radius: 20px;
+  background-image: linear-gradient( to right, var(--back), var(--secondary), var(--back));
+}
+
+@media screen and (max-width: 722px) {
+  .container {
+    height: 90%;
+    width: auto;
+  }
+}

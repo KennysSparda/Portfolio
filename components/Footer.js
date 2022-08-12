@@ -6,9 +6,9 @@ import Copyright from "./copyright";
  */
 export default function Footer() {
   return (
-    <footer className="footer" id="unstyled">
+    <footer>
       {/* You can make changes below */}
-      <p>06 Aug 2022 - Campo Largo / PR</p>
+      <p>12 Aug 2022 - Campo Largo / PR</p>
       <Copyright />
     </footer>
   )

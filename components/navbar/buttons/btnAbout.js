@@ -1,5 +1,5 @@
-import Box from '../../Box'
+import Button from '../../Button'
 
 export default function BtnAbout(props) {
-  return <Box style='unstyled' link="/#about" function={props.function}>Sobre</Box >
+  return <Button type='linkIn' path="/#about" function={props.function}>Sobre</Button>
 }

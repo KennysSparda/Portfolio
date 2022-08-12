@@ -1,67 +1,55 @@
-import Section from '../../components/Section'
+import Container from '../../components/Container'
 import Picture from '../../components/Picture'
-import Box from '../../components/Box'
+import Button from '../../components/Button'
 import Copyright from '../../components/copyright'
+import Icon from '../../components/Icon'
 
 export default function Projects() {
   var imagePath = ['/images/ThermalConversor.png', '/images/calculator.png', '/images/storeProject.png']
   var links = ["/projects/thermalconversor/index.html", "/projects/calculator/index.html", "https://selena-modas.vercel.app/"]
-  var ico = ['/images/link.png']
 
   return (
-      <Section  id='projects'>
+      <Container  id='projects'>
         <h1>Projetos</h1>
-        <div id='styled'>
-          <h5>Store Project</h5>
+          <h2>Store Project</h2>
           <Picture  description="image of store project"
                     source={imagePath[2]} />
           <br/>
           <br/>
-          <Box  type='external'
-                style='styled'
-                link={links[2]}>
-                  <img id='ico' src={ico[0]} alt='linked icon'></img>
+          <Button type='linkEx'
+                  path={links[2]}>
+                <Icon type={2} />
                 Acessar
-          </Box>
+          </Button>
           <br/>
           <br/>
           <Copyright />
-        </div>
-        <br/>
-        <div id='styled'>
-          <h5>Conversor de Temperaturas</h5>
+          <h2>Conversor de Temperaturas</h2>
           <Picture  description="image of thermal conversor"
                     source={imagePath[0]} />
           <br/>
           <br/>
-          <Box  type='external'
-                style='styled'
-                link={links[0]}> 
-                  <img id='ico' src={ico[0]} alt='linked icon'></img>
+          <Button type='linkEx'
+                  path={links[0]}> 
+                <Icon type={2} />
                 Acessar
-          </Box>
+          </Button>
           <br/>
           <br/>
           <Copyright />
-        </div>
-        <br/>
-        <div id='styled'>
-          <h5>Calculadora</h5>
+          <h2>Calculadora</h2>
           <Picture  description="image of calculator"
                     source={imagePath[1]} />
           <br/>
           <br/>
-          <Box  type='external'
-                style='styled'
-                link={links[1]}>
-                  <img id='ico' src={ico[0]} alt='linked icon'></img>
+          <Button type='linkEx'
+                  path={links[1]}>
+                <Icon type={2} />
                 Acessar
-          </Box>
+          </Button>
           <br/>
           <br/>
           <Copyright />
-        </div>
-        <br/>
-      </Section>
+      </Container>
   )
 }

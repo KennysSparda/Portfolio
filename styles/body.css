@@ -1,0 +1,16 @@
+
+
+:root {
+  --primary: #ff0000;
+  --secondary: #5c5c5c33;
+  --back: #161619;
+  --shadow: #ff0000;
+}
+
+body {
+  text-align: center;
+  font-size: 28px;
+  margin: 0px;
+  color: var(--primary);
+  background: var(--back);
+}

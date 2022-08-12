@@ -1,0 +1,32 @@
+.Button {
+  font-family: sans-serif;
+  font-size: 18px;
+  color: var(--primary);
+  text-align: center;
+  padding: 12px;
+  background-image: linear-gradient( to bottom right, var(--secondary), var(--back), var(--secondary));
+  border-radius: 20px;
+}
+
+.Button:hover {
+  color: var(--primary);
+  text-shadow: 0px 0px 20px var(--shadow);
+  background: var(--secondary);
+}
+
+.menu {
+  vertical-align: auto;
+}
+
+a.Button {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 722px) {
+  .Button {
+    height: 50px;
+    width: auto;
+    min-width: 100px;
+    margin: 8px auto;
+  }
+}

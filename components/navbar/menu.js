@@ -1,4 +1,3 @@
-import Box from '../Box'
 import ButtonHome from './buttons/btnHome'
 import BtnProjects from './buttons/btnProjects'
 import BtnSkills from './buttons/btnSkills'
