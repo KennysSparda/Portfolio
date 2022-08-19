@@ -23,7 +23,7 @@ function soma() {
   } else if (Display2.value == "") {
     Display3.value = "+";
   } else {
-    Display1.value = (parseFloat(Display1.value) + parseFloat(Display2.value)).toFixed(6);
+    Display1.value = (parseFloat(Display1.value) + parseFloat(Display2.value)).toFixed(2);
     Display2.value = "";
   }
 }
@@ -38,7 +38,7 @@ function subtrai() {
   } else if (Display2.value == "") {
     Display3.value = "-";
   } else {
-    Display1.value = (parseFloat(Display1.value) - parseFloat(Display2.value)).toFixed(6);
+    Display1.value = (parseFloat(Display1.value) - parseFloat(Display2.value)).toFixed(2);
     Display2.value = "";
   }
 }
@@ -53,7 +53,7 @@ function mult() {
   } else if (Display2.value == "") {
     Display3.value = "x";
   } else {
-    Display1.value = (parseFloat(Display1.value) * parseFloat(Display2.value)).toFixed(6);
+    Display1.value = (parseFloat(Display1.value) * parseFloat(Display2.value)).toFixed(2);
     Display2.value = "";
   }
 }
@@ -67,7 +67,7 @@ function divide() {
   } else if (Display2.value == "") {
     Display3.value = "/";
   } else {
-    Display1.value = (parseFloat(Display1.value) / parseFloat(Display2.value)).toFixed(6);
+    Display1.value = (parseFloat(Display1.value) / parseFloat(Display2.value)).toFixed(2);
     Display2.value = "";
   }
 }

@@ -1,4 +1,5 @@
-import Head from 'next/head'
+import {useEffect, useState} from 'react'
+
 import Navbar from '../components/navbar/Navbar'
 import Footer from '../components/Footer'
 
@@ -9,13 +10,25 @@ import Skills from './home/skills'
 import About from './home/about'
 
 export default function App() {
+  const [darkTheme, setDarkTheme] = useState(undefined)
+
+  const switchTheme = (e) => {
+    setDarkTheme(event.target.checked)
+  }
+
+  useEffect(() => {
+    if(darkTheme) {
+      document.documentElement.setAttribute("data-theme", "dark");
+      window.localStorage.setItem("theme", "dark");
+    } else {
+      document.documentElement.removeAttribute("data-theme");
+      window.localStorage.setItem("theme", "light");
+    }
+  }, [darkTheme]);
 
   return (
     <div>
-      <Head>
-        <title>Swygax Portfolio</title>
-      </Head>
-      <Navbar />
+      <Navbar theme={darkTheme} setTheme={switchTheme}/>
       <Home />
       <Projects /> 
       <Skills />

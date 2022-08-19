@@ -1,5 +1,5 @@
 import Button from '../../Button'
 
-export default function BtnProjects(props) {
-  return <Button type='linkIn' path="/#projects" function={props.function}>Projetos</Button >
+export default function BtnProjects() {
+  return <Button type='linkIn' path="/#projects">Projetos</Button >
 }

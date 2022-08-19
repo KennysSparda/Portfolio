@@ -12,18 +12,20 @@ export default function Navbar(props) {
     setShow(!show)
   }
 
+
+
   // Verify if main button is pressed
   if (show == true) {
     return (
       <Header>
-        <BtnMain function={showMenu}/>
-        <Menu function={showMenu}/>
+        <BtnMain function={showMenu}>Esconder menu</BtnMain>
+        <Menu function={showMenu} theme={props.theme} setTheme={props.setTheme}/>
       </Header>
     )
   } else {
     return (
       <Header>
-        <BtnMain function={showMenu}/>
+        <BtnMain function={showMenu}>Mostrar Menu</BtnMain>
       </Header>
     )
   }

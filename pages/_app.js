@@ -1,4 +1,4 @@
-import '../styles/body.css'
+import '../styles/globals.css'
 import '../styles/button.css'
 import '../styles/container.css'
 import '../styles/navbar.css'

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Codystar:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa&family=Codystar:wght@300&display=swap');
+
+:root {
+  --primary: rgba(93, 188, 194, 1);
+  --secondary: #ffffff;
+  --back: #aaaaaaaa;
+  --shadow: rgba(93, 188, 194, 1);
+}
+
+[data-theme='dark'] {
+  --primary: #ff0000;
+  --secondary: #5c5c5c33;
+  --back: #161619;
+  --shadow: #ff0000;
+}
+
+body {
+  font-family: 'Changa', sans-serif;
+  text-align: center;
+  font-size: 28px;
+  margin: 0px;
+  color: var(--primary);
+  background: var(--back);
+}
+
+h1 {
+  font-family: 'Codystar', cursive;
+  text-shadow: 0px 0px 10px var(--shadow)
+}
