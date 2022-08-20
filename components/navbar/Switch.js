@@ -8,7 +8,7 @@ export default function Slider(props){
           <label>Modo Escuro</label>
           <label className="switch">
             <input type="checkbox" checked={props.theme} onChange={props.setTheme}/>
-            <span className="slider round"></span>
+            <span className="slider"></span>
           </label>
         </form>
       </Button>

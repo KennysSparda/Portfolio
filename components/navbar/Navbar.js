@@ -5,7 +5,7 @@ import Menu from './menu'
 
 export default function Navbar(props) {
   // Start navbar empty
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
 
   // function to toggle Show / Hide navbar
   const showMenu = () => {

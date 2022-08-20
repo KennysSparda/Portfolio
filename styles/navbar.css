@@ -1,6 +1,6 @@
 .navbar {
   width: 90%;
-  max-width: 720px;
+  max-width: 1060px;
   margin: 0px auto;
   padding: 10px auto;
   text-align: center;
@@ -22,7 +22,7 @@
   float: right;
 }
 
-@media screen and (max-width: 722px) {
+@media screen and (max-width: 1010px) {
 
   .navbar {
     text-align: center;
