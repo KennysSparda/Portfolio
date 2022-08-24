@@ -9,7 +9,7 @@ export default function Contact() {
 
   return (
     <Container id='contact'>
-      <h1>Contato</h1>
+      <h2>Contato</h2>
       <p>Me mande uma mensagem no </p>
       <Button type='linkEx'      
         path={links[0]}>

@@ -5,7 +5,7 @@
   --primary: #00aaff;
   --secondary: #ffffff;
   --back: #aaaaaaaa;
-  --shadow: #000000;
+  --shadow: #00aaff;
 }
 
 [data-theme='dark'] {
@@ -18,13 +18,19 @@
 body {
   font-family: 'Changa', sans-serif;
   text-align: center;
-  font-size: 28px;
-  margin: 0px;
+  font-size: 30px;
   color: var(--primary);
   background: var(--back);
 }
 
 h1 {
   font-family: 'Codystar', cursive;
-  text-shadow: 0px 0px 10px var(--shadow)
+  text-shadow: 0px 0px 10px var(--shadow);
+  font-size: 62px;
+}
+
+h2 {
+  font-family: 'Codystar', cursive;
+  text-shadow: 0px 0px 10px var(--shadow);
+  font-size: 46px;
 }

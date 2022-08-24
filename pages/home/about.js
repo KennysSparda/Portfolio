@@ -5,7 +5,7 @@ export default function About() {
   return (
     <div>
       <Container id='about' >
-        <h1>Sobre</h1>
+        <h2>Sobre</h2>
         <p>Aqui é o lugar para demonstrar minhas habilidades e alguns dos meus projetos, espero que goste ;)</p>
         <p>Você pode acessar a página desse projeto no <strong>Github</strong> clicando no botão abaixo:</p>
         <Button type='linkEx'

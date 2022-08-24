@@ -9,12 +9,14 @@ export default function Projects() {
   var links = ["/projects/thermalconversor/index.html", "/projects/calculator/index.html", "https://selena-modas.vercel.app/"]
 
   return (
-      <Container  id='projects'>
-        <h1>Projetos</h1>
-          <h2>Store Project</h2>
+      <nav>
+        <Container  id='projects'>
+          <h1>Projetos</h1>
+        </Container>
+        <Container>
+          <h2>Loja Virtual</h2>
           <Picture  description="image of store project"
                     source={imagePath[2]} />
-          <br/>
           <br/>
           <Button type='linkEx'
                   path={links[2]}>
@@ -22,12 +24,12 @@ export default function Projects() {
                 Acessar
           </Button>
           <br/>
-          <br/>
           <Copyright />
+        </Container>
+        <Container>
           <h2>Conversor de Temperaturas</h2>
           <Picture  description="image of thermal conversor"
                     source={imagePath[0]} />
-          <br/>
           <br/>
           <Button type='linkEx'
                   path={links[0]}> 
@@ -35,12 +37,12 @@ export default function Projects() {
                 Acessar
           </Button>
           <br/>
-          <br/>
           <Copyright />
+        </Container>
+        <Container>
           <h2>Calculadora</h2>
           <Picture  description="image of calculator"
                     source={imagePath[1]} />
-          <br/>
           <br/>
           <Button type='linkEx'
                   path={links[1]}>
@@ -48,8 +50,8 @@ export default function Projects() {
                 Acessar
           </Button>
           <br/>
-          <br/>
           <Copyright />
-      </Container>
+        </Container>
+      </nav>
   )
 }

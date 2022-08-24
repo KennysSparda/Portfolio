@@ -9,7 +9,7 @@ export default function Document() {
 
   
   return (
-    <Html>
+    <Html data-theme="dark">
       <Head>
         <title>Swygax Portfolio</title>
       </Head>

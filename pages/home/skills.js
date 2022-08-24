@@ -2,9 +2,12 @@ import Container from '../../components/Container'
 
 export default function Skills() {
   return (
-      <Container id='skills'>
-        <h1>Habilidades</h1>
-        <div id='styled'>
+    <div>
+      <Container  id='skills'>
+        <h2>Habilidades</h2>
+      </Container>
+      <Container  id='skills'>
+        <div>
           <h3>Hard Skills</h3>
           <ul>
             <li><strong>Sistemas operacionais:</strong> Linux e Windows</li>
@@ -16,7 +19,7 @@ export default function Skills() {
           </ul>
         </div>
         <br/>
-        <div id='styled'>
+        <div>
           <h3>Soft Skills</h3>
           <ul>
             <li>Comunicação</li>
@@ -27,7 +30,7 @@ export default function Skills() {
           </ul>
         </div>
         <br/>
-        <div id='styled'>
+        <div>
           <h3>Idiomas</h3>
           <ul>
             <li><strong>Português</strong>: Fluente</li>
@@ -35,5 +38,6 @@ export default function Skills() {
           </ul>
         </div>
       </Container>
+    </div>
   )
 }

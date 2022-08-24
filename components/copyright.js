@@ -1,5 +1,5 @@
 export default function Copyright() {
   return (
-    <div>© swygax</div>
+    <div className="copyright">© swygax</div>
   )
 }
