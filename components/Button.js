@@ -14,7 +14,9 @@
 export default function Button(props) {
   if(props.type == 'linkEx') {
     return (
-      <a className="Button"
+      <a 
+        className="Button"
+        id={props.id} // Add id="btnStyled" to highlight button
         href={props.path}
         onClick={props.function}
         // Open in new page
@@ -29,6 +31,7 @@ export default function Button(props) {
     return (
       <a 
         className="Button"
+        id={props.id} // Add id="btnStyled" to highlight button
         href={props.path}
         onClick={props.function}
       >
@@ -39,6 +42,7 @@ export default function Button(props) {
     return (
       <button 
         className="Button"
+        id={props.id} // Add id="btnStyled" to highlight button
         onClick={props.function}
       >
         {props.children}

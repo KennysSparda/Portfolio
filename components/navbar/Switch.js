@@ -1,9 +1,7 @@
-import Button from '../Button'
 export default function Slider(props){
 
   return (
     <nav>
-      <Button>
         <form>
           <label>Modo Escuro</label>
           <label className="switch">
@@ -11,7 +9,6 @@ export default function Slider(props){
             <span className="slider"></span>
           </label>
         </form>
-      </Button>
     </nav>
   ) 
 }

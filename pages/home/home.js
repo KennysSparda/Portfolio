@@ -4,25 +4,34 @@ import Icon from '../../components/Icon'
 
 export default function Home() {
   var links = ["https://github.com/KennysSparda"]
-
   return (
     <Container id='home'>
-        <h1 id='start' >Hello world.
-            My name is Kenny.</h1>
-        <p>Me chamo Kenny Vargas e estudo programação por conta própria.</p>
-        <p>Gosto de aprender coisas novas!</p>
-        <Button type='linkEx'
-                path={links[0]}>
-                <Icon type={0}></Icon>
-                Github
-        </Button>
-        <br/>
-        <br/>
-        <Button type='linkIn'
-                path='/resume'>
-                <Icon type={1}></Icon>
-                Curriculo
-        </Button>
+      <div id="introduction">
+        <div id="introduction-left">
+          <h2>eu sou</h2>
+          <h1>Kenny Vargas</h1>
+          <h2>Desenvolvedor</h2>
+        </div>
+        <div id="introduction-right">
+          <Button 
+            type='linkEx'
+            id="btnStyled"
+            path={links[0]}>
+            <Icon type={0}></Icon>
+            Github
+          </Button>
+          <br/>
+          <br/>
+          <Button 
+            type='linkIn'
+            id="btnStyled"
+            path='/resume'>
+            <Icon type={1}></Icon>
+            Curriculo
+          </Button>
+        </div>
+      </div>
+     
     </Container>
   )
 }

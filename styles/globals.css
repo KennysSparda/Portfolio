@@ -4,33 +4,15 @@
 :root {
   --primary: #00aaff;
   --secondary: #ffffff;
-  --back: #aaaaaaaa;
+  --transparency: #aaaaaa55;
+  --back: #aaaaaa;
   --shadow: #00aaff;
 }
 
 [data-theme='dark'] {
   --primary: #aa0000;
-  --secondary: #5c5c5c33;
-  --back: #161619;
+  --secondary: #161619;
+  --transparency: #3c3c3c55;
+  --back: #1c1c1c;
   --shadow: #aa0000;
-}
-
-body {
-  font-family: 'Changa', sans-serif;
-  text-align: center;
-  font-size: 30px;
-  color: var(--primary);
-  background: var(--back);
-}
-
-h1 {
-  font-family: 'Codystar', cursive;
-  text-shadow: 0px 0px 10px var(--shadow);
-  font-size: 62px;
-}
-
-h2 {
-  font-family: 'Codystar', cursive;
-  text-shadow: 0px 0px 10px var(--shadow);
-  font-size: 46px;
 }

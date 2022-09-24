@@ -1,10 +1,8 @@
 section {
   text-shadow: 0px 0px 1px var(--shadow);
-  padding: 10px;
   padding-top: 100px;
   text-align: center;
   margin: 0px auto;
-  height: auto;
   width: 90%;
   max-width: 720px;
   left: 0;
@@ -21,9 +19,35 @@ ul {
   background-image: linear-gradient( to right, var(--back), var(--secondary), var(--back));
 }
 
+#introduction {
+  height: 100vh;
+}
+
+#introduction-left {
+  padding-top: 20%;
+  float: left;
+  margin: 70px auto;
+}
+
+#introduction-right {
+  padding-top: 20%;
+  float: right;
+  margin: 70px auto;
+}
+
 @media screen and (max-width: 722px) {
   .container {
     height: 90%;
     width: auto;
+  }
+
+  #introduction-left {
+    padding-top: 20%;
+    float: left;
+    text-align: left;
+  }
+  
+  #introduction-right {
+    float: right;
   }
 }

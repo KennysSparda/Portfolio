@@ -9,9 +9,9 @@ export default function Document() {
 
   
   return (
-    <Html data-theme="dark">
+    <Html>
       <Head>
-        <title>Swygax Portfolio</title>
+        <title>Kenny Portfolio</title>
       </Head>
       <body>
         <script

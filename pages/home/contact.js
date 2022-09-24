@@ -11,13 +11,17 @@ export default function Contact() {
     <Container id='contact'>
       <h2>Contato</h2>
       <p>Me mande uma mensagem no </p>
-      <Button type='linkEx'      
+      <Button 
+        type='linkEx'      
+        id="btnStyled"
         path={links[0]}>
         <Icon type={3}></Icon> Whatsapp
       </Button>
       <br />
       <p>ou</p>
-      <Button type='linkEx'
+      <Button 
+        type='linkEx'
+        id="btnStyled"
         path={links[1]}>
         <Icon type={4}></Icon> Linkedin
       </Button>

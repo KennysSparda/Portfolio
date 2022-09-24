@@ -4,7 +4,8 @@ export default function Icon(props) {
     '/images/user.png',       // 1  user
     '/images/link.png',       // 2  link
     '/images/whatsapp.png',   // 3  whatsapp
-    '/images/linkedin.png']   // 4  linkedin
+    '/images/linkedin.png',   // 4  linkedin
+    '/images/menu.png']       // 5  menu
   var ico = icons[props.type]
   return (
     <img id='ico' src={ico}></img>

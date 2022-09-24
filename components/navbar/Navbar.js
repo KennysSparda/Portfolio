@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import Header from './header'
-import BtnMain from './buttons/btnMain'
+import BtnMenu from './buttons/BtnMenu'
 import Menu from './menu'
+import Icon from '../Icon'
 
 export default function Navbar(props) {
   // Start navbar empty
@@ -18,14 +19,15 @@ export default function Navbar(props) {
   if (show == true) {
     return (
       <Header>
-        <BtnMain function={showMenu}>Esconder menu</BtnMain>
+        <BtnMenu function={showMenu}><Icon type={5}></Icon></BtnMenu>
         <Menu function={showMenu} theme={props.theme} setTheme={props.setTheme}/>
       </Header>
     )
   } else {
     return (
       <Header>
-        <BtnMain function={showMenu}>Mostrar Menu</BtnMain>
+        <BtnMenu function={showMenu}><Icon type={5}></Icon></BtnMenu>
+        <h2 id="title">Portfólio</h2>
       </Header>
     )
   }

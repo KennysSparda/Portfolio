@@ -6,10 +6,10 @@ export default function ResumeMenu() {
 
   return (
     <div>
-      <label>Português: </label><Button type='linkIn' path={links[0]}>Baixar</Button>
+      <label>Português: </label><Button type='linkEx' path={links[0]}>Baixar</Button>
       <br />
       <br />
-      <label>English: </label><Button type='linkIn' path={links[1]}>Download</Button>
+      <label>English: </label><Button type='linkEx' path={links[1]}>Download</Button>
       <br />
       <br />
       <div className='frame'><Viewer source={links[0]} /></div>

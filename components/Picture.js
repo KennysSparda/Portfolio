@@ -8,7 +8,6 @@ export default function Picture(props) {
 
     return (
         <img 
-            id='unstyled'
             src={props.source}
             alt={props.description}>
         </img>

@@ -3,7 +3,7 @@
   max-width: 1060px;
   margin: 0px auto;
   padding: 10px auto;
-  text-align: center;
+  text-align: left;
 }
 
 .navbar-body {
@@ -14,11 +14,22 @@
   left: 0;
   right: 0;
   box-shadow: 0px 0px 10px var(--shadow);
-  background-image: linear-gradient( to right, var(--secondary), var(--back), var(--secondary));
+  background-image:  linear-gradient( to right, var(--secondary), var(--transparency), var(--secondary));
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
 }
 
 .menu {
+  font-size: 18px;
   display: flex;
+  float: right;
+  text-align: center;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+#title {
   float: right;
 }
 
@@ -36,7 +47,6 @@
   .navbar img {
     text-align: center;
   }
-
   .menu {
     float: none;
     display: block;
