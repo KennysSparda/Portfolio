@@ -8,5 +8,9 @@ import '../styles/copyright.css'
 import '../styles/body.css'
 
 export default function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <div>
+      <Component {...pageProps} />
+    </div>
+  )
 }

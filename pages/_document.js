@@ -1,18 +1,16 @@
 import { Html, Head, Main, NextScript } from 'next/document'
-import {useState} from 'react'
+import { useState } from 'react'
 
-function ToggleTheme(){
+function ToggleTheme() {
 
 }
 
 export default function Document() {
 
-  
+
   return (
     <Html>
-      <Head>
-        <title>Kenny Portfolio</title>
-      </Head>
+      <Head />
       <body>
         <script
           dangerouslySetInnerHTML={{
@@ -37,7 +35,7 @@ function setInitialColorMode() {
     const persistedPreferenceMode = window.localStorage.getItem('theme');
     const hasPersistedPreference = typeof persistedPreferenceMode === 'string';
 
-    if(hasPersistedPreference) {
+    if (hasPersistedPreference) {
       return persistedPreferenceMode
     }
 
@@ -54,7 +52,7 @@ function setInitialColorMode() {
   const element = document.documentElement;
   element.style.setProperty('--initial-color-mode', currentColorMode);
 
-  if(currentColorMode === 'dark') {
+  if (currentColorMode === 'dark') {
     document.documentElement.setAttribute("data-theme", "dark");
   }
 }
