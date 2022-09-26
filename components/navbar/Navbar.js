@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Header from './header'
-import BtnMenu from './buttons/BtnMenu'
+import BtnMenu from './buttons/btnMenu'
 import Menu from './menu'
 import Icon from '../Icon'
 
@@ -20,7 +20,7 @@ export default function Navbar(props) {
     return (
       <Header>
         <BtnMenu function={showMenu}><Icon type={5}></Icon></BtnMenu>
-        <Menu function={showMenu} theme={props.theme} setTheme={props.setTheme}/>
+        <Menu function={showMenu} theme={props.theme} setTheme={props.setTheme} />
       </Header>
     )
   } else {
