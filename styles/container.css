@@ -24,30 +24,32 @@ ul {
 }
 
 #introduction-left {
-  padding-top: 20%;
+  padding-top: 10%;
   float: left;
   margin: 70px auto;
+  text-align: left;
 }
 
 #introduction-right {
-  padding-top: 20%;
+  padding-top: 10%;
   float: right;
   margin: 70px auto;
 }
 
-@media screen and (max-width: 722px) {
+@media screen and (max-width: 610px) {
   .container {
     height: 90%;
     width: auto;
   }
 
   #introduction-left {
-    padding-top: 20%;
+    padding-top: 0px;
     float: left;
-    text-align: left;
+    text-align: center;
   }
   
   #introduction-right {
-    float: right;
+    padding-top: 0px;
+    float: none;
   }
 }
