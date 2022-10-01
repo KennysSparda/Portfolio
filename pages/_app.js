@@ -1,3 +1,7 @@
+// pages/_app.js
+import React from 'react'
+import Head from 'next/head'
+
 import '../styles/globals.css'
 import '../styles/button.css'
 import '../styles/container.css'
@@ -6,11 +10,17 @@ import '../styles/footer.css'
 import '../styles/picture.css'
 import '../styles/copyright.css'
 import '../styles/body.css'
+import '../styles/skills.css'
 
-export default function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }) {
   return (
-    <div>
+    <>
+      <Head>
+        <title>Kenny Portfolio</title>
+      </Head>
       <Component {...pageProps} />
-    </div>
+    </>
   )
 }
+
+export default MyApp

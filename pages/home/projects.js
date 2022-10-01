@@ -14,21 +14,6 @@ export default function Projects() {
           <h1>Projetos</h1>
         </Container>
         <Container>
-          <h2>Loja Virtual</h2>
-          <Picture  description="image of store project"
-                    source={imagePath[2]} />
-          <br/>
-          <Button 
-            type='linkEx'
-            id="btnStyled"
-            path={links[2]}>
-            <Icon type={2} />
-            Acessar
-          </Button>
-          <br/>
-          <Copyright />
-        </Container>
-        <Container>
           <h2>Conversor de Temperaturas</h2>
           <Picture  description="image of thermal conversor"
                     source={imagePath[0]} />

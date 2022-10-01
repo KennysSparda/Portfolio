@@ -1,3 +1,4 @@
+
 import {useEffect, useState} from 'react'
 
 import Navbar from '../components/navbar/Navbar'
@@ -10,28 +11,28 @@ import Skills from './home/skills'
 import About from './home/about'
 
 export default function App() {
-  const [darkTheme, setDarkTheme] = useState(undefined)
+  const [lightTheme, setLightTheme] = useState(undefined)
 
   const switchTheme = (e) => {
-    setDarkTheme(event.target.checked)
+    setLightTheme(event.target.checked)
   }
 
   useEffect(() => {
-    if(darkTheme) {
-      document.documentElement.setAttribute("data-theme", "dark");
-      window.localStorage.setItem("theme", "dark");
+    if(lightTheme) {
+      document.documentElement.setAttribute("data-theme", "light");
+      window.localStorage.setItem("theme", "light");
     } else {
       document.documentElement.removeAttribute("data-theme");
-      window.localStorage.setItem("theme", "light");
+      window.localStorage.setItem("theme", "dark");
     }
-  }, [darkTheme]);
+  }, [lightTheme]);
 
   return (
     <div>
-      <Navbar theme={darkTheme} setTheme={switchTheme}/>
+      <Navbar theme={lightTheme} setTheme={switchTheme}/>
       <Home />
-      <Projects /> 
       <Skills />
+      <Projects /> 
       <Contact />
       <About />
       <Footer />

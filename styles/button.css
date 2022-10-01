@@ -75,7 +75,7 @@ a.Button {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--back);
+  background-color: var(--primary);
   -webkit-transition: .4s;
   transition: .4s;
 }

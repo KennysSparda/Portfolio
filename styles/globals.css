@@ -2,17 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Changa&family=Codystar:wght@300&display=swap');
 
 :root {
-  --primary: #00aaff;
-  --secondary: #ffffff;
-  --transparency: #aaaaaa55;
-  --back: #aaaaaa;
-  --shadow: #00aaff;
-}
-
-[data-theme='dark'] {
   --primary: #aa0000;
   --secondary: #161619;
   --transparency: #3c3c3c55;
   --back: #1c1c1c;
   --shadow: #aa0000;
+}
+
+[data-theme='light'] {
+  --primary: #00aaff;
+  --secondary: #eeeeee;
+  --transparency: #aaaaaa55;
+  --back: #cccccc;
+  --shadow: #00aaff;
 }

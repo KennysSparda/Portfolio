@@ -39,20 +39,20 @@ function setInitialColorMode() {
       return persistedPreferenceMode
     }
 
-    const preference = window.matchMedia('(preference-color-scheme: dark)');
+    const preference = window.matchMedia('(preference-color-scheme: light)');
     const hasMediaQueryPreference = typeof preference.matches == 'boolean';
 
     if (hasMediaQueryPreference) {
-      return preference.matches ? 'dark' : 'light';
+      return preference.matches ? 'light' : 'dark';
     }
-    return "light";
+    return "dark";
   }
 
   const currentColorMode = getInitialColorMode();
   const element = document.documentElement;
   element.style.setProperty('--initial-color-mode', currentColorMode);
 
-  if (currentColorMode === 'dark') {
-    document.documentElement.setAttribute("data-theme", "dark");
+  if (currentColorMode === 'light') {
+    document.documentElement.setAttribute("data-theme", "light");
   }
 }

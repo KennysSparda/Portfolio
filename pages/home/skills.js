@@ -8,34 +8,29 @@ export default function Skills() {
       </Container>
       <Container  id='skills'>
         <div>
-          <h3>Hard Skills</h3>
-          <ul>
-            <li><strong>Sistemas operacionais:</strong> Linux e Windows</li>
-            <li><strong>Linguagens de programação:</strong> C#, Python, Javascript, ShellScript</li>
-            <li><strong>Sistema de versionamento:</strong> Git e Github</li>
-            <li><strong>FrontEnd:</strong> HTML, CSS, ( React + NextJS )</li>
-            <li><strong>BackEnd:</strong> SQL Server Express, MySQL, SQLite</li>
-            <li><strong>Outros:</strong> Pacote Office</li>
-          </ul>
+          <h2>Soft Skills</h2>
+          <div id="item">Pró-atividade</div>
+          <div id="item">Comunicação</div>
+          <div id="item">Solução de problemas</div>
+          <div id="item">Trabalho em equipe</div>
+          <div id="item">Suportar críticas</div>
+          <div id="item">Atitude positiva</div>
         </div>
         <br/>
         <div>
-          <h3>Soft Skills</h3>
-          <ul>
-            <li>Comunicação</li>
-            <li>Solução de problemas</li>
-            <li>Trabalho em equipe</li>
-            <li>Suportar críticas</li>
-            <li>Atitude positiva</li>
-          </ul>
+          <h2>Hard Skills</h2>
+          <div id="item">Sistemas operacionais: Linux e Windows</div>
+          <div id="item">Linguagens de programação: C#, Python, Javascript, ShellScript</div>
+          <div id="item">FrontEnd: HTML, CSS, ( React + NextJS )</div>
+          <div id="item">BackEnd: SQL Server Express, MySQL, SQLite</div>
+          <div id="item">Sistema de versionamento: Git e Github</div>
+          <div id="item">Automação de testes: Jest</div>
         </div>
         <br/>
         <div>
-          <h3>Idiomas</h3>
-          <ul>
-            <li><strong>Português</strong>: Fluente</li>
-            <li><strong>Inglês</strong>: Intermediário</li>
-          </ul>
+          <h2>Idiomas</h2>
+          <div id="item"><strong>Português</strong>: Fluente</div>
+          <div id="item"><strong>Inglês</strong>: Intermediário</div>
         </div>
       </Container>
     </div>

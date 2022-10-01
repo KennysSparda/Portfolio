@@ -1,10 +1,9 @@
 section {
   text-shadow: 0px 0px 1px var(--shadow);
-  padding-top: 100px;
   text-align: center;
   margin: 0px auto;
   width: 90%;
-  max-width: 720px;
+  max-width: 1060px;
   left: 0;
   right: 0;
 }
@@ -14,13 +13,14 @@ ul {
 }
 
 .container{
-  padding: 10px;
+  margin: 20px;
+  padding: 30px;
   border-radius: 20px;
-  background-image: linear-gradient( to right, var(--back), var(--secondary), var(--back));
+  background-image: linear-gradient( to right, var(--secondary), var(--back), var(--secondary));
 }
 
 #introduction {
-  height: 100vh;
+  height: 70vh;
 }
 
 #introduction-left {
@@ -36,20 +36,30 @@ ul {
   margin: 70px auto;
 }
 
-@media screen and (max-width: 610px) {
+#home {
+  padding-top: 100px;
+}
+
+@media screen and (max-width: 690px) {
+  /* #introduction {
+    height: 110vh;
+  } */
+
   .container {
-    height: 90%;
     width: auto;
+    padding-left: 5%;
   }
 
   #introduction-left {
     padding-top: 0px;
-    float: left;
+    margin: 0px auto;
+    float: none;
     text-align: center;
   }
   
   #introduction-right {
     padding-top: 0px;
+    margin: 0px auto;
     float: none;
   }
 }
