@@ -1,8 +1,8 @@
 import Button from '../../components/Button'
-import Viewer from './PdfViewer'
+import Viewer from '../../components/PdfViewer'
 
 export default function ResumeMenu() {
-  var links = ["/files/KennyVargas-pt_BR.pdf", "/files/KennyVargas-en_US.pdf"]
+  var links = ["/files/27-10-22-KennyVargas-pt_BR.pdf", "/files/27-10-22-KennyVargas-en_US.pdf"]
 
   return (
     <div>

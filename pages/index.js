@@ -1,4 +1,3 @@
-
 import {useEffect, useState} from 'react'
 
 import Navbar from '../components/navbar/Navbar'
@@ -10,7 +9,7 @@ import Projects from './home/projects'
 import About from './home/about'
 
 export default function App() {
-  const [lightTheme, setLightTheme] = useState(undefined)
+  const [lightTheme, setLightTheme] = useState(false)
 
   const switchTheme = (e) => {
     setLightTheme(event.target.checked)

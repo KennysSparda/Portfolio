@@ -8,10 +8,10 @@ export default function Menu(props) {
   return (
     <nav className="menu">
       <Switch theme={props.theme} setTheme={props.setTheme}/>
-      <ButtonHome/>
-      <BtnProjects/>
-      <BtnContact/>
-      <BtnAbout/>
+      <ButtonHome />
+      <BtnProjects />
+      <BtnContact />
+      <BtnAbout />
     </nav>
   )
 }

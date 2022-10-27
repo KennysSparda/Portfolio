@@ -4,6 +4,8 @@ import Icon from '../../components/Icon'
 
 export default function Home() {
   var links = ["https://github.com/KennysSparda"]
+
+
   return (
     <Container id='home'>
       <div id="introduction">
