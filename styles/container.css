@@ -76,4 +76,9 @@ iframe {
     margin: 0px auto;
     float: none;
   }
+
+  iframe {
+    height: 600px;
+    width: 100%;
+  }
 }
