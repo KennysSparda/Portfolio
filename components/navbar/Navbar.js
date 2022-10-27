@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Header from './header'
-import BtnMenu from './buttons/btnMenu'
+import BtnMenu from '../buttons/btnMenu'
 import Menu from './menu'
 import Icon from '../Icon'
 

@@ -13,10 +13,19 @@ ul {
 }
 
 .container{
+  padding-top: 10%;
   margin: 20px;
   padding: 30px;
   border-radius: 20px;
   background-image: linear-gradient( to right, var(--secondary), var(--back), var(--secondary));
+}
+
+#projects {
+  padding-top: 10%;
+}
+
+#contact {
+  padding-top: 10%;
 }
 
 #introduction {
@@ -38,6 +47,11 @@ ul {
 
 #home {
   padding-top: 100px;
+}
+
+iframe {
+  height: 600px;
+  width: 80%;
 }
 
 @media screen and (max-width: 690px) {

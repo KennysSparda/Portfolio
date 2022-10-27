@@ -16,9 +16,12 @@
   background-image: linear-gradient( to bottom right, var(--secondary), var(--transparency), var(--secondary));
 }
 
+#btnStyled:hover {
+  background-image: linear-gradient( to bottom right, var(--primary), var(--transparency), var(--secondary));
+}
+
 .Button:hover {
   color: var(--primary);
-  text-shadow: 0px 0px 20px var(--shadow);
   background-color: var(--secondary);
 }
 

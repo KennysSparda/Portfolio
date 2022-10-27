@@ -7,10 +7,9 @@ import '../styles/button.css'
 import '../styles/container.css'
 import '../styles/navbar.css'
 import '../styles/footer.css'
-import '../styles/picture.css'
+import '../styles/image.css'
 import '../styles/copyright.css'
 import '../styles/body.css'
-import '../styles/skills.css'
 
 function MyApp({ Component, pageProps }) {
   return (
