@@ -2,10 +2,10 @@
  *  protective security 
  *   if explicit declaration type='linkEx' then
  *      it accept link property ex:
- *      <Button type='link' path='/about'>About</Button>
+ *      <Button type='linkEx' path='/about'>About</Button>
  *   if explicit declaration type='linkIn' then
  *      it accept link property ex:
- *      <Button type='link' path='/about'>About</Button>
+ *      <Button type='linkIn' path='/about'>About</Button>
  *   else
  *      accept default a function on click it
  *      <Button function='reserve()'>Reserve it!</Button>

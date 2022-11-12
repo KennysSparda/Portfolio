@@ -17,7 +17,7 @@
             <form class="mainForm" id="thermSelectForm">
                 <table>
                     <tr>
-                        <td>
+                        <td id="container-right">
                             <input type="number" id="thermInput" class="thermDisplay" placeholder="Insira o valor" required></input>
                             <p>
                                 <select name=selectThermInput id="selectInput" class="selectType" onchange="convert()" required>
@@ -28,7 +28,7 @@
                                 </select>
                             </p>
                         </td>
-                        <td>
+                        <td id="container-left">
                             <input id="thermOutput" class="thermDisplay" disabled></input>
                             <p>
                                 <select name=selectThermOutput id="selectOutput" class="selectType" onchange="convert()">

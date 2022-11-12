@@ -6,7 +6,6 @@
   text-align: center;
   margin: 9px;
   padding: 12px;
-  
   background: none;
   border-radius: 50px;
   border:none;
@@ -31,6 +30,7 @@
 
 a.Button {
   text-decoration: none;
+  border: 1px solid var(--secondary);
 }
 
 .slider {

@@ -27,8 +27,8 @@ export default function Resume() {
         <Navbar theme={lightTheme} setTheme={switchTheme}/>
         <Container id='home'>
           <h1>Curriculo</h1>
-          <ResumeMenu />
         </Container>
+        <ResumeMenu />
         <Footer />
     </div>
   )
