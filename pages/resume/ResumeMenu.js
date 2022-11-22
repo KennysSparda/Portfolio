@@ -4,7 +4,7 @@ import Viewer from '../../components/PdfViewer'
 import Container from '../../components/Container'
 
 export default function ResumeMenu() {
-  var links = ["/files/CV_Kenny_14_11_2022-pt_BR.pdf", "/files/CV_Kenny_14_11_2022-en_US.pdf"]
+  var links = ["/files/KennyVargas-pt_BR.pdf", "/files/KennyVargas-en_US.pdf"]
   const [selected, setSelected] = useState(links[0])
 
   const changeResume = (resumeFile) => {
