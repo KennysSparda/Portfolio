@@ -6,12 +6,12 @@ import Switch from './Switch'
 
 export default function Menu(props) {
   return (
-    <nav className="menu">
-      <Switch theme={props.theme} setTheme={props.setTheme}/>
+    <nav className="menu"> 
       <ButtonHome function={props.function}/>
       <BtnProjects function={props.function}/>
       <BtnContact function={props.function}/>
       <BtnAbout function={props.function}/>
+      <Switch theme={props.theme} setTheme={props.setTheme}/>
     </nav>
   )
 }

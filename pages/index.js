@@ -12,7 +12,7 @@ export default function App() {
   const [lightTheme, setLightTheme] = useState(false)
 
   const switchTheme = (e) => {
-    setLightTheme(event.target.checked)
+    setLightTheme(e.target.checked)
   }
 
   useEffect(() => {
