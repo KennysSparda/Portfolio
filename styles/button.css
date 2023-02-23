@@ -1,9 +1,9 @@
 .Button {
-  font-family: 'Changa', sans-serif;
-  font-size: 18px;
+  font-size: 26px;
   color: var(--primary);
   text-shadow: 0px 0px 1px var(--shadow);
   text-align: center;
+  vertical-align: center;
   margin: 9px;
   padding: 12px;
   background: none;
@@ -15,13 +15,13 @@
   background-image: linear-gradient( to bottom right, var(--secondary), var(--transparency), var(--secondary));
 }
 
-#btnStyled:hover {
-  background-image: linear-gradient( to bottom right, var(--primary), var(--transparency), var(--secondary));
+#btnStyled:hover { 
+  background-image: url(/img/bg-roses.jpeg);
 }
 
 .Button:hover {
   color: var(--primary);
-  background-color: var(--secondary);
+  background-color: var(--transparency);
 }
 
 .menu {
@@ -30,7 +30,6 @@
 
 a.Button {
   text-decoration: none;
-  border: 1px solid var(--secondary);
 }
 
 .slider {
@@ -40,7 +39,7 @@ a.Button {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: var(--back);
+  background-color: var(--transparency);
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -78,7 +77,7 @@ a.Button {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--primary);
+  background-color: var(--transparency);
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -90,17 +89,17 @@ a.Button {
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: var(--secondary);
+  background-color: var(--primary);
   -webkit-transition: .4s;
   transition: .4s;
 }
 
 input:checked + .slider {
-  background-color: var(--primary);
+  background-color: var(--transparency);
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px var(--shadow);
+  box-shadow: 0 0 3px var(--shadow);
 }
 
 input:checked + .slider:before {

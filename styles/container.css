@@ -18,6 +18,7 @@ ul {
   padding: 30px;
   border-radius: 20px;
   background-image: linear-gradient( to right, var(--secondary), var(--back), var(--secondary));
+
 }
 
 #projects {
@@ -59,9 +60,6 @@ iframe {
 }
 
 @media screen and (max-width: 690px) {
-  /* #introduction {
-    height: 110vh;
-  } */
 
   .container {
     width: auto;

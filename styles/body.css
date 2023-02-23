@@ -1,20 +1,18 @@
 body {
   margin: 0px;
-  font-family: 'Changa', sans-serif;
+  font-family: 'DM Mono', monospace;
   text-align: center;
   font-size: 30px;
   color: var(--primary);
-  background: var(--back);
+  background: url(/img/bg-roses.jpeg);
 }
 
 h1 {
-  font-family: 'Codystar', cursive;
   text-shadow: 0px 0px 10px var(--shadow);
   font-size: 48px;
 }
 
 h2 {
-  font-family: 'Codystar', cursive;
   text-shadow: 0px 0px 10px var(--shadow);
   font-size: 26px;
 }
