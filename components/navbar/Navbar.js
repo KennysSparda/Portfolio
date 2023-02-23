@@ -20,7 +20,9 @@ export default function Navbar(props) {
     return (
       <Header>
         <BtnMenu function={showMenu}><Icon type={5}></Icon></BtnMenu>
+        <h2 id="title">Portfólio</h2>
         <Menu function={showMenu} theme={props.theme} setTheme={props.setTheme} />
+        
       </Header>
     )
   } else {
