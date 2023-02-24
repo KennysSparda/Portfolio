@@ -13,15 +13,13 @@ export default function Navbar(props) {
     setShow(!show)
   }
 
-
-
   // Verify if main button is pressed
   if (show == true) {
     return (
       <Header>
         <h2 id="title">Portfólio</h2>
-        <Menu function={showMenu} theme={props.theme} setTheme={props.setTheme} />
         <BtnMenu function={showMenu}><Icon type={5}></Icon></BtnMenu>
+        <Menu function={showMenu} theme={props.theme} setTheme={props.setTheme} />
       </Header>
     )
   } else {

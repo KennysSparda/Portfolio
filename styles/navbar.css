@@ -20,7 +20,6 @@
   position: relative;
   font-size: 18px;
   display: flex;
-  float: right;
   text-align: center;
   width: auto;
   border-radius: 20px;
@@ -32,19 +31,28 @@
   float: left;
 }
 
-@media screen and (max-width: 1010px) {
+#btnMenu {
+  float: right;
+}
 
-  #title {
-    float: none;
-  }
+@media screen and (max-width: 1010px) {
   
   .navbar {
+    z-index: 2;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     text-align: center;
   }
 
-  .navbar a {
-    float: none;
-    display: block;
+  .menu a {
+    float: inline-end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    height: auto;
   }
 
   .navbar img {
@@ -54,7 +62,11 @@
   .menu {
     float: none;
     display: block;
-    padding: 10px;
+    max-width: 300px;
+    margin: 0px auto;
+    align-items: center;
+    padding-top: 80px;
+    z-index: 1;
     border-radius: 20px;
   }
 }
