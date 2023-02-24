@@ -37,8 +37,11 @@
 
 @media screen and (max-width: 1010px) {
   
-  .navbar {
+  #btnMenu{
+    position: absolute;
     z-index: 2;
+  }
+  .navbar {
     display: block;
     justify-content: center;
     align-items: center;
@@ -47,7 +50,6 @@
   }
 
   .menu a {
-    float: inline-end;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,7 +66,6 @@
     display: block;
     max-width: 300px;
     margin: 0px auto;
-    align-items: center;
     padding-top: 80px;
     z-index: 1;
     border-radius: 20px;
