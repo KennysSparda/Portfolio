@@ -1,8 +1,8 @@
 .navbar {
   width: 90%;
+  min-height: 80px;
   max-width: 1010px;
   margin: 0px auto;
-  padding: 10px auto;
   text-align:end;
 }
 
@@ -42,11 +42,10 @@
     z-index: 2;
   }
   .navbar {
-    display: block;
+    display: grid;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    text-align: center;
+    text-align: right;
+    width: 90%;
   }
 
   .menu a {
