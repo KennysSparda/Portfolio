@@ -1,5 +1,5 @@
 :root  {
-  --primary-color: #c90000;
+  --primary-color: #ffffff;
   --secundary-color: Black;
   --tertiary-color: #353535;
 }
@@ -40,6 +40,7 @@ body {
   background: var(--secundary-color);
 }
 input {
+  border: none;
   text-align: end;
   height: 30px;
   width: 185px;
@@ -62,11 +63,11 @@ button {
   background: radial-gradient(var(--primary-color),var(--secundary-color));
   color: var(--secundary-color);
   font-size: 26px;
-  border: 2px solid black;
+  border: none;
   border-radius: 10px;
 }
 button:hover {
-  background: radial-gradient(var(--primary-color),var(--tertiary-color));
+  background: radial-gradient(var(--primary-color),var(--primary-color));
 }
 #btnC {
   --primary-color: Red;

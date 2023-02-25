@@ -1,11 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700|PT++Mono);
 
 :root {
-    --primary-color: #c90000;
+    --primary-color: #ffffff;
     --secondary-color: #000000;
-    --tertiary-color: #520c00;
-    --quartenary-color: #1F2833;
-    --quinary-color: #0B0C10;
+    --tertiary-color: #888888;
+    --quartenary-color: #111111;
+    --quinary-color: #1C1C1C;
 }
 
 body {
@@ -18,7 +18,7 @@ body {
 #mainContainer {
     color: var(--tertiary-color);
     height: 445px;
-    width: 100%;
+    width: 60%;
     margin: 10% auto;
     background: var(--quinary-color);
     box-shadow: 5px 5px 5px var(--quinary-color);
@@ -98,7 +98,8 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
+@media screen and (max-width: 700px) {
+  #mainContainer {
+    width: 100%;
+  }
 }
