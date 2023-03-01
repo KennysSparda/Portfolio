@@ -26,12 +26,9 @@ export default function About() {
           <Button >
             <Icon type="11"></Icon><strong>HTML 5</strong>
           </Button>
-
-        <p>
-
-        </p>
-
         <p>Acesse o nosso
+          <br></br>
+          <br></br>
           <Button 
                 type='linkEx'
                 id="btnStyled"
