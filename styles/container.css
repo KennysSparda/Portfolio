@@ -1,11 +1,11 @@
 section {
-  padding: 5px;
+
   text-shadow: 0px 0px 1px var(--shadow);
   text-align: center;
   margin: 0px auto;
   width: 90%;
   max-width: 1060px;
-  height: 70vh;
+  height: 100%;
   left: 0;
   right: 0;
 }
@@ -15,7 +15,7 @@ ul {
 }
 
 .container{
-  padding-top: 10%;
+
   margin: 20px;
   padding: 30px;
   border-radius: 20px;
@@ -23,16 +23,35 @@ ul {
 
 }
 
-#projects {
-  padding-top: 10%;
+#home {
+  padding-top: 13vh;
 }
 
+#projects {
+  padding-top: 13vh;
+}
+
+
 #contact {
-  padding-top: 10%;
+  padding-top: 13vh;
 }
 
 #about {
-  padding-top: 10%;
+  padding-top: 13vh;
+}
+
+#imgPerfil {
+  border-radius: 20px;
+  float: left;
+}
+
+#banner {
+  border-radius: 20px;
+  color: white;
+  background-image: var(--bg);
+  padding: 50px;
+  align-items: center;
+  justify-items: center;
 }
 
 #introduction {
@@ -52,32 +71,50 @@ ul {
   margin: 70px auto;
 }
 
-#home {
-  padding-top: 100px;
-}
-
 iframe {
   height: 600px;
   width: 90%;
+  resize: both;
+  overflow: auto;
 }
 
 @media screen and (max-width: 690px) {
 
+
+  #home {
+    padding-top: 20vh;
+  }
+  
+  #projects {
+    padding-top: 20vh;
+  }
+  
+  
+  #contact {
+    padding-top: 20vh;
+  }
+  
+  #about {
+    padding-top: 20vh;
+  }
+  
+
   .container {
     width: auto;
+    padding-top: 15%;
     padding-left: 5%;
     padding: 30px;
+    padding: 10px;
   }
 
   #introduction-left {
-    padding-top: 0px;
+
     margin: 0px auto;
     float: none;
     text-align: center;
   }
   
   #introduction-right {
-    padding-top: 0px;
     margin: 0px auto;
     float: none;
   }

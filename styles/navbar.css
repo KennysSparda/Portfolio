@@ -19,6 +19,7 @@
 .menu {
   position: relative;
   font-size: 18px;
+  font-weight: bold;
   display: flex;
   text-align: center;
   width: auto;
@@ -29,6 +30,7 @@
 
 #title {
   float: left;
+  font-size: 26px;
 }
 
 #btnMenu {

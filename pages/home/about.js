@@ -6,16 +6,40 @@ export default function About() {
   return (
     <div>
       <Container id='about' >
-        <h2>Sobre</h2>
-        <p>Aqui é o lugar para demonstrar minhas habilidades e alguns dos meus projetos, espero que goste ;)</p>
-        <p>Você pode acessar a página desse projeto no <strong>Github</strong> clicando no botão abaixo:</p>
-        <Button 
-              type='linkEx'
-              id="btnStyled"
-              path='https://github.com/KennysSparda/Portfolio'>
-                <Icon type={0}></Icon> Github
-        </Button>
-        <p>Lá você vai entender como rodar o projeto e muito mais :D</p>
+        <h2>Projeto feito com:</h2>
+          <Button >
+            <Icon type="7"></Icon><strong>Next</strong>
+          </Button>
+          <br></br>
+          <Button >
+            <Icon type="8"></Icon><strong>React</strong>
+          </Button>
+          <br></br>
+          <Button >
+            <Icon type="9"></Icon><strong>Javascript</strong>
+          </Button>
+          <br></br>
+          <Button >
+            <Icon type="10"></Icon><strong>CSS 3</strong>
+          </Button>
+          <br></br>
+          <Button >
+            <Icon type="11"></Icon><strong>HTML 5</strong>
+          </Button>
+
+        <p>
+
+        </p>
+
+        <p>Acesse o nosso
+          <Button 
+                type='linkEx'
+                id="btnStyled"
+                path='https://github.com/KennysSparda/Portfolio'>
+                  <Icon type={0}></Icon><strong>Github</strong>!
+          </Button>
+        </p>
+        
       </Container>
     </div>
   )

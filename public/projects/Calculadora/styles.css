@@ -1,14 +1,14 @@
 :root  {
   --primary-color: #ffffff;
   --secundary-color: Black;
-  --tertiary-color: #353535;
+  --background: 353535;
 }
 body {
   margin: 0px;
 }
 
 .container {
-  background: radial-gradient(var(--primary-color),var(--secundary-color));
+  background: var(--secondary-color);
   color: var(--primary-color);
   width: 100vw;
   height: 100vh;
@@ -19,7 +19,7 @@ body {
 }
 
 #mainForm {
-  background: radial-gradient(var(--tertiary-color),var(--secundary-color));;
+  background: radial-gradient(var(--secundary-color),var(--secundary-color));;
   width: 240px;
   height: 350px;
   margin: auto 100px;

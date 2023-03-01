@@ -5,8 +5,13 @@ export default function Icon(props) {
     '/ico/link.png',        // 2  link
     '/ico/whatsapp.png',    // 3  whatsapp
     '/ico/linkedin.png',    // 4  linkedin
-    '/ico/menu.png',         // 5  menu
-    '/ico/git.png'         // 6  git
+    '/ico/menu.png',        // 5  menu
+    '/ico/git.png',         // 6  git
+    '/ico/next.png',        // 7 next
+    '/ico/react.png',        // 8 react
+    '/ico/js.png',         // 9 javascript
+    '/ico/css3.png',         // 10 css
+    '/ico/HTML5.png'         // 11 html
   ]
   var ico = icons[props.type]
   return (

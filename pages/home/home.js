@@ -8,6 +8,12 @@ export default function Home() {
 
   return (
     <Container id='home'>
+      
+      <div id="banner">
+        <img id="imgPerfil" src="/img/eu.png"></img>
+        oi
+        <p>turubaum</p>
+      </div>
       <div id="introduction">
         <div id="introduction-left">
           <h1>Kenny Vargas</h1>
