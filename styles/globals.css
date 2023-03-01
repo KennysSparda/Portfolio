@@ -2,17 +2,19 @@
 
 :root {
   --bg: url(/img/bg-green-lime.jpg);
-  --primary: #a8a8a8;
+  --primary: #55ff55;
   --secondary: #161619;
-  --transparency: #3c3c3c55;
+  --transparency: #3c3c3c33;
   --back: #1c1c1c;
   --shadow: #000000;
+  --text: #ddd;
 }
 
 [data-theme='light'] {
-  --primary: #000000;
+  --bg: url(/img/bg-green-lime-light.jpg);
+  --primary: #55ff55;
   --secondary: #ccc;
-  --transparency: #a8a8a8dd;
+  --transparency: #a8a8a8aa;
   --back: #aaa;
   --shadow: #000000;
 }

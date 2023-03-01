@@ -5,6 +5,7 @@ body {
   font-size: 26px;
   color: var(--primary);
   background: var(--bg);
+  background-attachment: fixed
 }
 
 h1 {
