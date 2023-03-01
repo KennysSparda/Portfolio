@@ -43,6 +43,8 @@ ul {
 #imgPerfil {
   border-radius: 20px;
   float: left;
+  height: 200px;
+  width: 200px;
 }
 
 #banner {
@@ -52,6 +54,9 @@ ul {
   padding: 50px;
   align-items: center;
   justify-items: center;
+  font-weight: bold;
+  font-size: 36px;
+  text-shadow: 0 0 10px var(--shadow);
 }
 
 #introduction {
@@ -59,16 +64,17 @@ ul {
 }
 
 #introduction-left {
-  padding-top: 10%;
+  padding-top: 13vh;
   float: left;
-  margin: 70px auto;
-  text-align: left;
+  margin: 0px auto;
+  text-align: right;
 }
 
 #introduction-right {
-  padding-top: 10%;
+  padding-top: 13vh;
   float: right;
-  margin: 70px auto;
+  margin: 80px auto;
+  text-align: left;
 }
 
 iframe {

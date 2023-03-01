@@ -10,12 +10,12 @@ export default function Home() {
     <Container id='home'>
       
       <div id="banner">
-        <img id="imgPerfil" src="/img/eu.png"></img>
-        oi
-        <p>turubaum</p>
+        <img id="imgPerfil" src="/img/eu.jpg"></img>
+        <p>Oi, seja bem vindo</p>
       </div>
       <div id="introduction">
         <div id="introduction-left">
+          <h2>Eu sou</h2>
           <h1>Kenny Vargas</h1>
           <h2>Desenvolvedor</h2>
         </div>
