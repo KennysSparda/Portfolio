@@ -10,7 +10,6 @@ export default function Home() {
     <Container id='home'>
       <div id="introduction">
         <div id="introduction-left">
-          <h2>eu sou</h2>
           <h1>Kenny Vargas</h1>
           <h2>Desenvolvedor</h2>
         </div>

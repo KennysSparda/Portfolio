@@ -16,7 +16,7 @@
 }
 
 #btnStyled:hover { 
-  background-image: url(/img/bg-roses.jpeg);
+  background-image: var(--bg);
 }
 
 .Button:hover {

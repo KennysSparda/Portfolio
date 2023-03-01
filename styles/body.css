@@ -4,7 +4,7 @@ body {
   text-align: center;
   font-size: 30px;
   color: var(--primary);
-  background: url(/img/bg-roses.jpeg);
+  background: var(--bg);
 }
 
 h1 {

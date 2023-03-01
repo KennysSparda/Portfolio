@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono&display=swap');
 
 :root {
+  --bg: url(/img/bg-stars.jpg);
   --primary: #5c5c5f;
   --secondary: #161619;
   --transparency: #3c3c3c55;
