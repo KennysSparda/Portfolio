@@ -1,6 +1,7 @@
 import Container from '../../components/Container'
 import Button from '../../components/Button'
 import Icon from '../../components/Icon'
+import Banner from '../../components/banner'
 
 export default function Home() {
   var links = ["https://github.com/KennysSparda"]
@@ -8,18 +9,14 @@ export default function Home() {
 
   return (
     <Container id='home'>
-      
-      <div id="banner">
-        <img id="imgPerfil" src="/img/eu.jpg"></img>
-        <p>Oi, seja bem vindo</p>
-      </div>
-      <div id="introduction">
-        <div id="introduction-left">
+      <Banner/>
+      <div id="home">
+        <div id="home-left">
           <h2>Eu sou</h2>
           <h1>Kenny Vargas</h1>
           <h2>Desenvolvedor</h2>
         </div>
-        <div id="introduction-right">
+        <div id="home-right">
           <Button 
             type='linkEx'
             id="btnStyled"

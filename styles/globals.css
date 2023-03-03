@@ -2,19 +2,20 @@
 
 :root {
   --bg: url(/img/bg-green-lime.jpg);
-  --primary: #55ff55;
+  --primary: #00ff00;
   --secondary: #161619;
   --transparency: #3c3c3c33;
   --back: #1c1c1c;
-  --shadow: #000000;
+  --shadow: #00ff00;
   --text: #ddd;
 }
 
 [data-theme='light'] {
   --bg: url(/img/bg-green-lime-light.jpg);
-  --primary: #55dd55;
-  --secondary: #ccc;
-  --transparency: #a8a8a8aa;
-  --back: #aaa;
-  --shadow: #000000;
+  --primary: #00aa00;
+  --secondary: #a8a8a8;
+  --transparency: #3c3c3c33;
+  --back: #eee;
+  --shadow: #00ff00;
+  --text: #363636;
 }

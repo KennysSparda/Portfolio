@@ -10,6 +10,8 @@ import '../styles/footer.css'
 import '../styles/image.css'
 import '../styles/copyright.css'
 import '../styles/body.css'
+import '../styles/banner.css'
+import '../styles/home.css'
 
 function MyApp({ Component, pageProps }) {
   return (

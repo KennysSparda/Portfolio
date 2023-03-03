@@ -1,0 +1,33 @@
+#home {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#home-left {
+  position:inherit;
+  width: 45%;
+  float: left;
+  text-align: right;
+}
+
+#home-right {
+  position:inherit;
+  width: 45%;
+  float: right;
+  text-align: left;
+}
+
+@media screen and (max-width: 755px) {
+  #home-left {
+    margin: 0px auto;
+    float: none;
+    text-align: center;
+  }
+  
+  #home-right {
+    margin: 0px auto;
+    float: none;
+    text-align: center;
+  }
+}

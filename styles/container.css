@@ -1,5 +1,5 @@
 section {
-  text-shadow: 0px 0px 1px var(--shadow);
+  padding-top: 13vh;
   text-align: center;
   margin: 0px auto;
   width: 90%;
@@ -7,6 +7,7 @@ section {
   height: 100%;
   left: 0;
   right: 0;
+  margin-bottom: 1vh;
 }
 
 ul {
@@ -14,63 +15,18 @@ ul {
 }
 
 .container{
-
-  margin: 20px;
-  padding: 30px;
+  padding: 10px;
   border-radius: 20px;
   background-image: linear-gradient( to right, var(--secondary), var(--back), var(--secondary));
-
 }
 
-#home {
-  padding-top: 13vh;
-}
-
-#projects {
-  padding-top: 13vh;
-}
-
-
-#contact {
-  padding-top: 13vh;
-}
-
-#about {
-  padding-top: 13vh;
-}
-
-#imgPerfil {
-  border-radius: 20px;
-  float: left;
-  height: 200px;
-  width: 200px;
-}
-
-#banner {
-  border-radius: 20px;
-  color: white;
-  background-image: var(--bg);
-  padding: 50px;
-  align-items: center;
-  justify-items: center;
-  font-weight: bold;
-  font-size: 36px;
-  text-shadow: 0 0 10px var(--shadow);
-}
-
-#introduction {
-  height: 70vh;
-}
-
-#introduction-left {
-  padding-top: 13vh;
+#home-left {
   float: left;
   margin: 0px auto;
   text-align: right;
 }
 
-#introduction-right {
-  padding-top: 13vh;
+#home-right {
   float: right;
   margin: 80px auto;
   text-align: left;
@@ -85,23 +41,19 @@ iframe {
 
 @media screen and (max-width: 755px) {
 
-  #imgPerfil {
-    float: none;
-  }
-
   .container {
     padding-left: 5%;
     padding: 30px;
     padding: 10px;
   }
 
-  #introduction-left {
+  #home-left {
     margin: 0px auto;
     float: none;
     text-align: center;
   }
   
-  #introduction-right {
+  #home-right {
     padding-top: none;
     margin: 0px auto;
     float: none;

@@ -14,34 +14,24 @@ export default function Projects() {
   return (
       <div>
         <Container id='projects'>
-          <h1>Projetos</h1>
-          <Container id="project">
+          <h2>Projetos</h2>
+
+            <p>Projeto em Javascript, html e css</p>
             <iframe src={links[0]}></iframe>
-            <Copyright />
-          </Container>
 
-          <Container id="project">
+            <p>Projeto em Javascript, html e css</p>
             <iframe src={links[1]}></iframe>
-            <Copyright />
-          </Container>
 
-          <Container id="project">
+            <p>Projeto em Javascript, html e css</p>
             <iframe src={links[2]}></iframe>
-            <Copyright />
-          </Container>
 
-          <Container id="project">
+            <p>Projeto em Javascript, html e css</p>
             <iframe src={links[3]}></iframe>
-            <Copyright />
-          </Container>
 
-          <Container id="project">
-            <h2>
-              Blog
-            </h2>
+            <p>Projeto em NextJS, React ,Javascript, HTML e CSS:</p>
             <iframe src={links[4]}></iframe>
-            <Copyright />
-          </Container>
+
+
         </Container>
       </div>
   )

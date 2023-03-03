@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer>
       {/* You can make changes below */}
-      <p>01/03/2023 - Campo Largo / PR</p>
+      <p id="footerText">03/03/2023 - Campo Largo / PR</p>
       <Copyright />
     </footer>
   )

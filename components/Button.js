@@ -12,20 +12,29 @@
  */
 
 export default function Button(props) {
-  if(props.type == 'linkEx') {
-    function play() {
-      var hoverAudio = document.createElement("AUDIO");
-      if (hoverAudio.canPlayType("audio/mpeg")) {
-        hoverAudio.setAttribute("src","/audio/mixkit-interface-click-hover-1127.wav");
-      }
-      hoverAudio.play()
+  function playDown() {
+    var hoverAudio = document.createElement("AUDIO");
+    if (hoverAudio.canPlayType("audio/mpeg")) {
+      hoverAudio.setAttribute("src","/audio/mixkit-interface-device-click-2577.wav");
     }
+    hoverAudio.play()
+  }
+  function playHover() {
+    var hoverAudio = document.createElement("AUDIO");
+    if (hoverAudio.canPlayType("audio/mpeg")) {
+      hoverAudio.setAttribute("src","/audio/mixkit-interface-click-hover-1127.wav");
+    }
+    hoverAudio.play()
+  }
+  if(props.type == 'linkEx') {
+
     return (
       <a className="Button"
         id={props.id} // Add id="btnStyled" to highlight button
         href={props.path}
         onClick={props.function}
-        onMouseEnter={play} 
+        onMouseEnter={playHover}
+        onMouseDown={playDown} 
         // Open in new page
         target="_blank"
         // Security: to prevent malicious attacks from the pages how can you make a link
@@ -35,36 +44,24 @@ export default function Button(props) {
       </a>
     )
   } else if(props.type == 'linkIn') {
-    function play() {
-      var hoverAudio = document.createElement("AUDIO");
-      if (hoverAudio.canPlayType("audio/mpeg")) {
-        hoverAudio.setAttribute("src","/audio/mixkit-interface-click-hover-1127.wav");
-      }
-      hoverAudio.play()
-    }
     return (
       <a className="Button"
         id={props.id} // Add id="btnStyled" to highlight button
         href={props.path}
         onClick={props.function}
-        onMouseEnter={play} 
+        onMouseEnter={playHover} 
+        onMouseDown={playDown} 
       >
         {props.children}
       </a>
     )
   } else {
-    function play() {
-      var hoverAudio = document.createElement("AUDIO");
-      if (hoverAudio.canPlayType("audio/mpeg")) {
-        hoverAudio.setAttribute("src","/audio/mixkit-interface-click-hover-1127.wav");
-      }
-      hoverAudio.play()
-    }
     return (
       <button className="Button"
         id={props.id} // Add id="btnStyled" to highlight button
         onClick={props.function}
-        onMouseEnter={play} 
+        onMouseEnter={playHover} 
+        onMouseDown={playDown} 
       >
         {props.children}
       </button>

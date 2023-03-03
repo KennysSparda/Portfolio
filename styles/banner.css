@@ -1,0 +1,15 @@
+#banner {
+  border-radius: 20px;
+  color: white;
+  background-image: var(--bg);
+  padding: 50px;
+  align-items: center;
+  justify-items: center;
+}
+#bannerText {
+  color: var(--text);
+  text-shadow: 0 0 5px var(--shadow);
+  font-weight: bold;
+  font-size: 36px;
+  margin: 0px;
+}
