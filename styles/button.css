@@ -16,8 +16,6 @@
 }
 
 #btnStyled:hover {
-  background-attachment: fixed;
-  background-image: var(--bg);
   box-shadow: 0 0 1px var(--shadow);
 }
 

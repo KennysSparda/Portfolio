@@ -19,6 +19,10 @@
 }
 
 @media screen and (max-width: 755px) {
+  #home {
+    display:block;
+  }
+
   #home-left {
     margin: 0px auto;
     float: none;
