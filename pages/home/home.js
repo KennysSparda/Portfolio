@@ -1,6 +1,6 @@
 import Container from '../../components/Container'
 import Button from '../../components/Button'
-import Banner from '../../components/Banner'
+import Banner from '../../components/banner'
 import Icon from '../../components/Icon'
 
 export default function Home() {
