@@ -101,6 +101,7 @@ input:checked + .slider:before {
 }
 .slider {
   border-radius: 34px;
+  background-color: var(--back);
 }
 
 .slider:before {

@@ -1,6 +1,5 @@
 #banner {
   border-radius: 20px;
-  color: white;
   background-image: var(--banner);
   background-size:cover;
   height: 150px ;
@@ -14,7 +13,6 @@
 #imgPerfil {
   height: 150px ;
   width: 150px ;
-  background-image: var(--banner);
   background-size: cover;
   background-image: var(--eu);
   border-radius: 18px;
@@ -40,10 +38,10 @@
 }
 
 #bannerText {
-  color: var(--secondary);
-  text-shadow: 0 0 5px var(--shadow);
+  color: #dcdcdc;
+  text-shadow: 0 0 20px var(--primary);
   font-weight: bold;
-  font-size: 36px;
+  font-size: 42px;
   margin: 0px;
 }
 
