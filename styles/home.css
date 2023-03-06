@@ -31,6 +31,10 @@
 
 @media screen and (max-width: 755px) {
 
+  #home {
+    padding-top: 10px;
+  }
+
   #box {
     display: block;
     padding-top: 0vh;

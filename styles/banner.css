@@ -49,6 +49,10 @@
   #bannerText {
     font-size: 26px;
   }
+
+  #banner {
+    padding: 0px;
+  }
 }
 
 @media screen and (max-width: 430px) {
@@ -60,6 +64,9 @@
     width: 100px ;
     margin: auto;
     float:none;
+  }
+  #banner {
+    padding: 0px;
   }
 }
 
