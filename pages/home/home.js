@@ -12,9 +12,8 @@ export default function Home() {
       <Banner/>
       <div id="home">
         <div id="home-left">
-          <h2>Eu sou</h2>
+          <h1>Olá, eu sou</h1>
           <h1>Kenny Vargas</h1>
-          <h2>Desenvolvedor</h2>
         </div>
         <div id="home-right">
           <Button 

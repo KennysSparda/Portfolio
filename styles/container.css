@@ -1,8 +1,8 @@
 section {
-  padding-top: 13vh;
+  width: 90%;
+  padding-top: 120px;
   text-align: center;
   margin: 0px auto;
-  width: 90%;
   max-width: 1060px;
   height: 100%;
   left: 0;
@@ -17,19 +17,7 @@ ul {
 .container{
   padding: 10px;
   border-radius: 20px;
-  background-image: linear-gradient( to right, var(--secondary), var(--back), var(--secondary));
-}
-
-#home-left {
-  float: left;
-  margin: 0px auto;
-  text-align: right;
-}
-
-#home-right {
-  float: right;
-  margin: 80px auto;
-  text-align: left;
+  background-image: linear-gradient( to right, var(--back), var(--secondary), var(--back));
 }
 
 iframe {
@@ -42,26 +30,11 @@ iframe {
 @media screen and (max-width: 755px) {
 
   .container {
-    padding-left: 5%;
-    padding: 30px;
     padding: 10px;
   }
 
-  #home-left {
-    margin: 0px auto;
-    float: none;
-    text-align: center;
-  }
-  
-  #home-right {
-    padding-top: none;
-    margin: 0px auto;
-    float: none;
-    text-align: center;
-  }
-
   section {
-    width: 100%;
+    width: 90%;
   }
 
   iframe {

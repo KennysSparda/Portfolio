@@ -1,15 +1,76 @@
 #banner {
   border-radius: 20px;
   color: white;
-  background-image: var(--bg);
-  padding: 50px;
+  background-image: var(--banner);
+  background-size:cover;
+  height: 150px ;
+  padding: 0px;
+  padding-left: 0;
+  padding-right: 50px;
   align-items: center;
-  justify-items: center;
+  display: flex;
 }
+
+#imgPerfil {
+  height: 150px ;
+  width: 150px ;
+  background-image: var(--banner);
+  background-size: cover;
+  background-image: var(--eu);
+  border-radius: 18px;
+  float: left;
+  margin: 0px;
+  margin-right: 50px;
+}
+#imgPerfil:hover {
+  animation-name: rotate;
+  animation-duration: .3s;
+  animation-fill-mode:forwards;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: translate(30px, 20px) rotate(20deg);
+  }
+  0% {
+    transform: rotate(0);
+  }
+}
+
 #bannerText {
-  color: var(--text);
+  color: var(--secondary);
   text-shadow: 0 0 5px var(--shadow);
   font-weight: bold;
   font-size: 36px;
   margin: 0px;
+}
+
+@media screen and (max-width: 775px) {
+  #bannerText {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  #bannerText {
+    font-size: 16px;
+  }
+  #imgPerfil {
+    height: 100px ;
+    width: 100px ;
+    margin: auto;
+    float:none;
+  }
+}
+
+@media screen and (max-width: 322px) {
+  #bannerText {
+    font-size: 16px;
+  }
+
+  #banner {
+    padding: 0px;
+  }
 }

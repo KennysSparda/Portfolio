@@ -2,20 +2,24 @@
 
 :root {
   --bg: url(/img/bg-green-lime.jpg);
+  --banner: url(/img/bg-green-lime-light.jpg);
+  --eu: url(/img/eu-a.jpg);
   --primary: #00ff00;
-  --secondary: #161619;
+  --secondary: #262629;
   --transparency: #3c3c3c33;
-  --back: #1c1c1c;
+  --back: #000;
   --shadow: #00ff00;
   --text: #ddd;
 }
 
 [data-theme='light'] {
   --bg: url(/img/bg-green-lime-light.jpg);
+  --banner: url(/img/bg-green-lime.jpg);
+  --eu: url(/img/eu-b.jfif);
   --primary: #00aa00;
-  --secondary: #a8a8a8;
+  --secondary: #eee;
   --transparency: #3c3c3c33;
-  --back: #eee;
+  --back: #a8a8a8;
   --shadow: #00ff00;
   --text: #363636;
 }

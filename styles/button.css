@@ -16,7 +16,7 @@
 }
 
 #btnStyled:hover {
-  box-shadow: 0 0 1px var(--shadow);
+  box-shadow: 0 0 7px var(--shadow);
 }
 
 .Button:hover {
@@ -38,9 +38,8 @@ a.Button {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: var(--transparency);
-  -webkit-transition: 0.4s;
   transition: 0.4s;
+  -webkit-transition: 0.4s;
 }
 
 .slider:before {
@@ -50,9 +49,9 @@ a.Button {
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: var(--primary);
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  background-color: var(--primary);
 }
 
 .switch {
@@ -76,7 +75,6 @@ a.Button {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--transparency);
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -88,17 +86,12 @@ a.Button {
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: var(--primary);
   -webkit-transition: .4s;
   transition: .4s;
 }
 
 input:checked + .slider {
-  background-color: var(--transparency);
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 3px var(--shadow);
+  background-color: var(--back);
 }
 
 input:checked + .slider:before {

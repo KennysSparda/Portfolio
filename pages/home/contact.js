@@ -15,7 +15,7 @@ export default function Contact() {
         type='linkEx'      
         id="btnStyled"
         path={links[0]}>
-        <Icon type={3}></Icon> Whatsapp
+        <Icon type={3}></Icon>Whatsapp
       </Button>
       <br />
       <p>ou</p>
@@ -23,7 +23,7 @@ export default function Contact() {
         type='linkEx'
         id="btnStyled"
         path={links[1]}>
-        <Icon type={4}></Icon> Linkedin
+        <Icon type={4}></Icon>Linkedin
       </Button>
       <p>Você pode mandar um e-mail para: </p>
       <p><strong>swygax@gmail.com</strong></p>

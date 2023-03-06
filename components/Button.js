@@ -22,7 +22,7 @@ export default function Button(props) {
   function playHover() {
     var hoverAudio = document.createElement("AUDIO");
     if (hoverAudio.canPlayType("audio/mpeg")) {
-      hoverAudio.setAttribute("src","/audio/mixkit-interface-click-hover-1127.wav");
+      hoverAudio.setAttribute("src","/audio/mixkit-modern-technology-select-3124.wav");
     }
     hoverAudio.play()
   }

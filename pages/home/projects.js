@@ -30,8 +30,6 @@ export default function Projects() {
 
             <p>Projeto em NextJS, React ,Javascript, HTML e CSS:</p>
             <iframe src={links[4]}></iframe>
-
-
         </Container>
       </div>
   )
