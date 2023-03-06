@@ -39,7 +39,7 @@
     margin: 0px auto;
     float: none;
     text-align: center;
-    padding-right: 0px;
+    padding: 0px;
   }
   
   #box-right {
@@ -47,6 +47,6 @@
     margin-top: 80px;
     float: none;
     text-align: center;
-    padding-left: 0px;
+    padding: 0px;
   }
 }
