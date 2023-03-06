@@ -46,14 +46,14 @@
     text-align: center;
     padding: 0px;
     width: 90%;
+    padding: 1vh 0vw;
   }
   
   #box-right {
     margin: 0px auto;
-    margin-top: 80px;
+    margin-top: 20px;
     float: none;
     text-align: center;
     padding: 0px;
-    
   }
 }
