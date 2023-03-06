@@ -1,4 +1,9 @@
 #home {
+  padding-top: 120px;
+}
+
+
+#box {
   display: flex;
 
   margin: 0 auto;
@@ -7,36 +12,40 @@
   padding-top: 5vh;
 }
 
-#home-left {
+#box-left {
+  padding: 10px 100px;
+  border-radius: 20px;
+  background-image: linear-gradient( to right, var(--back), var(--secondary), var(--back));
   position:inherit;
   float: left;
   text-align: right;
-  padding-right: 25px;
+  padding-right: 200px;
 }
 
-#home-right {
+#box-right {
   position:inherit;
   float: right;
   margin-top: 80px;
-  text-align: left;
-  padding-left: 25px;
+  text-align: right;
+  padding-left: 200px;
 }
 
 @media screen and (max-width: 755px) {
 
-  #home {
+  #box {
     display: block;
     padding-bottom: 50px;
   }
-  #home-left {
+  #box-left {
     margin: 0px auto;
     float: none;
     text-align: center;
     padding-right: 0px;
   }
   
-  #home-right {
+  #box-right {
     margin: 0px auto;
+    margin-top: 80px;
     float: none;
     text-align: center;
     padding-left: 0px;

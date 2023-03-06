@@ -1,25 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono&display=swap');
 
 :root {
-  --bg: url(/img/bg-green-lime.jpg);
-  --banner: url(/img/bg-green-lime-light.jpg);
+  --bg: url(/img/blue1.jpg);
+  --banner: url(/img/banner.jpg);
   --eu: url(/img/eu-a.jpg);
-  --primary: #00ff00;
+  --primary: #FF0055;
   --secondary: #262629;
   --transparency: #3c3c3c33;
   --back: #000;
-  --shadow: #00ff00;
+  --shadow: #0000FF;
   --text: #ddd;
 }
 
 [data-theme='light'] {
-  --bg: url(/img/bg-green-lime-light.jpg);
-  --banner: url(/img/bg-green-lime.jpg);
-  --eu: url(/img/eu-b.jfif);
-  --primary: #00aa00;
+  --bg: url(/img/blue.jpg);
+  --banner: url(/img/banner.jpg);
+  --eu: url(/img/eu-a.jpg);
+  --primary: #FF0055;
   --secondary: #eee;
-  --transparency: #3c3c3c33;
+  --transparency: #eeeeee33;
   --back: #a8a8a8;
-  --shadow: #00ff00;
+  --shadow: #0000FF;
   --text: #363636;
 }

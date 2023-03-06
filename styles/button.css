@@ -51,7 +51,7 @@ a.Button {
   bottom: 4px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  background-color: var(--primary);
+  background-color: var(--shadow);
 }
 
 .switch {

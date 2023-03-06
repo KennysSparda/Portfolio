@@ -1,5 +1,6 @@
 import Container from '../../components/Container'
 import Button from '../../components/Button'
+import Banner from '../../components/Banner'
 import Icon from '../../components/Icon'
 
 export default function Home() {
@@ -7,13 +8,14 @@ export default function Home() {
 
 
   return (
-    <div id='home'>
-      <div id="home">
-        <div id="home-left">
+    <div id="home">
+      <Banner/>
+      <div id="box">
+        <div id="box-left">
           <h1>Olá, eu sou</h1>
           <h1>Kenny Vargas</h1>
         </div>
-        <div id="home-right">
+        <div id="box-right">
           <Button 
             type='linkEx'
             id="btnStyled"
@@ -32,7 +34,6 @@ export default function Home() {
           </Button>
         </div>
       </div>
-     
     </div>
   )
 }
