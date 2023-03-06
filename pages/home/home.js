@@ -1,15 +1,13 @@
 import Container from '../../components/Container'
 import Button from '../../components/Button'
 import Icon from '../../components/Icon'
-import Banner from '../../components/banner'
 
 export default function Home() {
   var links = ["https://github.com/KennysSparda"]
 
 
   return (
-    <Container id='home'>
-      <Banner/>
+    <div id='home'>
       <div id="home">
         <div id="home-left">
           <h1>Olá, eu sou</h1>
@@ -35,6 +33,6 @@ export default function Home() {
         </div>
       </div>
      
-    </Container>
+    </div>
   )
 }

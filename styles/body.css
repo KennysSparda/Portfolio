@@ -5,6 +5,7 @@ body {
   font-size: 26px;
   color: var(--text);
   background: var(--bg);
+  background-size: cover;
   background-attachment: fixed;
 }
 

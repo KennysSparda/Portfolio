@@ -2,6 +2,7 @@ import {useEffect, useState} from 'react'
 
 import Navbar from '../components/navbar/Navbar'
 import Footer from '../components/Footer'
+import Banner from '../components/Banner'
 
 import Home from './home/home'
 import Contact from './home/contact'
@@ -28,6 +29,7 @@ export default function App() {
   return (
     <div>
       <Navbar theme={lightTheme} setTheme={switchTheme}/>
+      <Banner/>
       <Home />
       <Projects /> 
       <Contact />
