@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono&display=swap');
+
+:root {
+  --bg: url(/img/blue1.jpg);
+  --banner: url(/img/banner.jpg);
+  --eu: url(/img/eu-a.jpg);
+  --primary: #FF0055;
+  --secondary: #262629;
+  --transparency: #3c3c3c33;
+  --back: #000;
+  --shadow: #0000FF;
+  --text: #ddd;
+}
+
+[data-theme='light'] {
+  --bg: url(/img/blue.jpg);
+  --banner: url(/img/banner.jpg);
+  --eu: url(/img/eu-a.jpg);
+  --primary: #FF0055;
+  --secondary: #eee;
+  --transparency: #eeeeee33;
+  --back: #a8a8a8;
+  --shadow: #0000FF;
+  --text: #000000;
+}

@@ -1,0 +1,44 @@
+section {
+  width: 90%;
+  padding-top: 120px;
+  text-align: center;
+  margin: 0px auto;
+  max-width: 1060px;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin-bottom: 1vh;
+}
+
+ul {
+  text-align: left;
+}
+
+.container{
+  padding: 10px;
+  border-radius: 20px;
+  background-image: linear-gradient( to right, var(--back), var(--secondary), var(--back));
+}
+
+iframe {
+  height: 600px;
+  width: 90%;
+  resize: both;
+  overflow: auto;
+}
+
+@media screen and (max-width: 755px) {
+
+  .container {
+    padding: 10px;
+  }
+
+  section {
+    width: 90%;
+  }
+
+  iframe {
+    height: 600px;
+    width: 100%;
+  }
+}
