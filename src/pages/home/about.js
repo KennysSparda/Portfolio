@@ -6,7 +6,7 @@ export default function About() {
   return (
     <div>
       <Container id='about' >
-        <h2>Projeto feito com:</h2>
+        <h2>Tecnologias utilizadas neste projeto</h2>
           <Button >
             <Icon type="7"></Icon><strong>NextJS</strong>
           </Button>
@@ -30,14 +30,14 @@ export default function About() {
           <Button >
             <Icon type="12"></Icon><strong>HTML 5</strong>
           </Button>
-        <p>Acesse o nosso
+        <p>Acesse a pagina deste projeto no
           <br></br>
           <br></br>
           <Button 
                 type='linkEx'
                 id="btnStyled"
                 path='https://github.com/KennysSparda/Portfolio'>
-                  <Icon type={0}></Icon><strong>Github</strong>!
+                  <Icon type={0}></Icon><strong>Github</strong>
           </Button>
         </p>
         

@@ -10,25 +10,21 @@ export default function Contact() {
   return (
     <Container id='contact'>
       <h2>Contato</h2>
-      <p>Me mande uma mensagem no </p>
+      <p>Entre em contato comigo </p>
       <Button 
         type='linkEx'      
         id="btnStyled"
         path={links[0]}>
-        <Icon type={3}></Icon>Whatsapp
+        <Icon type={3}></Icon>
       </Button>
-      <br />
-      <p>ou</p>
       <Button 
         type='linkEx'
         id="btnStyled"
         path={links[1]}>
-        <Icon type={4}></Icon>Linkedin
+        <Icon type={4}></Icon>
       </Button>
-      <p>Você pode mandar um e-mail para: </p>
-      <p><strong>swygax@gmail.com</strong></p>
-      <p>Ou entrar em contato pelo telefone: </p>
-      <p><strong>55 41 99510-1213</strong></p>
+      <p><strong>kennykysv@gmail.com</strong></p>
+      <p><strong>+55 41 99510-1213</strong></p>
 
     </Container>
   )
