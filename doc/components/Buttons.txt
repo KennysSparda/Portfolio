@@ -1,0 +1,21 @@
+/*    Button is the generalization of links and buttons with style and 
+ *  protective security 
+ *   if explicit declaration type='linkEx' then
+ *      it accept link property ex:
+ *      <Button type='linkEx' path='/about'>About</Button>
+ *   if explicit declaration type='linkIn' then
+ *      it accept link property ex:
+ *      <Button type='linkIn' path='/about'>About</Button>
+ *   else
+ *      accept default a function on click it
+ *      <Button function='reserve()'>Reserve it!</Button>
+ */
+
+// Add id="btnStyled" to highlight button
+        id={props.id}
+
+// Open in new page
+	target="_blank"
+
+// Security: to prevent malicious attacks from the pages how can you make a link
+	rel="noopener noreferrer"

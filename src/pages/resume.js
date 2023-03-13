@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import Navbar from '../components/navbar/Navbar'
-import Footer from '../components/Footer'
-import Button from '../components/Button'
 import Container from '../components/Container'
+import Footer from '../components/Footer'
+import Button from '../components/buttons/Button'
 import Viewer from '../components/PdfViewer'
 
 export default function Resume() {

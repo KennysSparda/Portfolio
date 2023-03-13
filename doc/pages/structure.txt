@@ -1,0 +1,6 @@
+
+Are two principals structures in this web project
+
+Home page = default on first access
+  and
+Resume    = resume with more info about pdf
