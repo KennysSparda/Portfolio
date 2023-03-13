@@ -3,10 +3,10 @@ import {useEffect, useState} from 'react'
 import Navbar from '../components/navbar/Navbar'
 import Footer from '../components/Footer'
 
-import Home from './home/home'
-import Contact from './home/contact'
-import Projects from './home/projects'
-import About from './home/about'
+import Home from './home'
+import Contact from './contact'
+import Projects from './projects'
+import About from './about'
 
 export default function App() {
   const [lightTheme, setLightTheme] = useState(false)

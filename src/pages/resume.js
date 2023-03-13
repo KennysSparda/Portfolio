@@ -2,8 +2,9 @@ import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import Navbar from '../components/navbar/Navbar'
 import Footer from '../components/Footer'
-import ResumeMenu from './resume/ResumeMenu'
+import Button from '../components/Button'
 import Container from '../components/Container'
+import Viewer from '../components/PdfViewer'
 
 export default function Resume() {
   const [lightTheme, setLightTheme] = useState(false)
@@ -22,13 +23,25 @@ export default function Resume() {
     }
   }, [lightTheme]);
 
+  var links = ["/files/KennyVargas-pt_BR.pdf", "/files/KennyVargas-en_US.pdf"]
+  const [selected, setSelected] = useState(links[0])
+
+  const changeResume = (resumeFile) => {
+    setSelected(resumeFile)
+  }
+
   return (
     <div>
         <Navbar theme={lightTheme} setTheme={switchTheme}/>
         <Container>
           <h1>Curriculo</h1>
+          <br/>
+          <h2>Baixar</h2>
+          <Button id="btnStyled" type='linkEx' path={links[0]}>Português</Button>
+          <Button id="btnStyled" type='linkEx' path={links[1]}>English</Button>
+          <h2>Visualização</h2>
+          <div className='frame'><Viewer source={selected} /></div>
         </Container>
-        <ResumeMenu />
         <Footer />
     </div>
   )

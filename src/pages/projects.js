@@ -1,7 +1,7 @@
-import Container from '../../components/Container'
-import Button from '../../components/Button'
-import Copyright from '../../components/copyright'
-import Icon from '../../components/Icon'
+import Container from '../components/Container'
+import Button from '../components/buttons/Button'
+import Copyright from '../components/copyright'
+import Icon from '../components/Icon'
 
 export default function Projects() {
   var links = [ "/projects/Calculadora/index.html",
