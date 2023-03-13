@@ -1,6 +1,6 @@
-import Container from '../components/Container'
-import Button from '../components/buttons/Button'
-import Icon from '../components/Icon'
+import Container from './Container'
+import Button from './buttons/Button'
+import Icon from './Icon'
 
 export default function Contact() {
   var links = ["https://contate.me/hi-swygax",

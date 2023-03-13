@@ -1,6 +1,6 @@
-import Button from '../components/buttons/Button'
-import Container from '../components/Container'
-import Icon from '../components/Icon'
+import Button from './buttons/Button'
+import Container from './Container'
+import Icon from './Icon'
 
 export default function About() {
   return (

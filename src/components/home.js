@@ -1,7 +1,7 @@
-import Container from '../components/Container'
-import Button from '../components/buttons/Button'
-import Banner from '../components/banner'
-import Icon from '../components/Icon'
+import Container from './Container'
+import Button from './buttons/Button'
+import Banner from './banner'
+import Icon from './Icon'
 
 export default function Home() {
   var links = ["https://github.com/KennysSparda"]
@@ -12,8 +12,10 @@ export default function Home() {
       <Banner/>
       <div id="box">
         <div id="box-left">
-          <h1>Olá, eu sou</h1>
+          <h2>Olá, meu nome é</h2>
           <h1>Kenny Vargas</h1>
+          <h2>e sou</h2>
+          <h1>Programador</h1>
         </div>
         <div id="box-right">
           <Button 

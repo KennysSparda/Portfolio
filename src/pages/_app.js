@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>Kenny Portfolio</title>
-        <link rel="shortcut icon" href="ico\puzzle.png"></link>
+        <link rel="shortcut icon" href="ico\logo.png"></link>
       </Head>
       <Component {...pageProps} />
     </>

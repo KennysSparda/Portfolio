@@ -2,7 +2,6 @@
   padding-top: 120px;
 }
 
-
 #box {
   display: flex;
   margin: 0 auto;
@@ -12,12 +11,12 @@
 }
 
 #box-left {
-  padding: 10px 100px;
+  padding: 10px 80px;
   border-radius: 20px;
   background-image: linear-gradient( to right, var(--back), var(--secondary), var(--back));
   position:inherit;
   float: left;
-  text-align: right;
+  text-align: left;
   padding-right: 200px;
 }
 
