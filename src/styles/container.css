@@ -1,6 +1,7 @@
 section {
   width: 90%;
   padding-top: 120px;
+  padding-bottom: 20px;
   text-align: center;
   margin: 0px auto;
   max-width: 1060px;
@@ -17,7 +18,9 @@ ul {
 .container{
   padding: 10px;
   border-radius: 20px;
-  background-image: linear-gradient( to right, var(--back), var(--secondary), var(--back));
+  box-shadow: 0px 0px 5px black;
+  background-color:  var(--transparency);
+  backdrop-filter: blur(15px);
 }
 
 iframe {
