@@ -43,14 +43,14 @@ export default function Button(props) {
     )
   } else {
     return (
-      <button className="Button"
+      <div className="Button"
         id={props.id}
         onClick={props.function}
         onMouseEnter={soundOnHover} 
         onMouseDown={soundOnDown} 
       >
         {props.children}
-      </button>
+      </div>
     )
   }
 }

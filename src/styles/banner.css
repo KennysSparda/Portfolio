@@ -24,6 +24,7 @@
   animation-name: rotate;
   animation-duration: .3s;
   animation-fill-mode:forwards;
+  animation-delay: 0.3s;
 }
 @keyframes rotate {
   0% {

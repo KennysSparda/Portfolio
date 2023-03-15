@@ -12,9 +12,8 @@
 }
 
 #btnStyled {
-  box-shadow: 0px 0px 5px var(--shadow);
+  box-shadow: 0px 0px 5px black;
   background-color:  var(--transparency);
-  backdrop-filter: blur(15px);
 }
 
 #btnStyled:hover {

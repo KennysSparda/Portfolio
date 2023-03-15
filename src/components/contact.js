@@ -12,16 +12,18 @@ export default function Contact() {
       <h2>Contato</h2>
       <p>Entre em contato comigo </p>
       <Button 
-        type='linkEx'      
-        id="btnStyled"
+        type='linkEx'
+        id="btnStyled"      
         path={links[0]}>
-        <Icon type={3}></Icon>
+        <Icon type={3}></Icon>Whatsapp
       </Button>
+      <br/>
+      <br/>
       <Button 
         type='linkEx'
-        id="btnStyled"
+        id="btnStyled"      
         path={links[1]}>
-        <Icon type={4}></Icon>
+        <Icon type={4}></Icon>Linkedin
       </Button>
       <p><strong>kennykysv@gmail.com</strong></p>
       <p><strong>+55 41 99510-1213</strong></p>
