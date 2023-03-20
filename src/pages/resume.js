@@ -37,8 +37,13 @@ export default function Resume() {
           <h1>Curriculo</h1>
           <br/>
           <h2>Baixar</h2>
+          <br/>
           <Button id="btnStyled" type='linkEx' path={links[0]}>Português</Button>
+          <br/>
+          <br/>
           <Button id="btnStyled" type='linkEx' path={links[1]}>English</Button>
+          <br/>
+          <br/>
           <h2>Visualização</h2>
           <div className='frame'><Viewer source={selected} /></div>
         </Container>

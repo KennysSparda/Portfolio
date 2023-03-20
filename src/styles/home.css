@@ -31,14 +31,14 @@
   float: left;
   text-align: left;
   padding: 60px 10%;
-
   animation: float 2s ease-in-out infinite;
 }
 
 #box-right {
   position:inherit;
   float: right;
-  margin-top: 80px;
+  align-items: center;
+  justify-content: center;
   text-align: right;
   padding: 60px 0;
   padding-right: 10%

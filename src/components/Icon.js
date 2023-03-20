@@ -12,7 +12,8 @@ export default function Icon(props) {
     '/ico/nodejs.png',      // 9 node
     '/ico/js.png',          // 10 javascript
     '/ico/css3.png',        // 11 css
-    '/ico/HTML5.png'        // 12 html
+    '/ico/HTML5.png',       // 12 html
+    '/ico/puzzle.png'       // 13 puzzle
   ]
   var ico = icons[props.type]
   return (

@@ -5,7 +5,6 @@ import Footer from '../components/Footer'
 
 import Home from '../components/home'
 import Contact from '../components/contact'
-import Projects from '../components/projects'
 import About from '../components/about'
 
 export default function App() {
@@ -29,7 +28,6 @@ export default function App() {
     <div>
       <Navbar theme={lightTheme} setTheme={switchTheme}/>
       <Home />
-      <Projects /> 
       <Contact />
       <About />
       <Footer />
