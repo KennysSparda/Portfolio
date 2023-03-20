@@ -44,6 +44,19 @@
   padding-right: 10%
 }
 
+@keyframes blink {
+    from, to {
+      visibility: hidden;
+    }
+    50% {
+      visibility: visible;
+    }
+  }
+  
+#cursor {
+  animation: 1s blink step-end infinite ;
+}
+
 @media screen and (max-width: 1100px) {
 
   #home {

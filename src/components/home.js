@@ -15,7 +15,7 @@ export default function Home() {
           <h2>Olá, meu nome é</h2>
           <h1>Kenny Vargas</h1>
           <h2>e quero me tornar um </h2>
-          <strong><h1>programador</h1>|</strong>
+          <h1>programador<strong id="cursor">|</strong></h1>
         </div>
         <div id="box-right">
           <Button 
