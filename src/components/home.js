@@ -1,5 +1,3 @@
-import Container from './Container'
-import Button from './buttons/Button'
 import Banner from './banner'
 import BtnGithub from './buttons/btnGithub'
 import BtnResume from './buttons/btnResume'
@@ -13,7 +11,7 @@ export default function Home() {
         <div id="box-left">
           <h2>Olá, meu nome é</h2>
           <h1>Kenny Vargas</h1>
-          <h2>e quero me tornar um </h2>
+          <h2>e eu sou um </h2>
           <h1>programador<strong id="cursor">|</strong></h1>
         </div>
         <div id="box-right">
