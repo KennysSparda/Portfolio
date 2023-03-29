@@ -37,19 +37,19 @@ export default function Projects() {
         <Container id='projects'>
           <h2>Projetos</h2>
 
-            <p>Projeto em Javascript, html e css</p>
+            <p>Projeto feito com Javascript, HTML e CSS</p>
             <iframe src={links[0]}></iframe>
 
-            <p>Projeto em Javascript, html e css</p>
+            <p>Projeto feito com Javascript, HTML e CSS</p>
             <iframe src={links[1]}></iframe>
 
-            <p>Projeto em Javascript, html e css</p>
+            <p>Projeto feito com Javascript, HTML e CSS</p>
             <iframe src={links[2]}></iframe>
 
-            <p>Projeto em Javascript, html e css</p>
+            <p>Projeto feito com Javascript, HTML e CSS</p>
             <iframe src={links[3]}></iframe>
 
-            <p>Projeto em NextJS, React ,Javascript, HTML e CSS:</p>
+            <p>Projeto feito com NextJS, React, Javascript, HTML e CSS</p>
             <iframe src={links[4]}></iframe>
         </Container>
         <Footer/>

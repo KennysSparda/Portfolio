@@ -9,10 +9,10 @@ export default function Home() {
       <Banner/>
       <div id="box">
         <div id="box-left">
-          <h2>Olá, meu nome é</h2>
+          <h2>Olá, me chamo</h2>
           <h1>Kenny Vargas</h1>
-          <h2>e eu sou um </h2>
-          <h1>programador<strong id="cursor">|</strong></h1>
+          <h2>E sou</h2>
+          <h1>Programador<strong id="cursor">|</strong></h1>
         </div>
         <div id="box-right">
           <BtnProjects/>

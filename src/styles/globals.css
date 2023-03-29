@@ -4,11 +4,11 @@
   --bg: url(/img/blue1.jpg);
   --banner: url(/img/banner.jpg);
   --eu: url(/img/eu-a.jpg);
-  --primary: #FF0055;
+  --primary: #0000FF;
   --secondary: #262629;
-  --transparency: #3c3c3c33;
+  --transparency: #000000aa;
   --back: #000;
-  --shadow: #0000FF;
+  --shadow: #FF0055;
   --text: #ddd;
 }
 
@@ -18,7 +18,7 @@
   --eu: url(/img/eu-a.jpg);
   --primary: #FF0055;
   --secondary: #eee;
-  --transparency: #eeeeee33;
+  --transparency: #ffffff55;
   --back: #a8a8a8;
   --shadow: #0000FF;
   --text: #000000;
