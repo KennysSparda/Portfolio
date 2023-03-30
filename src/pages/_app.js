@@ -2,6 +2,7 @@
 import React from 'react'
 import Head from 'next/head'
 
+import '../styles/projects.css'
 import '../styles/globals.css'
 import '../styles/button.css'
 import '../styles/container.css'

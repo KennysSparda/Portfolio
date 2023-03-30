@@ -2,7 +2,7 @@
 
 :root {
     --primary-color: #ffffff;
-    --secondary-color: 353535;
+    --secondary-color: #353535;
     --tertiary-color: #888888;
     --quartenary-color: #111111;
     --quinary-color: #1C1C1C;
@@ -18,7 +18,7 @@ body {
 #mainContainer {
     color: var(--tertiary-color);
     height: 445px;
-    width: 60%;
+    width: 600px;
     margin: 10% auto;
     background: var(--quinary-color);
     box-shadow: 5px 5px 5px var(--quinary-color);

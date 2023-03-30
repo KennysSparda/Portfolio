@@ -1,10 +1,11 @@
 export default function Slider(props){
   function playChange() {
-    var hoverAudio = document.createElement("AUDIO");
-    if (hoverAudio.canPlayType("audio/mpeg")) {
-      hoverAudio.setAttribute("src","/audio/mixkit-collect-material-3209.wav");
+    var Audio = document.createElement("AUDIO");
+    if (Audio.canPlayType("audio/mpeg")) {
+      Audio.setAttribute("src","/audio/mixkit-collect-material-3209.wav");
+      Audio.volume = 0.1;
     }
-    hoverAudio.play()
+    Audio.play()
   }
   return (
     <nav>

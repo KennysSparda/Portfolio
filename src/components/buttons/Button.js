@@ -1,28 +1,31 @@
+import Script from 'next/script'
 
 export default function Button(props) {
-  function soundOnDown() {
-    var hoverAudio = document.createElement("AUDIO");
-    if (hoverAudio.canPlayType("audio/mpeg")) {
-      hoverAudio.setAttribute("src","/audio/mixkit-modern-technology-select-3124.wav");
+  function AudioOnMouseDown() {
+    var Audio = document.createElement("AUDIO");
+    if (Audio.canPlayType("audio/mpeg")) {
+      Audio.setAttribute("src","/audio/mixkit-modern-technology-select-3124.wav");
+      Audio.volume = 0.1;
     }
-    hoverAudio.play()
+    Audio.play()
   }
-  function soundOnHover() {
-    var hoverAudio = document.createElement("AUDIO");
-    if (hoverAudio.canPlayType("audio/mpeg")) {
-      hoverAudio.setAttribute("src","/audio/mixkit-interface-device-click-2577.wav");
+  function AudioOnMouseHover() {
+    var Audio = document.createElement("AUDIO");
+    if (Audio.canPlayType("audio/mpeg")) {
+      Audio.setAttribute("src","/audio/mixkit-interface-device-click-2577.wav");
+      Audio.volume = 0.1;
     }
-    hoverAudio.play()
+    Audio.play()
   }
-  if(props.type == 'linkEx') {
 
+  if(props.type == 'linkEx') {
     return (
       <a className="Button"
         id={props.id}
         href={props.path}
         onClick={props.function}
-        onMouseEnter={soundOnHover}
-        onMouseDown={soundOnDown} 
+        onMouseEnter={AudioOnMouseDown}
+        onMouseDown={AudioOnMouseHover}
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -35,8 +38,8 @@ export default function Button(props) {
         id={props.id}
         href={props.path}
         onClick={props.function}
-        onMouseEnter={soundOnHover} 
-        onMouseDown={soundOnDown} 
+        onMouseEnter={AudioOnMouseDown}
+        onMouseDown={AudioOnMouseHover}
       >
         {props.children}
       </a>
@@ -46,8 +49,8 @@ export default function Button(props) {
       <div className="Button"
         id={props.id}
         onClick={props.function}
-        onMouseEnter={soundOnHover} 
-        onMouseDown={soundOnDown} 
+        onMouseEnter={AudioOnMouseDown}
+        onMouseDown={AudioOnMouseHover}
       >
         {props.children}
       </div>

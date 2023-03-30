@@ -1,11 +1,6 @@
 import {useEffect, useState} from 'react'
-
-import Navbar from '../components/navbar/Navbar'
-import Footer from '../components/Footer'
-
-import Home from '../components/home'
-import Contact from '../components/contact'
-import About from '../components/about'
+import dynamic from "next/dynamic";
+import { Suspense } from "react";
 
 export default function App() {
   const [lightTheme, setLightTheme] = useState(false)
@@ -23,14 +18,32 @@ export default function App() {
       window.localStorage.setItem("theme", "dark");
     }
   }, [lightTheme]);
+  
+  const Navbar = dynamic(() => import("../Components/navbar/Navbar"), {
+    suspense: true,
+  });
+  const Home = dynamic(() => import("../Components/Home"), {
+    suspense: true,
+  });
+  const Contact = dynamic(() => import("../Components/Contact"), {
+    suspense: true,
+  });
+  const About = dynamic(() => import("../Components/About"), {
+    suspense: true,
+  });
+  const Footer = dynamic(() => import("../Components/Footer"), {
+    suspense: true,
+  });
 
   return (
     <div>
-      <Navbar theme={lightTheme} setTheme={switchTheme}/>
-      <Home />
-      <Contact />
-      <About />
-      <Footer />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Navbar theme={lightTheme} setTheme={switchTheme}/>
+        <Home />
+        <Contact />
+        <About />
+        <Footer />
+      </Suspense>
     </div>
-  )
+  );
 }
