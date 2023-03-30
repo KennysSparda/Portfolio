@@ -7,9 +7,12 @@ export default function About() {
     <div>
       <Container id='about' >
         <h1>Sobre mim</h1>
-        <p>Meu objetivo a curto prazo é concluir a faculdade de ciências da computação e desenvolver minhas habilidades interpessoais no meu emprego atual, onde atuo como Auxiliar de Informática na empresa Atacadão.</p>
-        <p>E meu objetivo a longo prazo é desenvolver cada vez mais a minha resolução de problemas para me tornar um Desenvolvedor de Software Sênior, utilizando sempre a melhor tecnologia que for necessária e as melhores práticas no desenvolvimento de software para cada tipo de projeto.</p>
-        <p>Minha meta para o futuro é estar envolvido no desenvolvimento de software, fazendo o que for necessário para o crescimento da empresa em que estiver atuando de forma eficiente, sustentável e constante.</p>
+        <p>Sou um desenvolvedor front-end apaixonado por criar experiências excepcionais para usuários finais.</p>
+        <p>Com mais de 2 anos de experiência em desenvolvimento web, tenho habilidades sólidas em Next.js, React e .NET.</p>
+        <p>Sou especializado em construir interfaces de usuário interativas e responsivas, utilizando as melhores práticas de desenvolvimento e as últimas tecnologias para fornecer soluções de alta qualidade. </p>
+        <p>Além disso, estou constantemente aprimorando minhas habilidades técnicas e buscando aprender novas tecnologias para ficar atualizado no mercado em constante mudança.</p>
+        <p>Meu objetivo é sempre superar as expectativas dos clientes e entregar projetos de sucesso.</p>
+        <p>Se você precisa de um desenvolvedor front-end para seu próximo projeto, sinta-se à vontade para entrar em contato comigo.</p>
         <br/>
         <h2>Tecnologias utilizadas neste projeto</h2>
           <Button >
