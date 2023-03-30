@@ -7,12 +7,14 @@ export default function About() {
     <div>
       <Container id='about' >
         <h1>Sobre mim</h1>
-        <p>Sou um desenvolvedor front-end apaixonado por criar experiências excepcionais para usuários finais.</p>
-        <p>Com mais de 2 anos de experiência em desenvolvimento web, tenho habilidades sólidas em Next.js, React e .NET.</p>
-        <p>Sou especializado em construir interfaces de usuário interativas e responsivas, utilizando as melhores práticas de desenvolvimento e as últimas tecnologias para fornecer soluções de alta qualidade. </p>
-        <p>Além disso, estou constantemente aprimorando minhas habilidades técnicas e buscando aprender novas tecnologias para ficar atualizado no mercado em constante mudança.</p>
-        <p>Meu objetivo é sempre superar as expectativas dos clientes e entregar projetos de sucesso.</p>
-        <p>Se você precisa de um desenvolvedor front-end para seu próximo projeto, sinta-se à vontade para entrar em contato comigo.</p>
+        <div  id="text-about">
+          <p>Olá! Sou um desenvolvedor front-end apaixonado por construir sites e aplicativos incríveis para os usuários. </p>
+          <p>Com mais de 2 anos de experiência em desenvolvimento web, sou especializado em tecnologias como Next.js, React e .NET.</p>
+          <p>Eu adoro criar interfaces de usuário que são bonitas e fáceis de usar em qualquer dispositivo - desde smartphones até desktops.</p>
+          <p>Além disso, estou constantemente aprimorando minhas habilidades técnicas e buscando aprender novas tecnologias para ficar atualizado no mercado em constante mudança.</p>
+          <p>Meu objetivo é sempre superar as expectativas dos clientes e entregar projetos de sucesso.</p>
+          <p>Se você precisa de ajuda para construir seu próximo site ou aplicativo, ficarei feliz em trabalhar com você! Vamos criar algo incrível juntos.</p>
+        </div>
         <br/>
         <h2>Tecnologias utilizadas neste projeto</h2>
           <Button >
