@@ -6,6 +6,11 @@ export default function About() {
   return (
     <div>
       <Container id='about' >
+        <h1>Sobre mim</h1>
+        <p>Meus objetivos a curto prazo é concluir a faculdade de ciências da computação e ir desenvolvendo minhas habilidades interpessoais no meu emprego atual, onde atuo como Auxiliar de Informática na empresa Atacadão.</p>
+        <p>E meu objetivo a longo prazo é desenvolver cada vez mais a minha resolução de problemas para me tornar um Desenvolvedor de Software Sênior, utilizando sempre a melhor tecnologia que for necessária e as melhores práticas no desenvolvimento de software para cada tipo de projeto.</p>
+        <p>Minha meta para o futuro é estar envolvido no desenvolvimento de software, fazendo o que for necessário para o crescimento da empresa em que estiver atuando de forma eficiente, sustentável e constante.</p>
+        <br/>
         <h2>Tecnologias utilizadas neste projeto</h2>
           <Button >
             <Icon type="7"></Icon><strong>NextJS</strong>

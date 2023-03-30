@@ -4,7 +4,7 @@ import Icon from '../Icon'
 export default function Project1() {
   return (
     <div id='galery-project'>
-      <h3>Gerador de numeros sequenciais</h3>
+      <h3>Contador Sequencial</h3>
       <Image className='ProjectImage'
         src='/img/geradornumeros.png'
         alt="Picture of project"
