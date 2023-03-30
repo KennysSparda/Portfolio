@@ -8,7 +8,7 @@
     background-color:  var(--transparency);
     backdrop-filter: blur(15px);
     display: -webkit-box;
-    overflow-x: hidden;   
+    overflow-x: scroll;   
     overflow-y: hidden;   
     white-space: nowrap;
   }
@@ -26,4 +26,14 @@
     height: 700px;
     padding: 10px 100px;
 }
+
+@media screen and (max-width: 481px) {
+    #galery-project {
+        padding: 0px;
+        margin: 4px;
+        font-size: 11px;
+        width: 300px;
+        height: 500px;
+    }
+} 
 

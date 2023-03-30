@@ -10,7 +10,7 @@ export default function Menu(props) {
       <ButtonHome function={props.function}/>
       <BtnContact function={props.function}/>
       <BtnAbout function={props.function}/>
-      <BtnProjects/>
+      <BtnProjects navbar={true} />
       <Switch theme={props.theme} setTheme={props.setTheme}/>
     </nav>
   )
