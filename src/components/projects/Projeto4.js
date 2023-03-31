@@ -5,12 +5,18 @@ export default function Project1() {
   return (
     <div id='galery-project'>
       <h3>Contador Sequencial</h3>
-      <Image className='ProjectImage'
-        src='/img/geradornumeros.png'
-        alt="Picture of project"
-        width={400}
-        height={400}
-      />
+      <Button 
+        type='linkEx'
+        id="btnStyled"
+        path="/projects/SuperContador/index.html">
+        <Image
+          className='ProjectImage'
+          src='/img/geradornumeros.png'
+          alt="Picture of project"
+          width={400}
+          height={400}
+        />
+      </Button>
       <p>Projeto feito com</p>
       <Button >
         <Icon type="10"></Icon><strong>Javascript</strong>
@@ -20,14 +26,6 @@ export default function Project1() {
       </Button>
       <Button >
         <Icon type="12"></Icon><strong>HTML 5</strong>
-      </Button>
-      <br/>
-      <Button 
-        type='linkEx'
-        id="btnStyled"
-        path="/projects/SuperContador/index.html">
-        <Icon type={2}></Icon>
-        Acessar
       </Button>
     </div>
   )

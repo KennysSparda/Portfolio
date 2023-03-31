@@ -1,6 +1,6 @@
 #projects {
   padding-bottom: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 8px;
 }
 
 #galery {
@@ -18,7 +18,7 @@
   .galery::before{ content:''; display:block; width:400%; height:1px; }
 
 .ProjectImage { 
-    border-radius: 20px;
+  border-radius: 20px;
 }
 
 #galery-project {
@@ -45,6 +45,14 @@
 #galery-project div.Button {
   padding: 0px;
   height: 32px;
+}
+
+#galery-project a.Button {
+  display: block;
+  height: auto;
+  padding: 10px 0px;
+  margin: 0px auto;
+  border-radius: 20px;
 }
 
 @media screen and (max-width: 481px) {

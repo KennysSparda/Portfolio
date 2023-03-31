@@ -1,16 +1,23 @@
 import Image from 'next/image'
 import Button from '../buttons/Button'
 import Icon from '../Icon'
-export default function Project1() {
+export default function Project2() {
   return (
     <div id='galery-project'>
       <h3>Conversor de Temperatura</h3>
-      <Image className='ProjectImage'
+      <Button 
+        type='linkEx'
+        id="btnStyled"
+        path="/projects/ConversorDeTemperatura/index.html">
+      <Image
+        className='ProjectImage'
         src='/img/conversortemperatura.png'
         alt="Picture of project"
         width={400}
         height={400}
       />
+      </Button>
+
       <p>Projeto feito com</p>
       <Button >
         <Icon type="10"></Icon><strong>Javascript</strong>
@@ -20,14 +27,6 @@ export default function Project1() {
       </Button>
       <Button >
         <Icon type="12"></Icon><strong>HTML 5</strong>
-      </Button>
-      <br/>
-      <Button 
-        type='linkEx'
-        id="btnStyled"
-        path="/projects/ConversorDeTemperatura/index.html">
-        <Icon type={2}></Icon>
-        Acessar
       </Button>
     </div>
   )
