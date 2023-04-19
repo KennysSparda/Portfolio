@@ -15,13 +15,17 @@ export default function Home() {
           <h1>Programador<strong id="cursor">|</strong></h1>
         </div>
         <div id="box-right">
-          <BtnProjects/>
-          <br/>
-          <br/>
-          <BtnGithub/>
-          <br/>
-          <br/>
-          <BtnResume/>
+          <div id="content-right">
+            <BtnProjects/>
+            <br/>
+            <br/>
+            <br/>
+            <BtnGithub/>
+            <br/>
+            <br/>
+            <br/>
+            <BtnResume/>
+          </div>
         </div>
       </div>
     </div>

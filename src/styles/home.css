@@ -7,6 +7,7 @@
   padding: 10px 50px;
   display: flex;
   justify-content: space-between;
+  max-width: 1070px;
 }
 
 @keyframes float{
@@ -35,19 +36,23 @@
   float: right;
   align-items: center;
   justify-content: center;
-  text-align: right;
+  text-align: center;
   padding: 60px 0;
-  padding-right: 10%
+}
+
+#content-right {
+  width:500px;
+  margin: auto;
 }
 
 @keyframes blink {
-    from, to {
-      visibility: hidden;
-    }
-    50% {
-      visibility: visible;
-    }
+  from, to {
+    visibility: hidden;
   }
+  50% {
+    visibility: visible;
+  }
+}
   
 #cursor {
   animation: 1s blink step-end infinite ;
@@ -64,6 +69,7 @@
     padding-top: 0vh;
     padding-bottom: 50px;
   }
+
   #box-left {
     margin: 0px auto;
     float: none;
@@ -78,6 +84,10 @@
     float: none;
     text-align: center;
     padding: 0px;
+  }
+
+  #content-right {
+    width: 100%;
   }
 }
 
