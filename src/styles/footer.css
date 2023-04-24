@@ -12,7 +12,6 @@ footer {
 
 #footerText {
   color: var(--text);
-  text-shadow: 0 0 10px var(--shadow);
   text-align: center;
   font-weight: bold;
   font-size: 26px;

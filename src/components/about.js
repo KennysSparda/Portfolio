@@ -8,15 +8,13 @@ export default function About() {
       <Container id='about' >
         <h1>Sobre mim</h1>
         <div  id="text-about">
-          <p>Olá! Sou um desenvolvedor front-end apaixonado por construir sites e aplicativos incríveis para os usuários. </p>
-          <p>Com mais de 2 anos de experiência em desenvolvimento web, sou especializado em tecnologias como Next.js, React e .NET.</p>
-          <p>Eu adoro criar interfaces de usuário que são bonitas e fáceis de usar em qualquer dispositivo - desde smartphones até desktops.</p>
-          <p>Além disso, estou constantemente aprimorando minhas habilidades técnicas e buscando aprender novas tecnologias para ficar atualizado no mercado em constante mudança.</p>
-          <p>Meu objetivo é sempre superar as expectativas dos clientes e entregar projetos de sucesso.</p>
-          <p>Se você precisa de ajuda para construir seu próximo site ou aplicativo, ficarei feliz em trabalhar com você! Vamos criar algo incrível juntos.</p>
+          <p>Olá! Sou um estudante de desenvolvimento de software e sou apaixonado por tecnologia!</p>
+          <p>Com mais de 2 anos de experiência em desenvolvimento de software, sou especializado em resolver problemas.</p>
+          <p>Se você precisa de ajuda para construir seu próximo site ou aplicativo, ficarei feliz em trabalhar com você!</p>
         </div>
         <br/>
         <h2>Tecnologias utilizadas neste projeto</h2>
+        <div id='tecnologiasUtilizadas'>
           <Button >
             <Icon type="7"></Icon><strong>NextJS</strong>
           </Button>
@@ -35,17 +33,17 @@ export default function About() {
           <Button >
             <Icon type="12"></Icon><strong>HTML 5</strong>
           </Button>
+        </div>
         <p>Acesse a pagina deste projeto no
-          <br></br>
-          <br></br>
-          <Button 
-                type='linkEx'
-                id="btnStyled"
-                path='https://github.com/KennysSparda/Portfolio'>
-                  <Icon type={0}></Icon><strong>Github</strong>
-          </Button>
+        <br></br>
+        <br></br>
+        <Button 
+          type='linkEx'
+          id="btnStyled"
+          path='https://github.com/KennysSparda/Portfolio'>
+            <Icon type={0}></Icon><strong>Github</strong>
+        </Button>
         </p>
-        
       </Container>
     </div>
   )

@@ -27,7 +27,7 @@
   position:inherit;
   float: left;
   text-align: left;
-  padding: 60px 10%;
+  padding: 60px 4%;
   animation: float 9s ease-in-out infinite;
 }
 
@@ -75,7 +75,7 @@
     float: none;
     text-align: center;
     width: 90%;
-    padding: 1vh 0vw;
+    padding: 3vh 0vw;
   }
   
   #box-right {

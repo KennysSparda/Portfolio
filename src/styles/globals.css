@@ -8,18 +8,18 @@
   --secondary: #262629;
   --transparency: #000000aa;
   --back: #000;
-  --shadow: #FF0055;
-  --text: #ddd;
+  --shadow: #ff0055;
+  --text: #ffffff;
 }
 
 [data-theme='light'] {
   --bg: url(/img/blue.jpg);
   --banner: url(/img/banner.jpg);
   --eu: url(/img/eu-a.jpg);
-  --primary: #FF0055;
+  --primary: #ff0055;
   --secondary: #eee;
-  --transparency: #ffffff55;
+  --transparency: #ffffffbb;
   --back: #a8a8a8;
   --shadow: #0000FF;
-  --text: #000000;
+  --text: #666666aa;
 }

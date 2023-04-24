@@ -38,7 +38,6 @@
 #title {
   float: left;
   font-size: 26px;
-  text-shadow: 0px 0px 4px var(--shadow);
 }
 
 #btnMenu {

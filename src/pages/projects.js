@@ -30,14 +30,22 @@ export default function Projects() {
       window.localStorage.setItem("theme", "dark");
     }
   }, [lightTheme]);
+
   useEffect(() => {
-    const scrollContainer = document.querySelector("#galery");
+    const scrollContainer = document.querySelector(".galery1");
     scrollContainer.addEventListener("wheel", (evt) => {
       evt.preventDefault();
       scrollContainer.scrollLeft += evt.deltaY;
     });
   }, [])
-
+  
+  useEffect(() => {
+    const scrollContainer = document.querySelector(".galery2");
+    scrollContainer.addEventListener("wheel", (evt) => {
+      evt.preventDefault();
+      scrollContainer.scrollLeft += evt.deltaY;
+    });
+  }, [])
 
   return (
       <div>
@@ -45,10 +53,12 @@ export default function Projects() {
         <Container id='projects'>
           <h2>Projetos</h2>
         </Container>
-        <div id='galery'>
+        <div id='galery' className='galery1'>
           <Projeto1/>
           <Projeto2/>
           <Projeto3/>
+        </div>
+        <div id='galery' className='galery2'>
           <Projeto4/>
           <Projeto5/>
           <Projeto6/>
