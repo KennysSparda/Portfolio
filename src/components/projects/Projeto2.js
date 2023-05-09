@@ -11,7 +11,7 @@ export default function Project2() {
         path="/projects/ConversorDeTemperatura/index.html">
       <Image
         className='ProjectImage'
-        src='/img/conversortemperatura.png'
+        src='/img/projects/conversortemperatura.png'
         alt="Picture of project"
         width={400}
         height={400}

@@ -11,7 +11,7 @@ export default function Project1() {
         path="/projects/SuperContador/index.html">
         <Image
           className='ProjectImage'
-          src='/img/geradornumeros.png'
+          src='/img/projects/geradornumeros.png'
           alt="Picture of project"
           width={400}
           height={400}

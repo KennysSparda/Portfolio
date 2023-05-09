@@ -11,7 +11,7 @@ export default function Project3() {
         path="/projects/VerificadorDeIdade/index.html">
       <Image
         className='ProjectImage'
-        src='/img/verificadoridade.png'
+        src='/img/projects/verificadoridade.png'
         alt="Picture of project"
         width={400}
         height={400}

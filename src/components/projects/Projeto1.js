@@ -11,7 +11,7 @@ export default function Project1() {
         path="/projects/Calculadora/index.html">
         <Image 
           className='ProjectImage'
-          src='/img/calculadora.png'
+          src='/img/projects/calculadora.png'
           alt="Picture of project"
           width={400}
           height={400}

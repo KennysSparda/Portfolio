@@ -4,13 +4,14 @@ import Icon from '../Icon'
 export default function Project1() {
   return (
     <div id='galery-project'>
-      <h3>Analizador de Números</h3>
+      <h3>Boletim</h3>
       <Button 
         type='linkEx'
         id="btnStyled"
-        path="/projects/AnalizadorDeNumeros/index.html">
-        <Image className='ProjectImage'
-          src='/img/projects/analizadornumeros.png'
+        path="/projects/Boletim/index.html">
+        <Image 
+          className='ProjectImage'
+          src='/img/projects/boletim.png'
           alt="Picture of project"
           width={400}
           height={400}

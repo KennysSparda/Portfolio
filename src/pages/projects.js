@@ -13,6 +13,8 @@ import Projeto3 from '../components/projects/Projeto3'
 import Projeto4 from '../components/projects/Projeto4'
 import Projeto5 from '../components/projects/Projeto5'
 import Projeto6 from '../components/projects/Projeto6'
+import Projeto7 from '../components/projects/Projeto7'
+import Projeto8 from '../components/projects/Projeto8'
 
 export default function Projects() {
   const [lightTheme, setLightTheme] = useState(false)
@@ -57,11 +59,13 @@ export default function Projects() {
           <Projeto1/>
           <Projeto2/>
           <Projeto3/>
+          <Projeto4/>
         </div>
         <div id='galery' className='galery2'>
-          <Projeto4/>
           <Projeto5/>
           <Projeto6/>
+          <Projeto7/>
+          <Projeto8/>
         </div>
         <Footer/>
       </div>

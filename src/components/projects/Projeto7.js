@@ -11,7 +11,7 @@ export default function Project1() {
         path="/projects/KySound/index.html">
         <Image 
           className='ProjectImage'
-          src='/img/kysoundprint.png'
+          src='/img/projects/kysoundprint.png'
           alt="Picture of project"
           width={400}
           height={400}

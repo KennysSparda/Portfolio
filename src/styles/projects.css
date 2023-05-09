@@ -5,6 +5,7 @@
 
 #galery {
     width: 90%;
+    max-width: 1070px;
     margin: 10px auto;
     margin-top: 0px;
     padding: 10px;

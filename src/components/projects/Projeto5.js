@@ -10,7 +10,7 @@ export default function Project1() {
         id="btnStyled"
         path="https://cesiane-and-mayke.vercel.app/">
         <Image className='ProjectImage'
-          src='/img/blogpessoal.png'
+          src='/img/projects/blogpessoal.png'
           alt="Picture of project"
           width={400}
           height={400}
