@@ -2,6 +2,9 @@
 
 This is my portfolio website where I showcase my projects and skills.
 
+## License
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/KennysSparda/Portfolio/blob/main/LICENSE) 
+
 ## Access
 
 You can access the live version of this website here: [https://kenny-portfolio-six.vercel.app/](https://kenny-portfolio-six.vercel.app/)
@@ -31,10 +34,6 @@ npm install @pdftron/webviewer --save
 ```
 npm run dev
 ```
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE.md file for details.
 
 ## Contributing
 
