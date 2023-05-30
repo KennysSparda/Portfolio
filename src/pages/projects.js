@@ -1,5 +1,4 @@
-import { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useEffect } from 'react'
 
 import Navbar from '../components/navbar/Navbar'
 import Footer from '../components/Footer'
@@ -17,22 +16,6 @@ import Projeto7 from '../components/projects/Projeto7'
 import Projeto8 from '../components/projects/Projeto8'
 
 export default function Projects() {
-  const [lightTheme, setLightTheme] = useState(false)
-
-  const switchTheme = (e) => {
-    setLightTheme(event.target.checked)
-  }
-
-  useEffect(() => {
-    if(lightTheme) {
-      document.documentElement.setAttribute("data-theme", "light");
-      window.localStorage.setItem("theme", "light");
-    } else {
-      document.documentElement.removeAttribute("data-theme");
-      window.localStorage.setItem("theme", "dark");
-    }
-  }, [lightTheme]);
-
   useEffect(() => {
     const scrollContainer = document.querySelector(".galery1");
     scrollContainer.addEventListener("wheel", (evt) => {
@@ -51,7 +34,7 @@ export default function Projects() {
 
   return (
       <div>
-        <Navbar theme={lightTheme} setTheme={switchTheme}/>
+        <Navbar/>
         <Container id='projects'>
           <h2>Projetos</h2>
         </Container>

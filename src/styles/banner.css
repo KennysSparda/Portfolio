@@ -1,11 +1,7 @@
 #banner {
   border-radius: 20px;
   background-size:48%;
-  background-image: var(--banner);
-  height: 150px ;
-  padding: 0px;
-  padding-left: 0;
-  padding-right: 50px;
+  height: 150px;
   align-items: center;
   display: flex;
 }
@@ -13,12 +9,12 @@
 #imgPerfil {
   height: 150px ;
   width: 150px ;
-  background-size: cover;
+  background-size:100%;
+  background-position: 0px 220px;
   background-image: var(--eu);
   border-radius: 18px;
-  float: left;
-  margin: 0px;
-  margin-right: 50px;
+  float: center;
+  margin: 0px auto;
 }
 
 @keyframes rotate {

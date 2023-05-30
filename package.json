@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "The place for demonstrate my projects and habilities",
   "main": "index.js",
   "dependencies": {

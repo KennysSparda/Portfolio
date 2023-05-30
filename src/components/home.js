@@ -1,6 +1,6 @@
 import Banner from './banner'
 import BtnGithub from './buttons/btnGithub'
-import BtnResume from './buttons/btnResume'
+import BtnLinkedin from './buttons/btnLinkedin'
 import BtnProjects from './buttons/btnProjects'
 
 export default function Home() {
@@ -24,7 +24,7 @@ export default function Home() {
             <br/>
             <br/>
             <br/>
-            <BtnResume/>
+            <BtnLinkedin/>
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ import BtnMenu from '../buttons/btnMenu'
 import Menu from './menu'
 import Icon from '../Icon'
 
-export default function Navbar(props) {
+export default function Navbar() {
   // Start navbar empty
   const [show, setShow] = useState(false);
 
@@ -19,7 +19,7 @@ export default function Navbar(props) {
       <Header>
         <h2 id="title">Portfólio</h2>
         <BtnMenu function={showMenu}><Icon type={5}></Icon></BtnMenu>
-        <Menu function={showMenu} theme={props.theme} setTheme={props.setTheme} />
+        <Menu function={showMenu} />
       </Header>
     )
   } else {
