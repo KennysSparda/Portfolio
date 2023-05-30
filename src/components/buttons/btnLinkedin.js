@@ -7,7 +7,7 @@ export default function btnLinkedin() {
     <Button 
       type='linkEx'
       id="btnStyled"      
-      path={links[1]}>
+      path={links[0]}>
       <Icon type={4}></Icon>Linkedin
     </Button>
   )
