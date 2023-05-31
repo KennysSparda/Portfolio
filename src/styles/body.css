@@ -4,10 +4,10 @@ body {
   text-align: center;
   font-size: 26px;
   color: var(--text);
-  background-image: var(--bg);
-  background-size: cover;
+  background: var(--back);
+  /* background-size: cover;
   background-attachment: fixed;
-  background-position: 50%;
+  background-position: 50%; */
 }
 
 h1 {

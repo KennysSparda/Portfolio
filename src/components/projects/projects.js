@@ -1,19 +1,15 @@
 import { useEffect } from 'react'
 
-import Navbar from '../components/navbar/Navbar'
-import Footer from '../components/Footer'
-import Container from '../components/Container'
+import Container from '../Container'
 
-import Copyright from '../components/copyright'
-
-import Projeto1 from '../components/projects/Projeto1'
-import Projeto2 from '../components/projects/Projeto2'
-import Projeto3 from '../components/projects/Projeto3'
-import Projeto4 from '../components/projects/Projeto4'
-import Projeto5 from '../components/projects/Projeto5'
-import Projeto6 from '../components/projects/Projeto6'
-import Projeto7 from '../components/projects/Projeto7'
-import Projeto8 from '../components/projects/Projeto8'
+import Projeto1 from './Projeto1'
+import Projeto2 from './Projeto2'
+import Projeto3 from './Projeto3'
+import Projeto4 from './Projeto4'
+import Projeto5 from './Projeto5'
+import Projeto6 from './Projeto6'
+import Projeto7 from './Projeto7'
+import Projeto8 from './Projeto8'
 
 export default function Projects() {
   useEffect(() => {
@@ -34,7 +30,6 @@ export default function Projects() {
 
   return (
       <div>
-        <Navbar/>
         <Container id='projects'>
           <h2>Projetos</h2>
         </Container>
@@ -50,7 +45,6 @@ export default function Projects() {
           <Projeto7/>
           <Projeto8/>
         </div>
-        <Footer/>
       </div>
   )
 }

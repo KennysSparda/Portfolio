@@ -4,6 +4,7 @@
   height: 150px;
   align-items: center;
   display: flex;
+  background: var(--secondary);
 }
 
 #imgPerfil {
@@ -12,8 +13,9 @@
   background-size:100%;
   background-position: 0px 220px;
   background-image: var(--eu);
-  border-radius: 18px;
-  float: center;
+  border-radius: 50%;
+  float: left;
+  padding: auto;
   margin: 0px auto;
 }
 

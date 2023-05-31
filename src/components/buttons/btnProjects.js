@@ -4,18 +4,17 @@ import Icon from '../Icon'
 export default function BtnProjects(props) {
   if(props.navbar == true) {
     return (
-      <Button 
-        type='linkIn' 
-        path="/projects" >
-          Projetos
-      </Button >
+      <Button type='linkIn'
+              path="/#projects" >
+                Projetos
+      </Button>
     )
   } else {
     return (
       <Button 
         type='linkIn' 
         id="btnStyled"
-        path="/projects" >
+        path="/#projects" >
           <Icon type={13}></Icon>
           Projetos
       </Button >

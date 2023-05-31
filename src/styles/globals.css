@@ -2,10 +2,10 @@
 
 :root {
   --bg: url('/img/back.jpg');
-  --primary: #ffffff;
-  --secondary: #262629;
-  --transparency: #00000055;
-  --back: #f7f7f7;
+  --primary: #1C1C1E;
+  --secondary: #B8E8D5;
+  --transparency: #FFFFFF;
+  --back: #C0C0C0;
   --shadow: #000000;
-  --text: #bbbbbb;
+  --text: #1C1C1E;
 }

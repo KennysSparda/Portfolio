@@ -17,7 +17,7 @@ export default function Navbar() {
   if (show == true) {
     return (
       <Header>
-        <h2 id="title">Portfólio</h2>
+        <h2 id="title">Menu</h2>
         <BtnMenu function={showMenu}><Icon type={5}></Icon></BtnMenu>
         <Menu function={showMenu} />
       </Header>
@@ -25,7 +25,7 @@ export default function Navbar() {
   } else {
     return (
       <Header>
-        <h2 id="title">Portfólio</h2>
+        <h2 id="title">Kenny Vargas</h2>
         <BtnMenu function={showMenu}><Icon type={5}></Icon></BtnMenu>
       </Header>
     )
