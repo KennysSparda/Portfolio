@@ -54,7 +54,7 @@
     display: grid;
     justify-content: center;
     text-align: right;
-    width: 90%;
+    width: 100%;
   }
 
   .menu a {

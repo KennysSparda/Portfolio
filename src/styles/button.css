@@ -30,12 +30,3 @@
 a.Button {
   text-decoration: none;
 }
-
-@media screen and (max-width: 722px) {
-  .Button {
-    height: 50px;
-    width: auto;
-    min-width: 100px;
-    margin: 8px auto;
-  }
-}
