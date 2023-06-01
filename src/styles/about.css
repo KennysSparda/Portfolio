@@ -1,9 +1,17 @@
+#about {
+  height: 70vh;
+}
+
 #text-about {
   margin: 24px;
   text-align: center;
 }
 
 #tecnologiasUtilizadas {
-  padding: 0% 20%;
+  padding: 5% 20%;
   float: center;
+}
+
+#linkToWhatsapp {
+  font-size: 32px;
 }
