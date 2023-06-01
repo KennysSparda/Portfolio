@@ -1,0 +1,20 @@
+#imgPerfil {
+  height: 200px ;
+  width: 200px ;
+  background-size:100%;
+  background-position: 0px 220px;
+  background-image: var(--eu);
+  border-radius: 50%;
+  float: left;
+  padding: auto;
+  margin: 0px auto;
+}
+
+@media screen and (max-width: 1100px) {
+  #imgPerfil {
+    height: 100px ;
+    width: 100px ;
+    margin: auto;
+    float:none;
+  }
+}
