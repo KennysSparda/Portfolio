@@ -1,5 +1,3 @@
-import Script from 'next/script'
-
 export default function Button(props) {
   function AudioOnMouseDown() {
     var Audio = document.createElement("AUDIO");

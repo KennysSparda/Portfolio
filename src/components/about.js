@@ -9,9 +9,10 @@ export default function About() {
       <Container id='about' >
         <h1>Sobre mim</h1>
         <div  id="text-about">
-          <p>Sou um entusiasta da programação em busca de oportunidades como desenvolvedor. Com três anos de dedicação autodidata e atualmente cursando Ciências da Computação. </p>
-          <p>Meu objetivo é me tornar um desenvolvedor fullstack versátil, capaz de trabalhar em diferentes linguagens e plataformas. Acredito que a chave para o sucesso nessa área está em minha abordagem centrada na resolução de problemas. Sempre me sinto motivado ao enfrentar desafios e encontrar soluções criativas e eficientes.</p>
-          <p>Estou entusiasmado em embarcar em projetos desafiadores e revolucionários. Vamos unir forças para fazer a diferença e impactar o mundo. Ficarei feliz em conversar e explorar como podemos trabalhar juntos para impulsionar mudanças significativas. Entre em contato e vamos começar essa jornada emocionante!</p>
+          <p>Sou um entusiasta da programação em busca de oportunidades como desenvolvedor.</p>
+          <p>Meu objetivo é me tornar um desenvolvedor fullstack versátil, capaz de trabalhar em diferentes linguagens e plataformas.</p>
+          <p>Precisa de um programador?</p>
+          <Button type='linkEx' id='linkToWhatsapp' path='https://whatsa.me/5541995101213'>Vamos trabalhar juntos -&gt;</Button>
         </div>
         <br/>
         <h2>Tecnologias utilizadas neste projeto</h2>
