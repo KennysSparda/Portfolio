@@ -8,7 +8,7 @@ section {
   height: 100%;
   left: 0;
   right: 0;
-  margin-bottom: 1vh;
+  margin-bottom: 10vh;
 }
 
 ul {
@@ -30,16 +30,7 @@ iframe {
 
 @media screen and (max-width: 755px) {
 
-  .container {
-    padding: 10px;
-  }
-
   section {
     width: 90%;
-  }
-
-  iframe {
-    height: 600px;
-    width: 100%;
   }
 }
