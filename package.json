@@ -4,13 +4,9 @@
   "description": "The place for demonstrate my projects and habilities",
   "main": "index.js",
   "dependencies": {
-    "@pdftron/webviewer": "^8.7.0",
     "next": "^12.3.4",
-    "nextjs": "^0.0.3",
     "react": "^18.2.0",
-    "react-copy-to-clipboard": "^5.1.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.4.2"
+    "react-dom": "^18.2.0"
   },
   "scripts": {
     "start": "next start",

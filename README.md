@@ -20,16 +20,10 @@ git clone https://github.com/KennysSparda/Portfolio.git
 2. Install the base requirements:
 
 ```
-npm install next react react-dom
+npm install
 ```
 
-3. Install the additional node modules:
-
-```
-npm install @pdftron/webviewer --save
-```
-
-4. Run the project:
+3. Run the project:
 
 ```
 npm run dev
