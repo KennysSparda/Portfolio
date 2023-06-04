@@ -21,16 +21,3 @@ ul {
   z-index: 1;
 }
 
-iframe {
-  height: 600px;
-  width: 90%;
-  resize: both;
-  overflow: auto;
-}
-
-@media screen and (max-width: 755px) {
-
-  section {
-    width: 90%;
-  }
-}

@@ -11,7 +11,6 @@ import '../styles/footer.css'
 import '../styles/image.css'
 import '../styles/copyright.css'
 import '../styles/body.css'
-import '../styles/imgPerfil.css'
 import '../styles/home.css'
 import '../styles/about.css'
 

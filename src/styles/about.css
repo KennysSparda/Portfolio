@@ -8,16 +8,12 @@
   float: center;
 }
 
-#about {
-  height: 150vh;
-  padding-bottom: 70px;
-}
-
 #linkToWhatsapp {
   font-size: 32px;
 }
+
 @media screen and (max-width: 555px) {
   #about {
-    padding-bottom: 550px;
+    padding-bottom: 10px;
   }
 }

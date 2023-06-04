@@ -21,7 +21,9 @@ export default function PerfilImage() {
       {loading ? (
         <Icon type="1"></Icon>
       ) : (
-        <img id="imgPerfil" src={imageSrc} alt='Perfil' />  
+        <div id="boxImgPerfil">
+          <img id="imgPerfil" src={imageSrc} alt='Perfil' />  
+        </div>
       )} 
     </div>
   )
