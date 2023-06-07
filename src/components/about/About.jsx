@@ -1,6 +1,6 @@
-import Button from './buttons/Button'
-import Container from './Container'
-import Icon from './Icon'
+import Button from '../buttons/Button'
+import Container from '../container/Container'
+import Icon from '../icon/Icon'
 
 export default function About() {
   let linkFaculdade = "https://descomplica.com.br/faculdade/?utm_source=google&utm_medium=cpc&utm_campaign=psq-institucional-faculdade-ongoing&utm_term=faculdade%20descomplica&utm_content=institucional&gad=1&gclid=CjwKCAjwvdajBhBEEiwAeMh1U3qQrvzX7IB7fIY_cWGFUjXbv1jtqxnd0stXSZS3MvXRdycWG5uxwxoCYRQQAvD_BwE"

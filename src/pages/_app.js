@@ -2,17 +2,17 @@
 import React from 'react'
 import Head from 'next/head'
 
-import '../styles/projects.css'
+import '../components/projects/projects.css'
 import '../styles/globals.css'
-import '../styles/button.css'
-import '../styles/container.css'
-import '../styles/navbar.css'
-import '../styles/footer.css'
+import '../components/buttons/button.css'
+import '../components/container/container.css'
+import '../components/navbar/navbar.css'
+import '../components/footer/footer.css'
 import '../styles/image.css'
 import '../styles/copyright.css'
 import '../styles/body.css'
-import '../styles/home.css'
-import '../styles/about.css'
+import '../components/home/home.css'
+import '../components/about/about.css'
 
 function MyApp({ Component, pageProps }) {
   return (

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import Icon from './Icon'
+import Icon from '../icon/Icon'
 
 export default function PerfilImage() {
   const [loading, setLoading] = useState(true) // Estado para controlar o carregamento

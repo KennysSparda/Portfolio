@@ -1,9 +1,9 @@
-import Container from  "./Container"
+import Container from  "../container/Container"
 
 import PerfilImage from './PerfilImage'
-import BtnProjects from './buttons/btnProjects'
-import BtnGithub from './buttons/btnGithub'
-import BtnLinkedin from './buttons/btnLinkedin'
+import BtnProjects from '../buttons/btnProjects'
+import BtnGithub from '../buttons/btnGithub'
+import BtnLinkedin from '../buttons/btnLinkedin'
 
 
 export default function Home() {

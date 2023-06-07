@@ -1,9 +1,9 @@
 import Navbar from '../components/navbar/Navbar'
-import Footer from '../components/Footer'
+import Footer from '../components/footer/Footer'
 
-import Home from '../components/home'
-import Projects from '../components/projects/projects'
-import About from '../components/about'
+import Home from '../components/home/Home'
+import Projects from '../components/projects/Projetos'
+import About from '../components/about/About'
 
 export default function App() {
 
