@@ -3,16 +3,15 @@
   padding: 10px;
 }
 
-#box {
+#boxHome {
   display: flex;
   margin: 0 auto;
   padding: 10vh 50px;
-  display: flex;
   justify-content: space-between;
   max-width: 1070px;
 }
 
-#box-left {
+#boxHomeLeft {
   border-radius: 20px;
   box-shadow: 0px 0px 5px var(--shadow);
   background-color:  var(--transparency);
@@ -23,7 +22,7 @@
   padding: 60px 4%;
 }
 
-#box-right {
+#boxHomeRight {
   position:inherit;
   float: right;
   align-items: center;
@@ -74,20 +73,20 @@
     margin-bottom: 20px;
   }
 
-  #box {
+  #boxHome {
     display: block;
     padding-top: 0vh;
     padding-bottom: 50px;
   }
 
-  #box-left {
+  #boxHomeLeft {
     margin: 10px auto;
     float: none;
     width: 90%;
     padding: 10%;
   }
   
-  #box-right {
+  #boxHomeRight {
     margin: 0px auto;
     margin-top: 20px;
     float: none;
@@ -101,7 +100,7 @@
 }
 
 @media screen and (max-width: 450px) {
-  #box {
+  #boxHome {
     padding: 0;
   }
 }

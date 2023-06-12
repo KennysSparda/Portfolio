@@ -3,7 +3,6 @@ import Container from '../container/Container'
 import Icon from '../icon/Icon'
 
 export default function About() {
-  let linkFaculdade = "https://descomplica.com.br/faculdade/?utm_source=google&utm_medium=cpc&utm_campaign=psq-institucional-faculdade-ongoing&utm_term=faculdade%20descomplica&utm_content=institucional&gad=1&gclid=CjwKCAjwvdajBhBEEiwAeMh1U3qQrvzX7IB7fIY_cWGFUjXbv1jtqxnd0stXSZS3MvXRdycWG5uxwxoCYRQQAvD_BwE"
   return (
     <Container id='about' >
       <h1>Sobre mim</h1>
@@ -15,36 +14,33 @@ export default function About() {
       </div>
       <br/>
       <h2>Tecnologias utilizadas neste projeto</h2>
-      <div id='tecnologiasUtilizadas'>
-        <Button >
-          <Icon type="7"></Icon><strong>NextJS</strong>
-        </Button>
-        <Button >
-          <Icon type="8"></Icon><strong>ReactJS</strong>
-        </Button>
-        <Button >
-          <Icon type="9"></Icon><strong>NodeJS</strong>
-        </Button>
-        <Button >
-          <Icon type="10"></Icon><strong>Javascript</strong>
-        </Button>
-        <Button >
-          <Icon type="11"></Icon><strong>CSS 3</strong>
-        </Button>
-        <Button >
-          <Icon type="12"></Icon><strong>HTML 5</strong>
-        </Button>
+      <div id="boxAbout">
+        <div id='boxAboutLeft'>
+            <Icon type="7"></Icon><strong id="technology">NextJS</strong>
+            <br />
+            <Icon type="8"></Icon><strong id="technology">ReactJS</strong>
+            <br />
+            <Icon type="9"></Icon><strong id="technology">NodeJS</strong>
+            <br />
+            <Icon type="10"></Icon><strong id="technology">Javascript</strong>
+            <br />
+            <Icon type="11"></Icon><strong id="technology">CSS 3</strong>
+            <br />
+            <Icon type="12"></Icon><strong id="technology">HTML 5</strong>
+            <br />
+        </div>
+        <div id="boxAboutRight">
+          <p>Acesse a pagina deste projeto no
+            <Button 
+              type='linkEx'
+              path='https://github.com/KennysSparda/Portfolio'>
+                <strong>Github</strong>
+            </Button>
+            para saber mais sobre os codigos e sobre a estrutura do projeto :D
+          </p>
+        </div>
       </div>
-      <p>Acesse a pagina deste projeto no
-      <br></br>
-      <br></br>
-      <Button 
-        type='linkEx'
-        id="btnStyled"
-        path='https://github.com/KennysSparda/Portfolio'>
-          <Icon type={0}></Icon><strong>Github</strong>
-      </Button>
-      </p>
+      <br/>
     </Container>
   )
 }

@@ -11,13 +11,13 @@ export default function Home() {
     <Container>
       <div id="home">
         <PerfilImage/>
-        <div id="box">
-          <div id="box-left">
+        <div id="boxHome">
+          <div id="boxHomeLeft">
             <h2>Sou um</h2>
             <h1>Programador</h1>
             <h2>Seja bem vindo ao meu portfolio<strong id="cursor">|</strong></h2>
           </div>
-          <div id="box-right">
+          <div id="boxHomeRight">
             <div id="content-right">
               <BtnProjects/>
               <br/>

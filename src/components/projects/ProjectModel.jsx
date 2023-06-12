@@ -8,7 +8,7 @@ export default function ProjectModel(props) {
       <Button 
         type='linkEx'
         id="btnStyled"
-        path={props.projetoPath}>
+        path={props.projectPath}>
         <h3>{props.projectName}</h3>
         <Image 
           className='ProjectImage'
