@@ -22,8 +22,9 @@
   color: var(--primary);
 }
 
-.menu {
+#btnMenu {
   vertical-align: auto;
+  margin: 9px;
 }
 
 a.Button {
