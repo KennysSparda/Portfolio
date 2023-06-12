@@ -4,7 +4,7 @@ import Button from '../buttons/Button'
 export default function ProjectModel(props) {
 
   return (
-    <div id='galery-project'>
+    <div id='project'>
       <Button 
         type='linkEx'
         id="btnStyled"
@@ -17,7 +17,6 @@ export default function ProjectModel(props) {
           width={400}
           height={400}
         />
-       <p>{props.projectInfo}</p>
       </Button>
      </div>
   )

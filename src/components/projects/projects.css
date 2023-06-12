@@ -22,7 +22,7 @@
   border-radius: 20px;
 }
 
-#galery-project {
+#project {
     font-size: 22px;
     margin: 16px;
     margin-left: 8px;
@@ -31,20 +31,20 @@
     height: auto;
 }
 
-#galery-project h3 {
+#project h3 {
   margin: 8px;
 }
 
-#galery-project p {
+#project p {
   margin: 8px;
 }
 
-#galery-project div.Button {
+#project div.Button {
   padding: 0px;
   height: 32px;
 }
 
-#galery-project a.Button {
+#project a.Button {
   display: block;
   height: auto;
   padding: 10px 0px;
@@ -53,9 +53,36 @@
 }
 
 @media screen and (max-width: 481px) {
-    #galery-project {
-        margin: 0px 8px;
-        font-size: 18px;
-    }
-} 
+  #project {
+    font-size: 8px;
+    margin: 0px 8px;
+    width: 60%;
+  }
+  #project h3 {
+    font-size: 10px;
+    margin: 3px;
+  }
+  
+  #project p {
+    margin: 5px;
+  }
+  
+  #project div.Button {
+    padding: 2px;
+    height: 32px;
+  }
+  
+  #project a.Button {
+    display: block;
+    height: auto;
+    padding: 20px 10px;
+    margin: 0px auto;
+    border-radius: 20px;
+  }
 
+  #galery {
+    width: 80%;
+    margin: 10px auto;
+    margin-top: 0px;
+  }
+}

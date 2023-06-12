@@ -8,7 +8,8 @@
 }
 
 .navbar-body {
-  position: fixed;
+  top: 0;
+  position:fixed;
   padding: 10px;
   left: 0;
   right: 0;
