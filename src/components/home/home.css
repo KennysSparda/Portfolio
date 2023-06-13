@@ -1,4 +1,5 @@
 #home {
+  padding-top:120px;
   height: 90vh;
   padding: 10px;
 }
@@ -7,6 +8,7 @@
   display: flex;
   margin: 0 auto;
   padding: 0px;
+  padding-top: 60px;
   justify-content: space-between;
   max-width: 1070px;
 }
@@ -51,6 +53,7 @@
 
   #boxHome {
     display: block;
+    padding-top: 60px;
     padding-bottom: 50px;
   }
 

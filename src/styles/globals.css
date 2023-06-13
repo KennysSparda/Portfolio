@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono&display=swap');
 
 :root {
-  --bg: url('/img/back.jpg');
-  --primary: #1C1C1E;
+  --back: url('/img/back.jpg');
+  --primary: #00aaff;
   --secondary: #B8E8D5;
-  --transparency: #FFFFFF;
-  --back: hsl(0, 0%, 75%);
-  --shadow: #00000066;
+  --transparency: #FFFFFF55;
+  /*--back: hsl(0, 0%, 75%);*/
+  --shadow: #00aaff;
   --text: #1C1C1E;
 }
