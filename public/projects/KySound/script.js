@@ -1,64 +1,55 @@
-function button1play() {
-  function play() {
-    let x = document.getElementById("audio1"); 
-    x.cloneNode(true).play(); 
+function toggleLoop(buttonNumber) {
+  let audioId = "audio" + buttonNumber;
+  let audio = document.getElementById(audioId);
+  let repeatButton = document.getElementById("repeat-button-" + buttonNumber);
+
+  if (audio.loop) {
+    audio.loop = false;
+    repeatButton.textContent = "Repetir";
+  } else {
+    audio.loop = true;
+    repeatButton.textContent = "Repetindo";
   }
-  play()
-}
-function button2play() {
-  function play() {
-    let x = document.getElementById("audio2"); 
-    x.cloneNode(true).play(); 
-  }
-  play()
-}
-function button3play() {
-  function play() {
-    let x = document.getElementById("audio3"); 
-    x.cloneNode(true).play(); 
-  }
-  play()
-}
-function button4play() {
-  function play() {
-    let x = document.getElementById("audio4"); 
-    x.cloneNode(true).play(); 
-  }
-  play()
-}
-function button5play() {
-  function play() {
-    let x = document.getElementById("audio5"); 
-    x.cloneNode(true).play(); 
-  }
-  play()
-}
-function button6play() {
-  function play() {
-    let x = document.getElementById("audio6"); 
-    x.cloneNode(true).play(); 
-  }
-  play()
-}
-function button7play() {
-  function play() {
-    let x = document.getElementById("audio7"); 
-    x.cloneNode(true).play(); 
-  }
-  play()
-}
-function button8play() {
-  function play() {
-    let x = document.getElementById("audio8"); 
-    x.cloneNode(true).play(); 
-  }
-  play()
-}
-function button9play() {
-  function play() {
-    let x = document.getElementById("audio9"); 
-    x.cloneNode(true).play(); 
-  }
-  play()
+
+  repeatButton.classList.toggle("active", audio.loop);
 }
 
+function playAudio(buttonNumber) {
+  let audioId = "audio" + buttonNumber;
+  let audio = document.getElementById(audioId);
+
+  if (!audio.loop) {
+    audio.currentTime = 0;
+  }
+
+  audio.play();
+}
+function addButtonListeners() {
+  const buttons = document.getElementsByClassName("btn");
+  for (let i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener("click", function() {
+      let buttonNumber = this.id.split("-")[1];
+      playAudio(buttonNumber);
+    });
+  }
+}
+
+function addRepeatButtons() {
+  const buttons = document.getElementsByClassName("btn");
+  const sidebar = document.getElementById("sidebar");
+
+  for (let i = 0; i < buttons.length; i++) {
+    let buttonNumber = buttons[i].id.split("-")[1];
+    let repeatButton = document.createElement("button");
+    repeatButton.id = "repeat-button-" + buttonNumber;
+    repeatButton.className = "repeat-button";
+    repeatButton.textContent = "Repetir";
+    repeatButton.addEventListener("click", function() {
+      toggleLoop(buttonNumber);
+    });
+    sidebar.appendChild(repeatButton);
+  }
+}
+
+addButtonListeners();
+addRepeatButtons();

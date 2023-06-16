@@ -88,3 +88,21 @@ body {
 #button-9:hover {
   background: white;
 }
+
+.playing {
+  opacity: 0.5; /* Exemplo de estilo quando o áudio está sendo reproduzido */
+}
+
+.repeat-button {
+  /* Estilos para o botão de repetição */
+  background-color: #ccc;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.repeat-button.active {
+  background-color: #ff0000; /* Exemplo de estilo quando a repetição está ativada */
+}
