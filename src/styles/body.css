@@ -4,11 +4,8 @@ body {
   text-align: center;
   font-size: 26px;
   color: var(--text);
+
   background: var(--back);
-/*  background-image: var(--back);
-*   background-size: cover;
-*   background-attachment: fixed;
-*   background-position: 50%;*/
 }
 
 * {
@@ -16,12 +13,8 @@ body {
 }
 
 h1 {
-  color: var(--text);
+  color: var(--secondary);
   font-size: 48px;
-}
-
-h2 {
-  font-size: 36px;
 }
 
 /* width and height*/

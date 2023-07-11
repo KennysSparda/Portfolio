@@ -45,7 +45,7 @@ export default function Projects() {
   return (
     <div>
       <Container id='projects'>
-        <h2>Projetos</h2>
+        <h1>Projetos</h1>
       </Container>
       <div id='galery' className='galery1' ref={scrollContainer1Ref}>
         {dataProjects.slice(0, 4).map((project, index) => (

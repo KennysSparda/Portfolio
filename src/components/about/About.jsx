@@ -7,7 +7,8 @@ export default function About() {
     <Container id='about' >
       <h1>Sobre mim</h1>
       <div  id="text-about">
-        <p>Sou um entusiasta da programação em busca de oportunidades como desenvolvedor.</p>
+        <p>Olá me chamo Kenny de Souza Vargas estou em transição de carreira, ja trabalhei como fiscal de caixa e nessa profissão descubri que gosto de solucionar problemas</p>
+        <p>Sou um cara que gosta de resolver problemas.</p>
         <p>Meu objetivo é me tornar um desenvolvedor fullstack versátil, capaz de trabalhar em diferentes linguagens e plataformas.</p>
         <p>Precisa de um programador?</p>
         <Button type='linkEx' id='linkToWhatsapp' path='https://whatsa.me/5541995101213'><strong>Vamos trabalhar juntos -&gt;</strong></Button>

@@ -1,4 +1,6 @@
 #about {
+  background: var(--back);
+  border-radius: 20px;
   padding-top: 120px;
 }
 
