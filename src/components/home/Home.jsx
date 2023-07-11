@@ -12,7 +12,6 @@ export default function Home() {
         <div id="boxHome">
           <div id="boxHomeLeft">
             <Perfil/>
-            <h2>Seja bem vindo!<strong id="cursor">|</strong></h2>
           </div>
           <div id="boxHomeRight">
             <div id="content-right">

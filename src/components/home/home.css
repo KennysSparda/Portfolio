@@ -17,12 +17,12 @@
   float: left;
   padding: 5rem;
   border-radius: 30px;
+  color: var(--primary);
   background: var(--secondary);
 }
 
 #boxHomeRight {
   position:inherit;
-
   float: right;
   text-align: center;
   margin-bottom: 10px;
@@ -32,19 +32,6 @@
   width:500px;
   margin: auto;
   margin-top: 120px;
-}
-
-@keyframes blink {
-  from, to {
-    visibility: hidden;
-  }
-  50% {
-    visibility: visible;
-  }
-}
-  
-#cursor {
-  animation: 1s blink step-end infinite ;
 }
 
 @media screen and (max-width: 800px) {

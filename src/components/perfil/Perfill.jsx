@@ -25,17 +25,18 @@ export default function Perfil() {
           </div>
           <div>
             <h1>Kenny Vargas</h1>
-            <h4>PROGRAMADOR</h4>
+
+            <h4>PROGRAMADOR FULLSTACK</h4>
           </div>
         </div>
       ) : (
-        <div>
+        <div id="boxPerfil">
           <div id="boxImgPerfil">
             <img id="imgPerfil" src={imageSrc} alt='Perfil' />  
           </div>
           <div>
             <h1>Kenny Vargas</h1>
-            <h4>PROGRAMADOR</h4>
+            <h4>PROGRAMADOR FULLSTACK</h4>
           </div>
         </div>
       )} 
