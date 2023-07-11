@@ -13,6 +13,7 @@ import '../styles/copyright.css'
 import '../styles/body.css'
 import '../components/home/home.css'
 import '../components/about/about.css'
+import '../components/perfil/perfil.css'
 
 function MyApp({ Component, pageProps }) {
   return (

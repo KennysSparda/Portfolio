@@ -16,7 +16,9 @@
 #boxHomeLeft {
   position:inherit;
   float: left;
-  text-align: left;
+  padding: 3rem;
+  border-radius: 30px;
+  background: var(--container);
 }
 
 #boxHomeRight {

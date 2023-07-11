@@ -4,22 +4,24 @@ body {
   text-align: center;
   font-size: 26px;
   color: var(--text);
-  background-image: var(--back);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: 50%;
+  background: var(--back);
+/*  background-image: var(--back);
+*   background-size: cover;
+*   background-attachment: fixed;
+*   background-position: 50%;*/
+}
+
+* {
+  margin: 0px;
 }
 
 h1 {
-  text-shadow: 0px 0px 100px var(--shadow);
   color: var(--text);
   font-size: 48px;
-  margin: 0px;
 }
 
 h2 {
   font-size: 36px;
-  margin: 0px;
 }
 
 /* width and height*/
