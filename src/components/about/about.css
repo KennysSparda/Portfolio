@@ -1,12 +1,12 @@
 #about {
-  background: var(--back);
+  background: var(--transparency);
   border-radius: 20px;
   padding-top: 120px;
 }
 
 #text-about {
   margin: 24px;
-  text-align: center;
+  text-align: left;
 }
 
 #boxAbout {
@@ -34,6 +34,10 @@
   padding: 40px 0px;
   width: 50%;
   margin: 20px;
+}
+
+#technology {
+  color: var(--secondary);
 }
 
 #technology:hover {
