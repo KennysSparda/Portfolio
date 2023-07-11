@@ -20,6 +20,7 @@
 }
 
 .menu {
+  top: 10px;
   position: relative;
   font-size: 18px;
   font-weight: bold;
@@ -46,13 +47,12 @@
 }
 
 @media screen and (max-width: 1010px) {
-  
-  #btnMenu{
-    position: absolute;
-    z-index: 2;
+
+  .navbar-body {
+    height: 94px; 
   }
+
   .navbar {
-    display: grid;
     justify-content: center;
     text-align: center;
     width: 100%;
@@ -77,5 +77,16 @@
     margin: 0px auto;
     z-index: 1;
     border-radius: 20px;
+    background: var(--back);
+    box-shadow: 3px 3px 9px var(--shadow);
   }
 }
+@media screen and (max-width: 1010px) {
+  
+  #btnMenu{
+    position: absolute;
+    right: 0;
+    z-index: 2;
+  }
+}
+
