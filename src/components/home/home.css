@@ -42,10 +42,10 @@
   }
 
   #boxHomeLeft {
-    margin: 10px auto;
+    margin: 0px auto;
     text-align: center;
     float: none;
-    padding: 2rem;
+    padding: 10px;
   }
   
   #boxHomeRight {

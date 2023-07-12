@@ -20,16 +20,12 @@
 }
 
 .menu {
-  top: 10px;
+  top: 100px;
   position: relative;
   font-size: 18px;
   font-weight: bold;
-  display: flex;
-  text-align: center;
-  width: auto;
+  width: 80%;
   border-radius: 20px;
-  align-items: center;
-  justify-content: center;
   z-index: 3;
 }
 
@@ -47,10 +43,6 @@
 }
 
 @media screen and (max-width: 1010px) {
-
-  .navbar-body {
-    height: 94px; 
-  }
 
   .navbar {
     justify-content: center;

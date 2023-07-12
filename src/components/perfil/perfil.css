@@ -1,7 +1,7 @@
 
 #boxPerfil {
-  color: var(--secondary);
-  text-shadow: 3px 3px 9px var(--primary);
+  color: var(--primary);
+  text-shadow: 3px 3px 19px var(--primary);
 }
 
 #imgPerfil {
@@ -10,7 +10,8 @@
   background-size:100%;
   background-position: 0px 220px;
   background-image: var(--eu);
-  box-shadow: 3px 3px 9px var(--shadow);
+  background-color: var(--back);
+  box-shadow: 3px 3px 29px var(--shadow);
   border-radius: 20px;
 }
 

@@ -18,9 +18,7 @@ export default function Home() {
               <BtnProjects/>
               <br/>
               <br/>
-              <br/>
               <BtnGithub/>
-              <br/>
               <br/>
               <br/>
               <BtnLinkedin/>
