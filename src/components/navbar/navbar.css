@@ -20,7 +20,8 @@
 }
 
 .menu {
-  top: 100px;
+  top: 20px;
+  right: -100px;
   position: relative;
   font-size: 18px;
   font-weight: bold;
@@ -64,7 +65,10 @@
 
   .menu {
     float: none;
-    display: block;
+    top: 100px;
+    right: 0px;
+    text-align: center;
+    display: grid;
     max-width: 300px;
     margin: 0px auto;
     z-index: 1;
@@ -72,9 +76,6 @@
     background: var(--back);
     box-shadow: 3px 3px 9px var(--shadow);
   }
-}
-@media screen and (max-width: 1010px) {
-  
   #btnMenu{
     position: absolute;
     right: 0;

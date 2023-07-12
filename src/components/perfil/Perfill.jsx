@@ -23,11 +23,8 @@ export default function Perfil() {
           <div>
             <Icon type="1"></Icon>
           </div>
-          <div>
-            <h1>Kenny Vargas</h1>
-
-            <h4>PROGRAMADOR FULLSTACK</h4>
-          </div>
+          <h1>Kenny Vargas</h1>
+          <h4>PROGRAMADOR FULLSTACK</h4>
         </div>
       ) : (
         <div id="boxPerfil">

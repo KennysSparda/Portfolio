@@ -1,25 +1,50 @@
 
 #boxPerfil {
-  color: var(--primary);
+  color: var(--back);
   text-shadow: 3px 3px 19px var(--primary);
 }
 
+#boxPerfil h1 {
+  color: var(--primary);
+  font-size: 48px;
+}
+
 #imgPerfil {
-  height: 200px ;
-  width: 200px ;
+  height: 100px ;
+  width: 100px ;
   background-size:100%;
   background-position: 0px 220px;
   background-image: var(--eu);
   background-color: var(--back);
   box-shadow: 3px 3px 29px var(--shadow);
   border-radius: 20px;
+  animation: fly 10s linear infinite;
+}
+
+@keyframes fly {
+    0%{
+      transform: translate(0%,-40%);
+    }
+    25% {
+      transform: translate(-20%,-20%);
+    }
+    50% {
+      transform: translate(0%,0%);
+}
+    75% {
+      transform: translate(20%,-20%);
+    }
+    100%{
+      transform: translate(0%,-40%);
+    }
 }
 
 @media screen and (max-width: 1100px) {
   #imgPerfil {
-    height: 100px ;
-    width: 100px ;
+    height: 70px ;
+    width: 70px ;
     margin: auto;
     float:none;
   }
 }
+
