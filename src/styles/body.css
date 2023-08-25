@@ -17,23 +17,20 @@ h1 {
   font-size: 48px;
 }
 
-/* width and height*/
 ::-webkit-scrollbar {
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
-  background: var(--back);
+  background: var(--transparency);
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--primary);
+  background-color: var(--secondary);
+  border-radius: 8px;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: var(--primary);
 }

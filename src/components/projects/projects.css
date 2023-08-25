@@ -2,22 +2,41 @@
   padding-top:120px;
   padding-bottom: 0px;
   margin-bottom: 8px;
+  background: var(--transparency);
+  border-radius: 20px;
+  border: solid 1px var(--primary);
+  max-width: 100%;
+  z-index: 2;
+}
+
+#projects h1 {
+  margin-bottom: 28px;
 }
 
 #galery {
-    width: 90%;
-    max-width: 1070px;
-    margin: 10px auto;
-    margin-top: 0px;
-    padding: 10px;
-    padding-top: 0px;
-    display: -webkit-box;
-    overflow-x: scroll;   
-    overflow-y: hidden;   
-    white-space: nowrap;
-  }
+  z-index: 1;
+  width: 90%;
+  margin: 10px auto;
+  margin-top: 0px;
+  padding: 10px;
+  padding-top: 0px;
+  display: -webkit-box;
+  overflow-x: scroll;   
+  overflow-y: hidden;   
+  white-space: nowrap;
+  border-radius: 20px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  box-shadow: inset 0px 0px 56px var(--back) ;
+  background: var(--secondary);
+}
   
-  .galery::before{ content:''; display:block; width:400%; height:1px; }
+.galery::before{
+  content:'';
+  display:block;
+  width:400%;
+  height:1px;
+}
 
 .ProjectImage { 
   border-radius: 20px;

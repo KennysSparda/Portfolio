@@ -46,29 +46,30 @@ export default function Projects() {
     <div>
       <Container id='projects'>
         <h1>Projetos</h1>
+
+        <div id='galery' className='galery1' ref={scrollContainer1Ref}>
+          {dataProjects.slice(0, 4).map((project, index) => (
+            <ProjectModel
+              key={index}
+              projectName={project.projectName}
+              projectPath={project.projectPath}
+              projectImage={project.projectImage}
+              projectInfo={project.projectInfo}
+            />
+          ))}
+        </div>
+        <div id='galery' className='galery2' ref={scrollContainer2Ref}>
+          {dataProjects.slice(4, 8).map((project, index) => (
+            <ProjectModel
+              key={index}
+              projectName={project.projectName}
+              projectPath={project.projectPath}
+              projectImage={project.projectImage}
+              projectInfo={project.projectInfo}
+            />
+          ))}
+        </div>
       </Container>
-      <div id='galery' className='galery1' ref={scrollContainer1Ref}>
-        {dataProjects.slice(0, 4).map((project, index) => (
-          <ProjectModel
-            key={index}
-            projectName={project.projectName}
-            projectPath={project.projectPath}
-            projectImage={project.projectImage}
-            projectInfo={project.projectInfo}
-          />
-        ))}
-      </div>
-      <div id='galery' className='galery2' ref={scrollContainer2Ref}>
-        {dataProjects.slice(4, 8).map((project, index) => (
-          <ProjectModel
-            key={index}
-            projectName={project.projectName}
-            projectPath={project.projectPath}
-            projectImage={project.projectImage}
-            projectInfo={project.projectInfo}
-          />
-        ))}
-      </div>
     </div>
   )
 }
