@@ -1,11 +1,9 @@
 
 #boxPerfil {
-  color: var(--back);
   text-shadow: 3px 3px 19px var(--primary);
 }
 
 #boxPerfil h1 {
-  color: var(--primary);
   font-size: 48px;
 }
 
@@ -14,7 +12,7 @@
   width: 100px ;
   background-size:100%;
   background-position: 0px 220px;
-  background-image: var(--eu);
+
   background-color: var(--back);
   box-shadow: 3px 3px 29px var(--shadow);
   border-radius: 20px;

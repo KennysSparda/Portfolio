@@ -39,7 +39,7 @@
 }
 
 #technology {
-  color: var(--secondary);
+  color: var(--text);
 }
 
 #technology:hover {
