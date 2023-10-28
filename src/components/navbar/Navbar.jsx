@@ -18,7 +18,7 @@ export default function Navbar() {
     return (
       <header className="navbar-body">
         <div className="navbar">
-        <h2 id="title">Kenny Vargas</h2>
+        <h2 id="title">Portfolio</h2>
         <BtnMenu function={showMenu}><Icon type={5}></Icon></BtnMenu>
         <Menu function={showMenu} />
         </div>
@@ -28,7 +28,7 @@ export default function Navbar() {
     return (
       <header className="navbar-body">
         <div className="navbar">
-          <h2 id="title">Kenny Vargas</h2>
+          <h2 id="title">Portfolio</h2>
           <BtnMenu function={showMenu}><Icon type={5}></Icon></BtnMenu>
         </div>
       </header>

@@ -11,24 +11,28 @@
   text-align: left;
 }
 
-#boxAbout {
+#linkWhatsapp {
+  margin: 48px;
+}
+
+#boxTechnologies {
   display: flex;
   margin: 0 auto;
-  padding: 10% 0px;
+  padding: 16px;
   justify-content: space-between;
   max-width: 1070px;
 }
 
-#boxAboutLeft {
+#boxTechnologiesLeft {
   position:inherit;
   float: left;
   text-align: left;
-  padding: 80px 0px;
+  padding: 0px;
   width: 50%;
   margin: 20px;
 }
 
-#boxAboutRight {
+#boxTechnologiesRight {
   position:inherit;
   float: right;
   align-items: left;
@@ -62,18 +66,18 @@
     margin-bottom: 20px;
   }
 
-  #boxAbout {
+  #boxTechnologies {
     display: block;
     padding-top: 0vh;
     padding-bottom: 50px;
   }
 
-  #boxAboutLeft {
+  #boxTechnologiesLeft {
     margin: 0px auto;
     float: none;
   }
   
-  #boxAboutRight {
+  #boxTechnologiesRight {
     margin: 0px auto;
     margin-top: 20px;
     float: none;
@@ -83,7 +87,7 @@
 }
 
 @media screen and (max-width: 450px) {
-  #boxAbout {
+  #boxTechnologies {
     padding: 0;
   }
 }

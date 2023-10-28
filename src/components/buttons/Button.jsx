@@ -3,7 +3,7 @@ export default function Button(props) {
     var Audio = document.createElement("AUDIO");
     if (Audio.canPlayType("audio/mpeg")) {
       Audio.setAttribute("src","/audio/mixkit-modern-technology-select-3124.wav");
-      Audio.volume = 0.1;
+      Audio.volume = 0.03;
     }
     Audio.play()
   }
@@ -11,7 +11,7 @@ export default function Button(props) {
     var Audio = document.createElement("AUDIO");
     if (Audio.canPlayType("audio/mpeg")) {
       Audio.setAttribute("src","/audio/mixkit-interface-device-click-2577.wav");
-      Audio.volume = 0.1;
+      Audio.volume = 0.03;
     }
     Audio.play()
   }
