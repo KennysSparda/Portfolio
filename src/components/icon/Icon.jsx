@@ -13,7 +13,15 @@ export default function Icon(props) {
     '/ico/js.png',          // 10 javascript
     '/ico/css3.png',        // 11 css
     '/ico/HTML5.png',       // 12 html
-    '/ico/puzzle.png'       // 13 puzzle
+    '/ico/puzzle.png',      // 13 puzzle
+    '/ico/linux.png',       // 14 linux
+    '/ico/python.png',      // 15 python
+    '/ico/c-sharp.png',     // 16 c#
+    '/ico/mysql.png',       // 17 mysql
+    '/ico/bootstrap.png',   // 18 mysql
+    '/ico/ruby.png',        // 19 css
+    '/ico/rails.png',       // 20 css
+    '/ico/gpt.png'          // 21 chatgpt
   ]
   var ico = icons[props.type]
   return (

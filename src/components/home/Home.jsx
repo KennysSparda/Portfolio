@@ -16,11 +16,7 @@ export default function Home() {
           <div id="boxHomeRight">
             <div id="content-right">
               <BtnProjects/>
-              <br/>
-              <br/>
               <BtnGithub/>
-              <br/>
-              <br/>
               <BtnLinkedin/>
             </div>
           </div>

@@ -13,7 +13,7 @@ export default function BtnProjects(props) {
     return (
       <Button 
         type='linkIn' 
-        id="btnStyled"
+        id="btnHome"
         path="/#projects" >
           <Icon type={13}></Icon>
           Projetos

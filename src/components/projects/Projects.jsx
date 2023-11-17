@@ -11,7 +11,7 @@ export default function Projects() {
   useEffect(() => {
     const getDataProjects = async () => {
       const response = await fetch('/projects/projects.json')
-      const dataProjectsJson = await response.json()
+      const dataProjectsJson = await response.json() // funcao que faz a solicitacao pro back end vai aqui
       setDataProjects(dataProjectsJson)
     }
 

@@ -9,15 +9,15 @@ export default function ProjectModel(props) {
         type='linkEx'
         id="btnStyled"
         path={props.projectPath}>
-        <h3>{props.projectName}</h3>
-        <Image 
-          className='ProjectImage'
-          src={props.projectImage}
-          alt="Picture of project"
-          width={400}
-          height={400}
-        />
-      </Button>
-     </div>
+      <h3>{props.projectName}</h3>
+      <Image 
+        className='ProjectImage'
+        src={props.projectImage}
+        alt="Picture of project"
+        width={400}
+        height={400}
+      />
+    </Button>
+    </div>
   )
 }

@@ -6,7 +6,7 @@ export default function btnGithub() {
   return (
     <Button 
       type='linkEx'
-      id="btnStyled"
+      id="btnHome"
       path={links[0]}>
       <Icon type={0}></Icon>
       Github

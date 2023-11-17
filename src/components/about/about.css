@@ -18,28 +18,25 @@
 #boxTechnologies {
   display: flex;
   margin: 0 auto;
-  padding: 16px;
-  justify-content: space-between;
+  padding: 3%;
+  justify-content: space-around;
   max-width: 1070px;
 }
 
 #boxTechnologiesLeft {
+  display: flex;
+  flex-direction: column;
   position:inherit;
   float: left;
-  text-align: left;
-  padding: 0px;
-  width: 50%;
-  margin: 20px;
+  width: 100;
 }
 
 #boxTechnologiesRight {
   position:inherit;
   float: right;
-  align-items: left;
   text-align: start;
   padding: 40px 0px;
-  width: 50%;
-  margin: 20px;
+  width: 30%;
 }
 
 #technology {
@@ -60,11 +57,6 @@
     padding-top: 10px;
 
  }
-
-  #home {
-    padding-top: 10px;
-    margin-bottom: 20px;
-  }
 
   #boxTechnologies {
     display: block;

@@ -15,7 +15,7 @@
 #boxHomeLeft {
   position:inherit;
   float: left;
-  padding: 5rem;
+  padding: 10vh 10vw ;
   border-radius: 30px;
   border: solid 1px var(--primary);
   background: var(--transparency);
@@ -25,13 +25,12 @@
   position:inherit;
   float: right;
   text-align: center;
-  margin-bottom: 10px;
 }
 
 #content-right {
-  width:500px;
-  margin: auto;
-  margin-top: 120px;
+  display: grid;
+  width: 25rem;
+  margin: 18vh 3vw;
 }
 
 @media screen and (max-width: 800px) {
@@ -49,10 +48,10 @@
   }
   
   #boxHomeRight {
-    margin: 0px auto;
-    float: none;
+    float: center;
     text-align: center;
-    padding: 0px;
+    margin: 100px 0;
+    height: 100vh;
   }
 
   #content-right {

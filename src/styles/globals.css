@@ -2,9 +2,9 @@
 
 :root {
   --back: #000000;
-  --primary: #00aa00;
-  --secondary: #444444;
-  --transparency: #22222299;
-  --shadow: #00ff00;
+  --primary: #0000FF;
+  --secondary: #222233;
+  --transparency: #22223399;
+  --shadow: rgba(0, 0, 255, 7);;
   --text: #ffffff;
 }
