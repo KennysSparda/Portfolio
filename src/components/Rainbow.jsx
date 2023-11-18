@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const ArcoIrisComponente = () => {
+const Rainbow = () => {
   const [corIndex, setCorIndex] = useState(0);
 
   const coresArcoIris = [
@@ -11,7 +11,7 @@ const ArcoIrisComponente = () => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCorIndex((prevIndex) => (prevIndex + 1) % coresArcoIris.length);
-    }, 1000);
+    }, 500);
     return () => clearInterval(intervalId);
   }, []);
 
@@ -23,4 +23,4 @@ const ArcoIrisComponente = () => {
   }, [corIndex]); // Adiciona corIndex como dependência para reagir às mudanças
 };
 
-export default ArcoIrisComponente;
+export default Rainbow;
