@@ -8,7 +8,7 @@ export default function About() {
       <h2>Sobre mim</h2>
       <div  id="text-about">
         <p>Olá me chamo Kenny de Souza Vargas estou em transição de carreira, ja trabalhei como fiscal de caixa e nessa profissão descobri que gosto de solucionar problemas.</p>
-        <p>Recentemente pouco mais de um ano consegui entrar na área de TI na empresa Atacação onde estou trabalhando atualmente na funcao de suporte de TI e em projetos internos com BASH, JS e PHP</p>
+        <p>Recentemente pouco mais de um ano consegui entrar na área de TI na empresa Atacadão onde estou trabalhando atualmente na função de Auxiliar de Informática, em projetos internos com BASH, JS e PHP</p>
         <p>Meu objetivo é conseguir um cargo como PROGRAMADOR FULLSTACK utilizando 
           <Button type='linkEx' path='https://nodejs.org/en/about'><Icon type="9"></Icon><strong id="technology">NodeJS</strong></Button>
            ou 
@@ -40,14 +40,12 @@ export default function About() {
             <Button id="btnTech" type='linkEx' path='https://openai.com/chatgpt'><Icon type="21"></Icon><strong id="technology">ChatGPT</strong></Button>
         </div>
         <div id="boxTechnologiesRight">
-          <p>Acesse a pagina deste projeto no
-            <Button 
+          <p>Acesse a pagina deste projeto no Github para saber mais sobre os codigos e sobre a estrutura do projeto :D</p>
+          <Button 
               type='linkEx'
               path='https://github.com/KennysSparda/Portfolio'>
-                <strong>Github</strong>
-            </Button>
-            para saber mais sobre os codigos e sobre a estrutura do projeto :D
-          </p>
+            <strong>Portfolio</strong>
+          </Button>
         </div>
       </div>
       <br/>
