@@ -12,7 +12,7 @@ export default function About() {
         <p>Meu objetivo é conseguir um cargo como PROGRAMADOR FULLSTACK utilizando 
           <Button type='linkEx' path='https://nodejs.org/en/about'><Icon type="9"></Icon><strong id="technology">NodeJS</strong></Button>
            ou 
-          <Button type='linkEx' path='https://rubyonrails.org/'><Icon type="10"></Icon><strong id="technology">RubyOnRails</strong></Button></p>
+          <Button type='linkEx' path='https://rubyonrails.org/'><Icon type="20"></Icon><strong id="technology">RubyOnRails</strong></Button></p>
       </div>
       <div id="linkWhatsapp">
         <p>Precisa de um programador?</p>
