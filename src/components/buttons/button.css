@@ -60,3 +60,9 @@
 a.Button {
   text-decoration: none;
 }
+
+@media screen and (max-width: 800px) {
+  .Button {
+    font-size: 13px;
+  }
+}

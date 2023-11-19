@@ -1,19 +1,19 @@
 export default function Button(props) {
-  function AudioOnMouseDown() {
+  async function AudioOnMouseDown() {
     var Audio = document.createElement("AUDIO");
     if (Audio.canPlayType("audio/mpeg")) {
-      Audio.setAttribute("src","/audio/mixkit-modern-technology-select-3124.wav");
+      await Audio.setAttribute("src","/audio/mixkit-modern-technology-select-3124.wav");
       Audio.volume = 0.03;
     }
-    Audio.play()
+    await Audio.play();
   }
-  function AudioOnMouseHover() {
+  async function AudioOnMouseHover() {
     var Audio = document.createElement("AUDIO");
     if (Audio.canPlayType("audio/mpeg")) {
-      Audio.setAttribute("src","/audio/mixkit-interface-device-click-2577.wav");
+      await Audio.setAttribute("src","/audio/mixkit-interface-device-click-2577.wav");
       Audio.volume = 0.03;
     }
-    Audio.play()
+    await Audio.play();
   }
 
   if(props.type == 'linkEx') {
