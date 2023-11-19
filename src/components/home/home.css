@@ -35,27 +35,26 @@
 
 @media screen and (max-width: 800px) {
   #boxHome {
-    padding-top: 120px;
-    display: block;
-    padding-bottom: 50px;
+    display: inline-grid;
+    margin: auto;
+    padding-bottom: 100vh;
+    height: 100vh;
   }
 
   #boxHomeLeft {
     margin: 0px auto;
-    text-align: center;
-    float: none;
     padding: 10px;
   }
   
   #boxHomeRight {
-    float: center;
-    text-align: center;
-    margin: 100px 0;
-    height: 100vh;
+    position: relative;
+    margin: 10vh auto;
+    margin-bottom: 15vh;
   }
 
   #content-right {
     width: 100%;
+    margin: 10px auto;
   }
 }
 
