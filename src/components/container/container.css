@@ -20,3 +20,11 @@ ul {
   z-index: 1;
 }
 
+@media screen and (max-width: 800px) {
+  .container{
+    font: 12px;
+    padding: 10px;
+    border-radius: 20px;
+    z-index: 1;
+  }
+}

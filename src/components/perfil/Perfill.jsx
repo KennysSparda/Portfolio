@@ -33,7 +33,7 @@ export default function Perfil() {
           </div>
           <div>
             <h1>Kenny Vargas</h1>
-            <h4>PROGRAMADOR FULLSTACK</h4>
+            <h3>PROGRAMADOR FULLSTACK</h3>
           </div>
         </div>
       )} 
