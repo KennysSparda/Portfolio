@@ -31,6 +31,14 @@
   width: 100;
 }
 
+#boxTechnologiesMiddle {
+  display: flex;
+  flex-direction: column;
+  position:inherit;
+  float: right;
+  width: 100;
+}
+
 #boxTechnologiesRight {
   position:inherit;
   float: right;
@@ -48,15 +56,7 @@
 }
 
 
-@media screen and (max-width: 600px) {
-  #boxImgPerfil {
-    float: none;
-    height: 100px ;
-    width: 100px ;
-    margin: 0px auto;
-    padding-top: 10px;
-
- }
+@media screen and (max-width: 800px) {
 
   #boxTechnologies {
     display: block;
@@ -68,12 +68,16 @@
     margin: 0px auto;
     float: none;
   }
+  #boxTechnologiesMiddle {
+    margin: 0px auto;
+    float: none;
+  }
   
   #boxTechnologiesRight {
-    margin: 0px auto;
-    margin-top: 20px;
+    margin: 5vh 0;
     float: none;
     text-align: center;
     padding: 0px;
+    width: 100%;
   }
 }

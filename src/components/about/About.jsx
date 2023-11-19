@@ -30,7 +30,7 @@ export default function About() {
             <Button id="btnTech" type='linkEx' path='https://www.ruby-lang.org/pt/'><Icon type="19"></Icon><strong id="technology">Ruby</strong></Button>
             <Button id="btnTech" type='linkEx' path='https://www.python.org/'><Icon type="15"></Icon><strong id="technology">Python</strong></Button>
         </div>
-        <div id='boxTechnologiesLeft'>
+        <div id='boxTechnologiesMiddle'>
             <Button id="btnTech" type='linkEx' path='https://nodejs.org/en/about'><Icon type="9"></Icon><strong id="technology">NodeJS</strong></Button>
             <Button id="btnTech" type='linkEx' path='https://rubyonrails.org/'><Icon type="20"></Icon><strong id="technology">Rails</strong></Button>
             <Button id="btnTech" type='linkEx' path='https://www.mysql.com/'><Icon type="17"></Icon><strong id="technology">MySQL</strong></Button>
@@ -39,6 +39,7 @@ export default function About() {
             <Button id="btnTech" type='linkEx' path='https://getbootstrap.com/'><Icon type="18"></Icon><strong id="technology">Bootstrap</strong></Button>
             <Button id="btnTech" type='linkEx' path='https://openai.com/chatgpt'><Icon type="21"></Icon><strong id="technology">ChatGPT</strong></Button>
         </div>
+        <hr />
         <div id="boxTechnologiesRight">
           <p>Acesse a pagina deste projeto no Github para saber mais sobre os codigos e sobre a estrutura do projeto :D</p>
           <Button 
