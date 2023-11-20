@@ -10,9 +10,12 @@ export default function About() {
         <p>Olá me chamo Kenny de Souza Vargas estou em transição de carreira, ja trabalhei como fiscal de caixa e nessa profissão descobri que gosto de solucionar problemas.</p>
         <p>Recentemente pouco mais de um ano consegui entrar na área de TI na empresa Atacadão onde estou trabalhando atualmente na função de Auxiliar de Informática, em projetos internos com BASH, JS e PHP</p>
         <p>Meu objetivo é conseguir um cargo como PROGRAMADOR FULLSTACK utilizando 
-          <Button type='linkEx' path='https://nodejs.org/en/about'><Icon type="9"></Icon><strong id="technology">NodeJS</strong></Button>
-           ou 
+          <br />
           <Button type='linkEx' path='https://rubyonrails.org/'><Icon type="20"></Icon><strong id="technology">RubyOnRails</strong></Button></p>
+          <br />
+           ou 
+           <br />
+          <Button type='linkEx' path='https://nodejs.org/en/about'><Icon type="9"></Icon><strong id="technology">NodeJS</strong></Button>
       </div>
       <hr/>      
       <h3>Tecnologias</h3>

@@ -81,4 +81,9 @@
     padding: 0px;
     width: 100%;
   }
+  #text-about {
+    margin: 2px;
+    margin-bottom: 6vh;
+    text-align: center; 
+  }
 }
