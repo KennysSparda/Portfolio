@@ -41,42 +41,26 @@
 #btnMenu {
   float: right;
 }
-
-@media screen and (max-width: 800px) {
-  .navbar img {
-    text-align: center;
-  }
-
-  .menu {
-    top: 200px;
-    text-align: center;
-    border-radius: 20px;
-    background: var(--transparency);
-    box-shadow: 3px 3px 9px var(--shadow);
-    display: grid;
-  }
-
-
-  .center-horizontal {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center; /* Optional: If you want the content inside to be centered */
-  }
   
   @media screen and (max-width: 800px) {
     .navbar img {
       text-align: center;
     }
   
+    .navbar {
+      position: relative;
+    }
+  
     .menu {
       top: 200px;
-      margin: 0 auto;
-      left: 0;
+      left: 50%;
+      transform: translateX(-50%);
       border-radius: 20px;
       background: var(--transparency);
       box-shadow: 3px 3px 9px var(--shadow);
       display: grid;
-      width: 100vw;
+      width: 80%;
+      position: absolute;
     }
   
     #btnMenu {
@@ -84,5 +68,4 @@
       right: 0;
       z-index: 2;
     }
-  }
 }
