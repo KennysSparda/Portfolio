@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono&display=swap');
 
 :root {
-  --back: #000000;
+  --container: #000000;
   --primary: #0000FF;
-  --secondary: #222233;
-  --transparency: #22223399;
+  --secondary: #00000099;
+  --transparency: #00000099;
   --shadow: rgba(0, 0, 255, 7);;
   --text: #ffffff;
 }

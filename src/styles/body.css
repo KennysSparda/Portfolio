@@ -4,7 +4,12 @@ body {
   text-align: center;
   font-size: 24px;
   color: var(--text);
-  background: var(--back);
+  
+  background-image: url("/img/bg.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 * {

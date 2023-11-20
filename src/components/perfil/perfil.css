@@ -8,8 +8,8 @@
   width: 100px ;
   background-size:100%;
   background-position: 0px 220px;
-
-  background-color: var(--back);
+  background: var(--transparency);
+  backdrop-filter: blur(10px);
   box-shadow: 3px 3px 29px var(--shadow);
   border-radius: 20px;
   animation: float 2s ease-in-out infinite;

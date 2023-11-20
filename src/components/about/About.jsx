@@ -14,10 +14,6 @@ export default function About() {
            ou 
           <Button type='linkEx' path='https://rubyonrails.org/'><Icon type="20"></Icon><strong id="technology">RubyOnRails</strong></Button></p>
       </div>
-      <div id="linkWhatsapp">
-        <p>Precisa de um programador?</p>
-        <Button type='linkEx' id='linkToWhatsapp' path='https://whatsa.me/5541995101213'><Icon type="3"></Icon><strong>Vamos trabalhar juntos -&gt;</strong></Button>
-      </div>
       <hr/>      
       <h3>Tecnologias</h3>
       <div id="boxTechnologies">
@@ -30,26 +26,27 @@ export default function About() {
             <Button id="btnTech" type='linkEx' path='https://www.ruby-lang.org/pt/'><Icon type="19"></Icon><strong id="technology">Ruby</strong></Button>
             <Button id="btnTech" type='linkEx' path='https://www.python.org/'><Icon type="15"></Icon><strong id="technology">Python</strong></Button>
         </div>
-        <div id='boxTechnologiesMiddle'>
-            <Button id="btnTech" type='linkEx' path='https://nodejs.org/en/about'><Icon type="9"></Icon><strong id="technology">NodeJS</strong></Button>
-            <Button id="btnTech" type='linkEx' path='https://rubyonrails.org/'><Icon type="20"></Icon><strong id="technology">Rails</strong></Button>
-            <Button id="btnTech" type='linkEx' path='https://www.mysql.com/'><Icon type="17"></Icon><strong id="technology">MySQL</strong></Button>
+        <div id='boxTechnologiesRight'>
+            <Button id="btnTech" type='linkEx' path='https://openai.com/chatgpt'><Icon type="21"></Icon><strong id="technology">ChatGPT</strong></Button>
             <Button id="btnTech" type='linkEx' path='https://react.dev'><Icon type="8"></Icon><strong id="technology">ReactJS</strong></Button>           
             <Button id="btnTech" type='linkEx' path='https://nextjs.org'><Icon type="7"></Icon><strong id="technology">NextJS</strong></Button>
             <Button id="btnTech" type='linkEx' path='https://getbootstrap.com/'><Icon type="18"></Icon><strong id="technology">Bootstrap</strong></Button>
-            <Button id="btnTech" type='linkEx' path='https://openai.com/chatgpt'><Icon type="21"></Icon><strong id="technology">ChatGPT</strong></Button>
-        </div>
-        <hr />
-        <div id="boxTechnologiesRight">
-          <p>Acesse a pagina deste projeto no Github para saber mais sobre os codigos e sobre a estrutura do projeto :D</p>
-          <Button 
-              type='linkEx'
-              path='https://github.com/KennysSparda/Portfolio'>
-            <strong>Portfolio</strong>
-          </Button>
+            <Button id="btnTech" type='linkEx' path='https://nodejs.org/en/about'><Icon type="9"></Icon><strong id="technology">NodeJS</strong></Button>
+            <Button id="btnTech" type='linkEx' path='https://rubyonrails.org/'><Icon type="20"></Icon><strong id="technology">Rails</strong></Button>
+            <Button id="btnTech" type='linkEx' path='https://www.mysql.com/'><Icon type="17"></Icon><strong id="technology">MySQL</strong></Button>
         </div>
       </div>
-      <br/>
+      <hr />
+      <div id="boxTechnologiesBelow">
+        <p>Acesse este projeto no Github para analisar o codigo e a estrutura do projeto!</p>
+        <Button
+            id="btnStyled"
+            type='linkEx'
+            path='https://github.com/KennysSparda/Portfolio'>
+          <strong>Acessar</strong>
+        </Button>
+      </div>
+    <br/>
     </Container>
   )
 }

@@ -5,7 +5,9 @@ export default function BtnProjects(props) {
   if(props.navbar == true) {
     return (
       <Button type='linkIn'
+              function={props.function}
               path="/#projects" >
+                
                 Projetos
       </Button>
     )

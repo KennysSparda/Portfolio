@@ -6,7 +6,7 @@ export default function Menu(props) {
   return (
     <nav className="menu"> 
       <ButtonHome function={props.function}/>
-      <BtnProjects navbar={true} />
+      <BtnProjects function={props.function} navbar={true} />
       <BtnAbout function={props.function}/>
     </nav>
   )

@@ -19,3 +19,7 @@ footer {
   font-size: 26px;
   margin: 0px;
 }
+
+#content-footer {
+  display: grid;
+}

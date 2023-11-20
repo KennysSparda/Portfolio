@@ -17,8 +17,7 @@
   float: left;
   padding: 10vh 10vw ;
   border-radius: 30px;
-  border: solid 1px var(--primary);
-  background: var(--transparency);
+
 }
 
 #boxHomeRight {
