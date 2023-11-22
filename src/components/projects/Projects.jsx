@@ -28,12 +28,12 @@ export default function Projects() {
       const scrollContainer1 = scrollContainer1Ref.current
       scrollContainer1.addEventListener('wheel', handleWheel)
 
-      const scrollContainer2 = scrollContainer2Ref.current
-      scrollContainer2.addEventListener('wheel', handleWheel)
+      // const scrollContainer2 = scrollContainer2Ref.current
+      // scrollContainer2.addEventListener('wheel', handleWheel)
 
       return () => {
         scrollContainer1.removeEventListener('wheel', handleWheel)
-        scrollContainer2.removeEventListener('wheel', handleWheel)
+        // scrollContainer2.removeEventListener('wheel', handleWheel)
       }
     }
   }, [dataProjects])
@@ -48,7 +48,7 @@ export default function Projects() {
         <h2>Projetos</h2>
 
         <div id='galery' className='galery1' ref={scrollContainer1Ref}>
-          {dataProjects.slice(0, 4).map((project, index) => (
+          {dataProjects.map((project, index) => (
             <ProjectModel
               key={index}
               projectName={project.projectName}
@@ -58,7 +58,7 @@ export default function Projects() {
             />
           ))}
         </div>
-        <div id='galery' className='galery2' ref={scrollContainer2Ref}>
+        {/* <div id='galery' className='galery2' ref={scrollContainer2Ref}>
           {dataProjects.slice(4, 8).map((project, index) => (
             <ProjectModel
               key={index}
@@ -68,7 +68,7 @@ export default function Projects() {
               projectInfo={project.projectInfo}
             />
           ))}
-        </div>
+        </div> */}
       </Container>
     </div>
   )
