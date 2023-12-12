@@ -5,10 +5,11 @@ body {
   font-size: 24px;
   color: var(--text);
   
-  background-image: url("/img/bg.gif");
+  background-image: url("/img/background.gif");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position-x: center;
+  background-position-y: -150px;
+  background-size: 140%;
   background-attachment: fixed;
 }
 
