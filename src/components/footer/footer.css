@@ -21,5 +21,8 @@ footer {
 }
 
 #content-footer {
-  display: grid;
+  display: flex;
+  width: 30%;
+  margin: auto;
+  justify-content: space-between;
 }
