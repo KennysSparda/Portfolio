@@ -1,6 +1,6 @@
 footer {
   background-color: var(--secundary);
-  width: auto;
+  width: 100%;
   align-items: center;
   justify-content: center;
   margin: 0px auto;
@@ -22,7 +22,13 @@ footer {
 
 #content-footer {
   display: flex;
-  width: 30%;
-  margin: auto;
-  justify-content: space-between;
+  justify-content: space-around;
 }
+
+@media screen and (max-width: 330px) {
+  #content-footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+  
