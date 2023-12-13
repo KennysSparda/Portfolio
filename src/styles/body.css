@@ -52,6 +52,15 @@ h3 {
   background: var(--primary);
 }
 
+
+@media screen and (max-width: 1200px) {
+  body {
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+  }
+}
+
 @media screen and (max-width: 800px) {
   h1 {
     font-size: 42px;
