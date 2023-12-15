@@ -73,6 +73,32 @@
   border-radius: 20px;
 }
 
+.headerProjects {
+  padding: 0px 50px;
+  justify-content: space-between;
+  display: flex;
+}
+
+.headerProjects button#btnStyled {
+  position:inherit;
+  float: right;
+  margin: 20px;
+}
+
+.headerProjects h2 {
+  position:inherit;
+  float: left;
+  margin-top: 20px;
+}
+
+.allProjects {
+  margin-top: 26vh;
+}
+
+.allProjects section#projects {
+  padding-top: 8vh;
+}
+
 @media screen and (max-width: 481px) {
   #project {
     font-size: 8px;
