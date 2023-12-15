@@ -12,6 +12,12 @@
     "projectInfo": "Javascript, CSS e HTML"
   },
   {
+    "projectName": "Conversor de Temperatura",
+    "projectPath": "/projects/ConversorDeTemperatura/index.html",
+    "projectImage": "/img/projects/conversordetemperatura.png",
+    "projectInfo": "Javascript, CSS e HTML"
+  },
+  {
     "projectName": "KySound",
     "projectPath": "/projects/KySound/index.html",
     "projectImage": "/img/projects/kysound.png",
@@ -27,12 +33,6 @@
     "projectName": "Calculadora",
     "projectPath": "projects/Calculadora/index.html",
     "projectImage": "/img/projects/calculadora.png",
-    "projectInfo": "Javascript, CSS e HTML"
-  },
-  {
-    "projectName": "Conversor de Temperatura",
-    "projectPath": "/projects/ConversorDeTemperatura/index.html",
-    "projectImage": "/img/projects/conversordetemperatura.png",
     "projectInfo": "Javascript, CSS e HTML"
   },
   {

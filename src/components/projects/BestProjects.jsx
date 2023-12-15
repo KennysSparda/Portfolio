@@ -27,8 +27,8 @@ export default function BestProjects() {
           <h2>Projetos em destaque</h2>
           <Button id="btnStyled" type="linkIn" path="/projects">Todos os projetos</Button>
         </div>
-        <div id='galery' className='galery1'>
-        {dataProjects.slice(0, 2).map((project, index) => (
+        <div id='galery' className='BestProjects'>
+        {dataProjects.slice(0, 3).map((project, index) => (
             <ProjectModel
               key={index}
               projectName={project.projectName}
