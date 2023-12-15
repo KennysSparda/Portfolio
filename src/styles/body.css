@@ -44,12 +44,8 @@ h3 {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--secondary);
-  border-radius: 8px;
-}
-
-::-webkit-scrollbar-thumb:hover {
   background: var(--primary);
+  border-radius: 8px;
 }
 
 @media screen and (max-width: 1200px) {

@@ -6,8 +6,6 @@ import Button from '../buttons/Button'
 export default function BestProjects() {
   const [dataProjects, setDataProjects] = useState(null)
 
-  const scrollContainer1Ref = useRef(null)
-
   useEffect(() => {
     const getDataProjects = async () => {
       const response = await fetch('/projects/projects.json')
@@ -17,22 +15,6 @@ export default function BestProjects() {
 
     getDataProjects()
   }, [])
-
-  useEffect(() => {
-    if (dataProjects) {
-      const handleWheel = (evt) => {
-        evt.preventDefault()
-        evt.currentTarget.scrollLeft += evt.deltaY
-      }
-
-      const scrollContainer1 = scrollContainer1Ref.current
-      scrollContainer1.addEventListener('wheel', handleWheel)
-
-      return () => {
-        scrollContainer1.removeEventListener('wheel', handleWheel)
-      }
-    }
-  }, [dataProjects])
 
   if (!dataProjects) {
     return <Container><h1>CARREGANDO PROJETOS</h1></Container>
@@ -45,16 +27,16 @@ export default function BestProjects() {
           <h2>Projetos em destaque</h2>
           <Button id="btnStyled" type="linkIn" path="/projects">Todos os projetos</Button>
         </div>
-        <div id='galery' className='galery1' ref={scrollContainer1Ref}>
-          {dataProjects.map((project, index) => (
+        <div id='galery' className='galery1'>
+        {dataProjects.slice(0, 2).map((project, index) => (
             <ProjectModel
-            key={index}
-            projectName={project.projectName}
-            projectPath={project.projectPath}
-            projectImage={project.projectImage}
-            projectInfo={project.projectInfo}
+              key={index}
+              projectName={project.projectName}
+              projectPath={project.projectPath}
+              projectImage={project.projectImage}
+              projectInfo={project.projectInfo}
             />
-            ))}
+          ))}
         </div>
       </Container>
     </div>
