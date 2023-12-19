@@ -6,8 +6,7 @@ export default function BtnProjects(props) {
     return (
       <Button type='linkIn'
               function={props.function}
-              path="/#projects" >
-                
+              path="/projects" > 
                 Projetos
       </Button>
     )
@@ -16,7 +15,7 @@ export default function BtnProjects(props) {
       <Button 
         type='linkIn' 
         id="btnHome"
-        path="/#projects" >
+        path="/projects" >
           <Icon type={13}></Icon>
           Projetos
       </Button >
