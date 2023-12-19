@@ -74,7 +74,7 @@
 }
 
 .headerProjects {
-  padding: 0px 50px;
+  padding: 0 5vw;
   justify-content: space-between;
   display: flex;
 }
@@ -132,4 +132,10 @@
     margin: 10px auto;
     margin-top: 0px;
   }
+
+  .headerProjects {
+    flex-direction: column;
+  }
+
+
 }

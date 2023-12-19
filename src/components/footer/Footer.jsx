@@ -12,7 +12,7 @@ export default function Footer() {
       </div>
       <p id="footerText">27/10/2023 - Campo Largo / PR</p>
       <p>versão do projeto: 3.7.6</p>
-     <div className="copyright">KennyVargas ©</div> 
+     <div className="copyright">Swygax ©</div> 
     </footer>
   )
 }
