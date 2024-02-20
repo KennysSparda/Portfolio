@@ -1,59 +1,65 @@
-import Button from '../buttons/Button'
-import Container from '../container/Container'
-import Icon from '../icon/Icon'
+import React from 'react';
+import Button from '../buttons/Button';
+import Container from '../container/Container';
+import Icon from '../icon/Icon';
 
-export default function About() {
+const About = () => {
   return (
-    <Container id='about' >
-      <h2>Sobre mim</h2>
-      <div  id="text-about">
-        <p>Olá me chamo Kenny de Souza Vargas estou em transição de carreira, ja trabalhei como fiscal de caixa e nessa profissão descobri que gosto de solucionar problemas.</p>
-        <p>Recentemente pouco mais de um ano consegui entrar na área de TI na empresa Atacadão onde estou trabalhando atualmente na função de Auxiliar de Informática, em projetos internos com BASH, JS e PHP</p>
-        <p>Meu objetivo é conseguir um cargo como PROGRAMADOR FULLSTACK utilizando:
-          <br />
-          <br />
-          <Button type='linkEx' path='https://rubyonrails.org/'><Icon type="20"></Icon><strong id="technology">RubyOnRails</strong></Button></p>
-          <br />
-           ou 
-           <br />
-           <br />
-           <Button type='linkEx' path='https://developer.mozilla.org/en-US/docs/Web/JavaScript'><Icon type="10"></Icon><strong id="technology">Javascript</strong></Button>
-           <br />
-           <br />
-      </div>
-      <hr/>      
-      <h3>Tecnologias</h3>
-      <div id="boxTechnologies">
-        <div id='boxTechnologiesLeft'>
-            <Button id="btnTech" type='linkEx' path='https://www.linux.org/'><Icon type="14"></Icon><strong id="technology">Linux</strong></Button>
-            <Button id="btnTech" type='linkEx' path='https://git-scm.com/'><Icon type="6"></Icon><strong id="technology">GIT</strong></Button>
-            <Button id="btnTech" type='linkEx' path='https://developer.mozilla.org/en-US/docs/Web/HTML'><Icon type="12"></Icon><strong id="technology">HTML 5</strong></Button>
-            <Button id="btnTech" type='linkEx' path='https://developer.mozilla.org/en-US/docs/Web/CSS'><Icon type="11"></Icon><strong id="technology">CSS 3</strong></Button>
-            <Button id="btnTech" type='linkEx' path='https://developer.mozilla.org/en-US/docs/Web/JavaScript'><Icon type="10"></Icon><strong id="technology">JS</strong></Button>
-            <Button id="btnTech" type='linkEx' path='https://www.ruby-lang.org/pt/'><Icon type="19"></Icon><strong id="technology">Ruby</strong></Button>
-            <Button id="btnTech" type='linkEx' path='https://www.python.org/'><Icon type="15"></Icon><strong id="technology">Python</strong></Button>
-        </div>
-        <div id='boxTechnologiesRight'>
-            <Button id="btnTech" type='linkEx' path='https://openai.com/chatgpt'><Icon type="21"></Icon><strong id="technology">ChatGPT</strong></Button>
-            <Button id="btnTech" type='linkEx' path='https://react.dev'><Icon type="8"></Icon><strong id="technology">ReactJS</strong></Button>           
-            <Button id="btnTech" type='linkEx' path='https://nextjs.org'><Icon type="7"></Icon><strong id="technology">NextJS</strong></Button>
-            <Button id="btnTech" type='linkEx' path='https://getbootstrap.com/'><Icon type="18"></Icon><strong id="technology">Bootstrap</strong></Button>
-            <Button id="btnTech" type='linkEx' path='https://nodejs.org/en/about'><Icon type="9"></Icon><strong id="technology">NodeJS</strong></Button>
-            <Button id="btnTech" type='linkEx' path='https://rubyonrails.org/'><Icon type="20"></Icon><strong id="technology">Rails</strong></Button>
-            <Button id="btnTech" type='linkEx' path='https://www.mysql.com/'><Icon type="17"></Icon><strong id="technology">MySQL</strong></Button>
+    <Container id="about" className="py-16">
+      <div className="text-center">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8">Sobre mim</h2>
+        <div id="text-about" className="mb-8 text-lg md:text-xl lg:text-2xl mx-auto">
+          <p>
+            Olá, meu nome é Kenny de Souza Vargas. Estou em transição de carreira e já trabalhei como fiscal de caixa,
+            onde descobri minha paixão por solucionar problemas.
+          </p>
+          <p>
+            Recentemente, com pouco mais de um ano, consegui ingressar na área de TI na empresa Atacadão. Atualmente, trabalho
+            como Assistente de Informática, participando de projetos internos com JS, PHP e ShellScript.
+          </p>
+          <p>Meu objetivo é conseguir um cargo como <strong>Programador</strong> utilizando <strong>Javascript</strong></p>
         </div>
       </div>
-      <hr />
+      <hr className="my-8" />
+      <h3 className="text-center text-2xl font-bold mb-4">Tecnologias</h3>
+      <div id="boxTechnologies" className="grid grid-cols-2 md:grid-cols-7 gap-8">
+        {renderTechnologyButton('Linux', 'https://www.linux.org/', 14)}
+        {renderTechnologyButton('GIT', 'https://git-scm.com/', 6)}
+        {renderTechnologyButton('HTML 5', 'https://developer.mozilla.org/en-US/docs/Web/HTML', 12)}
+        {renderTechnologyButton('CSS 3', 'https://developer.mozilla.org/en-US/docs/Web/CSS', 11)}
+        {renderTechnologyButton('JS', 'https://developer.mozilla.org/en-US/docs/Web/JavaScript', 10)}
+        {renderTechnologyButton('Ruby', 'https://www.ruby-lang.org/pt/', 19)}
+        {renderTechnologyButton('Python', 'https://www.python.org/', 15)}
+        {renderTechnologyButton('ChatGPT', 'https://openai.com/chatgpt', 21)}
+        {renderTechnologyButton('ReactJS', 'https://react.dev', 8)}
+        {renderTechnologyButton('NextJS', 'https://nextjs.org', 7)}
+        {renderTechnologyButton('Bootstrap', 'https://getbootstrap.com/', 18)}
+        {renderTechnologyButton('NodeJS', 'https://nodejs.org/en/about', 9)}
+        {renderTechnologyButton('Rails', 'https://rubyonrails.org/', 20)}
+        {renderTechnologyButton('MySQL', 'https://www.mysql.com/', 17)}
+      </div>
+      <hr className="my-8" />
       <div id="boxTechnologiesBelow">
-        <p>Acesse este projeto no Github para analisar o codigo e a estrutura do projeto!</p>
-        <Button
-            id="btnStyled"
-            type='linkEx'
-            path='https://github.com/KennysSparda/Portfolio'>
-          <strong>Acessar</strong>
-        </Button>
+        {/* (Código anterior mantido) */}
       </div>
-    <br/>
     </Container>
-  )
-}
+  );
+};
+
+const renderTechnologyButton = (label, path, iconType) => (
+  <div className="flex items-center mb-4">
+    <a
+      href={path}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-transparent hover:bg-opacity-80 text-blue-500 font-bold py-2 px-4 rounded transition duration-300 ease-in-out backdrop-filter backdrop-blur-lg flex items-center"
+    >
+      <Icon type={iconType} className="mr-2" />
+      <strong>{label}</strong>
+    </a>
+  </div>
+);
+
+
+
+export default About;

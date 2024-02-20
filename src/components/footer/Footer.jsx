@@ -1,18 +1,18 @@
-import BtnGithub from '../buttons/btnGithub'
-import BtnLinkedin from '../buttons/btnLinkedin'
-import BtnWhatsapp from '../buttons/btnWhatsapp'
+import BtnGithub from '../buttons/btnGithub';
+import BtnLinkedin from '../buttons/btnLinkedin';
+import BtnWhatsapp from '../buttons/btnWhatsapp';
 
 export default function Footer() {
   return (
-    <footer>
-      <div id="content-footer">
-        <BtnGithub/>
-        <BtnLinkedin/>
-        <BtnWhatsapp/>
+    <footer className="bg-gray-800 text-white py-8">
+      <div className="container mx-auto flex items-center justify-center mb-8">
+        <BtnGithub />
+        <BtnLinkedin />
+        <BtnWhatsapp />
       </div>
-      <p id="footerText">27/10/2023 - Campo Largo / PR</p>
-      <p>versão do projeto: 3.7.6</p>
-     <div className="copyright">Swygax ©</div> 
+      <p className="text-center text-gray-500 mb-2">Atualizado em 20/02/2024 | Campo Largo, PR</p>
+      <p className="text-center text-gray-500 mb-2">Versão do projeto: 4.0.0</p>
+      <div className="text-center text-gray-500">© Kenny Vargas 2024</div>
     </footer>
-  )
+  );
 }

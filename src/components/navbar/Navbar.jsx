@@ -1,73 +1,59 @@
 import React, { useState, useEffect } from 'react';
-import BtnMenu from '../buttons/btnMenu'
-import Menu from './Menu'
-import Icon from '../icon/Icon'
+import BtnMenu from '../buttons/btnMenu';
+import Menu from './Menu';
+import Icon from '../icon/Icon';
 
-export default function Navbar() {
-  const [isMuted, setIsMuted] = useState(false);
-  const [audio, setAudio] = useState(null);
+const Navbar = () => {
+  const [showMenu, setShowMenu] = useState(false);
+  const [showNavbar, setShowNavbar] = useState(true);
 
-  const playAudio = async () => {
-    try {
-      if (!audio) {
-        const newAudio = new Audio('/audio/ShootingStars.mp3');
-        setAudio(newAudio);
-      }
-
-      audio.volume = isMuted ? 0 : 0.05;
-
-      if (!isMuted) {
-        await audio.play();
-      }
-    } catch (error) {
-      console.error('Error playing audio:', error);
-    }
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
   };
 
-  const toggleMute = () => {
-    setIsMuted((prevMuted) => !prevMuted);
+  const handleMenuClick = () => {
+    setShowMenu(false);
   };
 
   useEffect(() => {
-    const handleInteraction = () => {
-      playAudio();
-      document.removeEventListener('click', handleInteraction);
+    let prevScrollPos = window.pageYOffset;
+
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+
+      if ((prevScrollPos > currentScrollPos && currentScrollPos > 0) || currentScrollPos === 0) {
+        setShowNavbar(true);
+      } else {
+        setShowNavbar(false);
+      }
+
+      prevScrollPos = currentScrollPos;
     };
 
-    document.addEventListener('click', handleInteraction);
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      document.removeEventListener('click', handleInteraction);
+      window.removeEventListener('scroll', handleScroll);
     };
-  }, [isMuted, audio]);
+  }, []);
 
-  // Start navbar empty
-  const [show, setShow] = useState(false);
+  return (
+    <header
+      className={`navbar-body bg-gray-800 fixed w-full transition-transform transform z-50 ${
+        showNavbar ? 'translate-y-0' : '-translate-y-full'
+      }`}
+    >
+      <div className="navbar flex items-center justify-between p-4">
+        <h2 id="title" className="text-white text-lg font-bold">
+          Portfolio
+        </h2>
+        <BtnMenu function={toggleMenu}>
+          <Icon type={5} className={`text-white ${showMenu ? 'menu-opened' : ''}`} />
+        </BtnMenu>
+        {showMenu && <Menu function={toggleMenu} onItemClick={handleMenuClick} />}
+      </div>
+    </header>
+  );
+};
 
-  // function to toggle Show / Hide navbar
-  const showMenu = () => {
-    setShow(!show)
-  }
-
-  // Verify if main button is pressed
-  if (show == true) {
-    return (
-      <header className="navbar-body">
-        <div className="navbar">
-        <h2 id="title">Portfolio</h2>
-        <BtnMenu function={showMenu}><Icon type={5}></Icon></BtnMenu>
-        <Menu function={showMenu} muteVar={isMuted} muteFunction={toggleMute} />
-        </div>
-      </header>
-    )
-  } else {
-    return (
-      <header className="navbar-body">
-        <div className="navbar">
-          <h2 id="title">Portfolio</h2>
-          <BtnMenu function={showMenu}><Icon type={5}></Icon></BtnMenu>
-        </div>
-      </header>
-    )
-  }
-}
+export default Navbar;

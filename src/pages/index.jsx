@@ -1,8 +1,7 @@
 import Navbar from '../components/navbar/Navbar'
 import Footer from '../components/footer/Footer'
-import Rainbow from '../components/Rainbow'
 import Home from '../components/home/Home'
-import BestProjects from '../components/projects/BestProjects'
+import Projects from '../components/projects/Projects'
 import About from '../components/about/About'
 
 export default function App() {
@@ -11,8 +10,7 @@ export default function App() {
     <div>
       <Navbar />
       <Home />
-      <Rainbow />
-      <BestProjects />
+      <Projects />
       <About />
       <Footer />
     </div>

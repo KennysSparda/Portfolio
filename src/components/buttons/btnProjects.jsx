@@ -16,8 +16,10 @@ export default function BtnProjects(props) {
         type='linkIn' 
         id="btnHome"
         path="/projects" >
-          <Icon type={13}></Icon>
-          Projetos
+          <div className="flex items-center">
+            <Icon type={13}></Icon>
+            <span className="ml-2">Projetos</span>
+          </div>
       </Button >
     )
   }

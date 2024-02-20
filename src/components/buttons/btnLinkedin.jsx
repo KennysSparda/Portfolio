@@ -8,8 +8,10 @@ export default function btnLinkedin() {
       type='linkEx'
       id="btnHome"      
       path={links[0]}>
-      <Icon type={4}></Icon>Linkedin
+      <div className="flex items-center">
+        <Icon type={4}></Icon>
+        <span className="ml-2">Linkedin</span>
+      </div>
     </Button>
   )
 }
-

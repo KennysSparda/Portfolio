@@ -1,77 +1,65 @@
-import { useEffect, useState, useRef } from 'react'
-import Container from '../container/Container'
-import ProjectModel from './ProjectModel'
+import React, { useEffect, useState, useRef } from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import Container from '../container/Container';
+import ProjectModel from './ProjectModel';
 
 export default function Projects() {
-  const [dataProjects, setDataProjects] = useState(null)
-
-  const scrollContainer1Ref = useRef(null)
-  const scrollContainer2Ref = useRef(null)
+  const [dataProjects, setDataProjects] = useState(null);
+  const slider = useRef(null);
 
   useEffect(() => {
     const getDataProjects = async () => {
-      const response = await fetch('/projects/projects.json')
-      const dataProjectsJson = await response.json() // funcao que faz a solicitacao pro back end vai aqui
-      setDataProjects(dataProjectsJson)
-    }
+      const response = await fetch('/projects/projects.json');
+      const dataProjectsJson = await response.json();
+      setDataProjects(dataProjectsJson);
+    };
 
-    getDataProjects()
-  }, [])
-
-  useEffect(() => {
-    if (dataProjects) {
-      const handleWheel = (evt) => {
-        evt.preventDefault()
-        evt.currentTarget.scrollLeft += evt.deltaY
-      }
-
-      const scrollContainer1 = scrollContainer1Ref.current
-      scrollContainer1.addEventListener('wheel', handleWheel)
-
-      const scrollContainer2 = scrollContainer2Ref.current
-      scrollContainer2.addEventListener('wheel', handleWheel)
-
-      return () => {
-        scrollContainer1.removeEventListener('wheel', handleWheel)
-        scrollContainer2.removeEventListener('wheel', handleWheel)
-      }
-    }
-  }, [dataProjects])
+    getDataProjects();
+  }, []);
 
   if (!dataProjects) {
-    return <Container><h1>CARREGANDO PROJETOS</h1></Container>
+    return <Container><h1>CARREGANDO PROJETOS</h1></Container>;
   }
 
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
   return (
-    <div className='allProjects'>
-      <Container id='projects'>
-        <h2>Projetos</h2>
-
-        <div id='galery' className='galery1' ref={scrollContainer1Ref}>
-        {dataProjects.slice(0, 4).map((project, index) => (
+    <Container id="projects">
+      <h2 className="text-4xl font-bold text-gray-800 mb-4 text-center pt-32">Projetos</h2>
+      <div className="relative">
+        <Slider ref={slider} {...settings} className="mx-auto mt-10">
+          {dataProjects.map((project, index) => (
             <ProjectModel
               key={index}
               projectName={project.projectName}
               projectPath={project.projectPath}
               projectImage={project.projectImage}
               projectInfo={project.projectInfo}
+              style={{ height: '50vh' }}
             />
           ))}
-        </div>
-        <div id='galery' className='galery2' ref={scrollContainer2Ref}>
-          {dataProjects.slice(4, 8).map((project, index) => (
-            <ProjectModel
-              key={index}
-              projectName={project.projectName}
-              projectPath={project.projectPath}
-              projectImage={project.projectImage}
-              projectInfo={project.projectInfo}
-            />
-          ))}
-        </div>
-      </Container>
-    </div>
-  )
+        </Slider>
+        <button
+          className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
+          onClick={() => slider.current.slickPrev()}
+        >
+          Anterior
+        </button>
+        <button
+          className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
+          onClick={() => slider.current.slickNext()}
+        >
+          Próximo
+        </button>
+      </div>
+    </Container>
+  );
 }
-
-
