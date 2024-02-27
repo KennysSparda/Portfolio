@@ -5,8 +5,8 @@ import Icon from '../icon/Icon';
 
 const About = () => {
   return (
-    <Container id="about" className="py-16">
-      <div className="text-center">
+    <Container id="about">
+      <div className="text-center p-8">
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8">Sobre mim</h2>
         <div id="text-about" className="mb-8 text-lg md:text-xl lg:text-2xl mx-auto">
           <p>
@@ -25,8 +25,8 @@ const About = () => {
       <div id="boxTechnologies" className="grid grid-cols-2 md:grid-cols-7 gap-8">
         {renderTechnologyButton('Linux', 'https://www.linux.org/', 14)}
         {renderTechnologyButton('GIT', 'https://git-scm.com/', 6)}
-        {renderTechnologyButton('HTML 5', 'https://developer.mozilla.org/en-US/docs/Web/HTML', 12)}
-        {renderTechnologyButton('CSS 3', 'https://developer.mozilla.org/en-US/docs/Web/CSS', 11)}
+        {renderTechnologyButton('HTML', 'https://developer.mozilla.org/en-US/docs/Web/HTML', 12)}
+        {renderTechnologyButton('CSS', 'https://developer.mozilla.org/en-US/docs/Web/CSS', 11)}
         {renderTechnologyButton('JS', 'https://developer.mozilla.org/en-US/docs/Web/JavaScript', 10)}
         {renderTechnologyButton('Ruby', 'https://www.ruby-lang.org/pt/', 19)}
         {renderTechnologyButton('Python', 'https://www.python.org/', 15)}
@@ -52,7 +52,7 @@ const renderTechnologyButton = (label, path, iconType) => (
       href={path}
       target="_blank"
       rel="noopener noreferrer"
-      className="bg-transparent hover:bg-opacity-80 text-blue-500 font-bold py-2 px-4 rounded transition duration-300 ease-in-out backdrop-filter backdrop-blur-lg flex items-center"
+      className="bg-transparent hover:bg-opacity-80 font-bold py-2 px-4 rounded transition duration-300 ease-in-out backdrop-filter backdrop-blur-lg flex items-center"
     >
       <Icon type={iconType} className="mr-2" />
       <strong>{label}</strong>

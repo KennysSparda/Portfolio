@@ -14,7 +14,7 @@ const Home = () => {
           <div id="boxHomeLeft" className="w-full md:w-2/3">
             <Perfil />
           </div>
-          <div id="boxHomeRight" className="w-full md:w-1/3 p-4 md:p-8 bg-gray-200">
+          <div id="boxHomeRight" className="w-full md:w-1/3 p-4 md:p-8">
             <div id="content-right" className="flex flex-col space-y-4">
               <BtnProjects isHomeButton={true} />
               <BtnGithub isHomeButton={true} />

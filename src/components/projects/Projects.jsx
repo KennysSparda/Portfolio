@@ -33,7 +33,7 @@ export default function Projects() {
 
   return (
     <Container id="projects">
-      <h2 className="text-4xl font-bold text-gray-800 mb-4 text-center pt-32">Projetos</h2>
+      <h2 className="text-4xl font-bold mb-4 text-center pt-32">Projetos</h2>
       <div className="relative">
         <Slider ref={slider} {...settings} className="mx-auto mt-10">
           {dataProjects.map((project, index) => (
@@ -48,13 +48,13 @@ export default function Projects() {
           ))}
         </Slider>
         <button
-          className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
+          className="absolute top-1/2 left-0 transform -translate-y-1/2 text-white font-bold py-2 px-4"
           onClick={() => slider.current.slickPrev()}
         >
           Anterior
         </button>
         <button
-          className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
+          className="absolute top-1/2 right-0 transform -translate-y-1/2 text-white font-bold py-2 px-4"
           onClick={() => slider.current.slickNext()}
         >
           Próximo
