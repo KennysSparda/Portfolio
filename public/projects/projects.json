@@ -1,5 +1,11 @@
 [
   {
+    "projectName": "Ship Adventure",
+    "projectPath": "https://ship-adventure.vercel.app",
+    "projectImage": "/img/projects/shipadventure.png",
+    "projectInfo": "ThreeJS, Next, React, Javascript, Tailwind e HTML"
+  },
+  {
     "projectName": "Blog",
     "projectPath": "https://cesiane-and-mayke.vercel.app",
     "projectImage": "/img/projects/blogpessoal.png",
