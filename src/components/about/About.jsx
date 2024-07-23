@@ -6,7 +6,7 @@ import Icon from '../icon/Icon';
 const About = () => {
   return (
     <Container id="about">
-      <div className="text-center p-8">
+      <div className="p-2">
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8">Sobre mim</h2>
         <div id="text-about" className="mb-8 text-lg md:text-xl lg:text-2xl mx-auto">
           <p>
@@ -54,7 +54,7 @@ const renderTechnologyButton = (label, path, iconType) => (
       rel="noopener noreferrer"
       className="bg-transparent hover:bg-opacity-80 font-bold py-2 px-4 rounded transition duration-300 ease-in-out backdrop-filter backdrop-blur-lg flex items-center"
     >
-      <Icon type={iconType} className="mr-2" />
+      <Icon type={iconType} />
       <strong>{label}</strong>
     </a>
   </div>

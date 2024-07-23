@@ -1,41 +1,19 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import BtnMenu from '../buttons/btnMenu';
 import Menu from './Menu';
 import Icon from '../icon/Icon';
+import useNavbarVisibility from './hooks/useNavbarVisibility';
+import useWindowSize from './hooks/useWindowSize';
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const [showNavbar, setShowNavbar] = useState(true);
+  const showNavbar = useNavbarVisibility();
+  const { width } = useWindowSize();
+  const isDesktop = width >= 768;
 
   const toggleMenu = () => {
-    setShowMenu(!showMenu);
+    setShowMenu(prevState => !prevState);
   };
-
-  const handleMenuClick = () => {
-    setShowMenu(false);
-  };
-
-  useEffect(() => {
-    let prevScrollPos = window.pageYOffset;
-
-    const handleScroll = () => {
-      const currentScrollPos = window.pageYOffset;
-
-      if ((prevScrollPos > currentScrollPos && currentScrollPos > 0) || currentScrollPos === 0) {
-        setShowNavbar(true);
-      } else {
-        setShowNavbar(false);
-      }
-
-      prevScrollPos = currentScrollPos;
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
   return (
     <header
@@ -43,14 +21,14 @@ const Navbar = () => {
         showNavbar ? 'translate-y-0' : '-translate-y-full'
       }`}
     >
-      <div className="navbar flex items-center justify-between p-4">
-        <h2 id="title" className="text-white text-lg font-bold">
-          Portfolio
-        </h2>
-        <BtnMenu function={toggleMenu}>
-          <Icon type={5} className={`text-white ${showMenu ? 'menu-opened' : ''}`} />
-        </BtnMenu>
-        {showMenu && <Menu function={toggleMenu} onItemClick={handleMenuClick} />}
+      <div className="navbar max-w-screen-lg mx-auto flex items-center justify-between p-4">
+        <h2 id="title" className="text-white text-lg font-bold">Portfolio</h2>
+        {!isDesktop && (
+          <BtnMenu function={toggleMenu}>
+            <Icon type={5} className={`text-white ${showMenu ? 'menu-opened' : ''}`} />
+          </BtnMenu>
+        )}
+        {(showMenu || isDesktop) && <Menu closeMenu={toggleMenu} isDesktop={isDesktop} />}
       </div>
     </header>
   );

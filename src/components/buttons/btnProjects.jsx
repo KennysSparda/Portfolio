@@ -3,7 +3,7 @@ import Icon from '../icon/Icon'
 
 export default function BtnProjects(props) {
   if (props.navbar) {
-    return <Button type='linkIn' path="/#projects">Projetos</Button>
+    return <Button type='linkIn' path="/#projects" function={props.function}>Projetos</Button>
   } else {
     return (
       <Button type='linkIn' id="btnHome" path="#projects" >
