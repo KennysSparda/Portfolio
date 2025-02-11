@@ -4,7 +4,7 @@ import BtnWhatsapp from '../buttons/btnWhatsapp';
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-white py-8">
+    <footer className="bg-transparent bg-opacity-30 hover:bg-opacity-20 backdrop-filter backdrop-blur-lg text-white py-8">
       <div className="container mx-auto flex flex-col items-center space-y-4 md:space-y-0 md:flex-row md:justify-center md:space-x-4">
         <BtnGithub />
         <BtnLinkedin />

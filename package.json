@@ -4,7 +4,7 @@
   "description": "The place for demonstrate my projects and habilities",
   "main": "index.js",
   "dependencies": {
-    "next": "^12.3.4",
+    "next": "^15.1.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scroll-trigger": "^0.6.14",

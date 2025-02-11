@@ -6,7 +6,7 @@ import BtnProjects from '../buttons/btnProjects';
 const Menu = ({ closeMenu, isDesktop }) => {
   return (
     <nav
-      className={`menu bg-gray-800 ${isDesktop ? 'menu-visible-desktop' : 'menu-mobile'} absolute top-16 right-0 mt-2 p-2 rounded shadow-md`}
+      className={`menu bg-transparent bg-opacity-30 hover:bg-opacity-20 ${isDesktop ? 'menu-visible-desktop' : 'menu-mobile'} absolute top-16 right-0 mt-2 p-2 rounded`}
     >
       <ButtonHome function={closeMenu} />
       <BtnProjects function={closeMenu} navbar={true} />

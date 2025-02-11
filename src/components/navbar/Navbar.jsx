@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <header
-      className={`navbar-body bg-gray-800 fixed w-full transition-transform transform z-50 ${
+      className={`navbar-body bg-transparent bg-opacity-30 hover:bg-opacity-20 backdrop-filter backdrop-blur-lg fixed w-full transition-transform transform z-50 ${
         showNavbar ? 'translate-y-0' : '-translate-y-full'
       }`}
     >
