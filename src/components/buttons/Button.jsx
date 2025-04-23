@@ -36,7 +36,7 @@ export default function Button(props) {
     return (
       <a
         {...commonProps}
-        className={`${buttonClass} ${isHomeButtonClass} bg-gradient-to-r from-blue-500 via-blue-600 to-indigo-500 hover:bg-opacity-80 focus:bg-opacity-80 focus:outline-none focus:shadow-outline-blue sm:inline-block md:inline-block lg:inline-block xl:inline-block`}
+        className={`${buttonClass} ${isHomeButtonClass}  hover:bg-opacity-80 focus:bg-opacity-80 focus:outline-none focus:shadow-outline-blue sm:inline-block md:inline-block lg:inline-block xl:inline-block`}
         href={props.path}
         onMouseEnter={handleMouseEnter}
         onMouseDown={handleMouseDown}

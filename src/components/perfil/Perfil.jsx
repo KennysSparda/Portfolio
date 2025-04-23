@@ -60,7 +60,7 @@ export default function Perfil() {
         </div>
       ) : (
         <div className="flex flex-col items-center">
-          <div className="border-8 border-blue-500 rounded-full overflow-hidden mb-4">
+          <div className="border-2 border-blue-400 rounded-full overflow-hidden mb-4">
             <img className="w-32 h-32 object-cover" src={imageSrc} alt="Perfil" />
           </div>
           <h1 className="text-4xl font-bold">{displayName}</h1>
