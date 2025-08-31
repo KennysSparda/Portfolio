@@ -6,7 +6,7 @@ export default function Perfil() {
   const [imageLoaded, setImageLoaded] = useState(false);
   const [displayName, setDisplayName] = useState('');
   const [displayProfession, setDisplayProfession] = useState('');
-  const imageSrc = 'img/perfil.jpg';
+  const imageSrc = 'img/perfil.png';
   const name = 'Kenny Vargas';
   const profession = 'Programador';
 

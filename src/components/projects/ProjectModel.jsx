@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function ProjectModel({ projectName, projectPath, projectImage, projectInfo }) {
   return (
     <div className="flex flex-col lg:flex-row items-center justify-center">
@@ -18,8 +16,7 @@ export default function ProjectModel({ projectName, projectPath, projectImage, p
 
         {/* Tecnologias Usadas */}
         <div>
-          <h4 className="text-xl font-bold mb-2">Tecnologias Usadas</h4>
-          <p className="text-blue-700 mb-4">{projectInfo}</p>
+          <h4 className="text-xl font-bold mr-20 mb-2">{projectInfo}</h4>
         </div>
 
         {/* Botão para acessar o projeto */}
