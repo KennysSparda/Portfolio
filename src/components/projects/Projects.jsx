@@ -1,9 +1,9 @@
-import { useEffect, useState, useRef } from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import Container from '../container/Container';
-import ProjectModel from './ProjectModel';
+import { useEffect, useState, useRef } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Container from "../container/Container";
+import ProjectModel from "./ProjectModel";
 
 export default function Projects() {
   const [dataProjects, setDataProjects] = useState(null);
@@ -11,7 +11,7 @@ export default function Projects() {
 
   useEffect(() => {
     const getDataProjects = async () => {
-      const response = await fetch('/projects/projects.json');
+      const response = await fetch("/projects/projects.json");
       const dataProjectsJson = await response.json();
       setDataProjects(dataProjectsJson);
     };
@@ -20,7 +20,11 @@ export default function Projects() {
   }, []);
 
   if (!dataProjects) {
-    return <Container><h1>CARREGANDO PROJETOS</h1></Container>;
+    return (
+      <Container>
+        <h1>CARREGANDO PROJETOS</h1>
+      </Container>
+    );
   }
 
   const settings = {
@@ -43,7 +47,8 @@ export default function Projects() {
               projectPath={project.projectPath}
               projectImage={project.projectImage}
               projectInfo={project.projectInfo}
-              style={{ height: '50vh' }}
+              projectRepo={project.projectRepo}
+              style={{ height: "50vh" }}
             />
           ))}
         </Slider>

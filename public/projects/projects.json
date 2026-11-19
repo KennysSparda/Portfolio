@@ -3,12 +3,14 @@
     "projectName": "Looja",
     "projectPath": "https://looja.com.br",
     "projectImage": "/img/projects/looja.png",
-    "projectInfo": "Projeto de controle de validade e gestao de lojas e promotores"
+    "projectInfo": "Projeto de controle de validade e gestao de lojas e promotores",
+    "projectRepo": "https://github.com/KennysSparda/looja"
   },
   {
     "projectName": "Self Control",
     "projectPath": "https://selfcontrol.vercel.app/",
     "projectImage": "/img/projects/selfcontrol.png",
-    "projectInfo": "Projeto interno de uma aplicação web para ajudar a gerenciar o estoque e uso de produtos em uma loja gerando um histórico de movimentações e visualização de uso de materiais, feito com Next.js, React, Javascript, Tailwind e HTML"
+    "projectInfo": "Projeto interno de uma aplicação web para ajudar a gerenciar o estoque e uso de produtos em uma loja gerando um histórico de movimentações e visualização de uso de materiais, feito com Next.js, React, Javascript, Tailwind e HTML",
+    "projectRepo": "https://github.com/KennysSparda/WhiteCat"
   }
 ]
